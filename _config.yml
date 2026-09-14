@@ -6,7 +6,7 @@
 # URL. Hoy el sitio se publica desde la cuenta faclopez91.
 # Si mañana se muda a una organización o a otra cuenta, se cambian estas dos
 # líneas y nada más: todos los enlaces del sitio usan relative_url / absolute_url.
-url: "https://faclopez91.github.io"
+url: "https://gtechuandestest.github.io"
 baseurl: ""
 
 lab:
