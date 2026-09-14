@@ -31,54 +31,54 @@
   lead: alberto-vergara
   color: "#3f7f8c"
   name:
-    es: "POR COMPLETAR"          # nombre temático del área, no el del PI
-    en: "TO BE COMPLETED"
+    es: "Biofiltración y Tratamiento de Gases"
+    en: "Gas Biofiltration and Treatment"
   tagline:
-    es: ""
-    en: ""
+    es: "Hongos y bacterias puestos a degradar contaminantes en fase gaseosa, y los biorreactores que lo hacen posible a escala."
+    en: "Fungi and bacteria put to work degrading gas-phase pollutants, and the bioreactors that make it work at scale."
   intro:
-    es: ""
-    en: ""
+    es: "Compuestos orgánicos volátiles, metano en baja concentración y CO₂ tratados por vía biológica en biofiltros y biorreactores de alta transferencia de masa. El foco está en lo que limita el proceso: la transferencia de masa hacia la biopelícula, el comportamiento de los hongos filamentosos frente a compuestos hidrofóbicos y el costo energético de mover el gas. Todo sostenido por modelación matemática, que es lo que permite pasar del laboratorio al aire de un espacio interior o a la chimenea de un proceso."
+    en: "Volatile organic compounds, low-concentration methane and CO₂ treated biologically in biofilters and high-mass-transfer bioreactors. The focus is on what limits the process: mass transfer into the biofilm, how filamentous fungi behave towards hydrophobic compounds, and the energy cost of moving the gas. All of it underpinned by mathematical modelling, which is what bridges the laboratory and the air of an indoor space or a process stack."
   site: ""
 
 - id: scott
   lead: felipe-scott
   color: "#8a7a3e"
   name:
-    es: "POR COMPLETAR"
-    en: "TO BE COMPLETED"
+    es: "Ingeniería Metabólica y Bioprocesos"
+    en: "Metabolic Engineering and Bioprocesses"
   tagline:
-    es: ""
-    en: ""
+    es: "Microorganismos rediseñados para convertir H₂, CO₂ y O₂ en productos químicos, y los procesos que los llevan a escala."
+    en: "Microorganisms redesigned to turn H₂, CO₂ and O₂ into chemicals, and the processes that take them to scale."
   intro:
-    es: ""
-    en: ""
+    es: "Ingeniería metabólica y fermentación de precisión aplicadas a la bioconversión de C1: bacterias modificadas para producir isopropanol, butanodiol, hidroxiácidos y polímeros a partir de gases. La modelación a escala genómica guía el rediseño de las rutas, y la ingeniería de procesos decide si el resultado tiene sentido fuera del matraz: qué configuración de reactor, cuánta energía, qué costo por kilo."
+    en: "Metabolic engineering and precision fermentation applied to C1 bioconversion: bacteria engineered to produce isopropanol, butanediol, hydroxy acids and polymers from gases. Genome-scale modelling guides the redesign of the pathways, and process engineering decides whether the result makes sense outside the flask: which reactor configuration, how much energy, what cost per kilo."
   site: ""
 
 - id: guerrero
   lead: sichem-guerrero
   color: "#7d5a86"
   name:
-    es: "POR COMPLETAR"
-    en: "TO BE COMPLETED"
+    es: "Catálisis Heterogénea"
+    en: "Heterogeneous Catalysis"
   tagline:
-    es: ""
-    en: ""
+    es: "Catalizadores sintetizados, ensayados y caracterizados para convertir contaminantes gaseosos en compuestos inertes o de mayor valor."
+    en: "Catalysts synthesised, tested and characterised to turn gaseous pollutants into inert or higher-value compounds."
   intro:
-    es: ""
-    en: ""
+    es: "Catálisis heterogénea aplicada a problemas ambientales concretos: reducción de óxido nítrico sobre absorbentes en base a cobre, eliminación de los contaminantes que deja la combustión de leña, absorción y activación de CO₂, oxidación selectiva hacia productos de mayor valor y producción catalítica de biodiésel. Cada catalizador se sintetiza, se ensaya en reacción y se caracteriza con técnicas físicas y espectroscópicas para entender por qué funciona."
+    en: "Heterogeneous catalysis applied to concrete environmental problems: nitric oxide reduction over copper-based absorbents, removal of the pollutants left by wood combustion, CO₂ absorption and activation, selective oxidation towards higher-value products, and catalytic biodiesel production. Each catalyst is synthesised, tested in reaction and characterised with physical and spectroscopic techniques to understand why it works."
   site: ""
 
 - id: moreno
   lead: patricio-moreno
   color: "#a9663f"
   name:
-    es: "POR COMPLETAR"
-    en: "TO BE COMPLETED"
+    es: "Flujos Multifásicos y Simulación Numérica"
+    en: "Multiphase Flows and Numerical Simulation"
   tagline:
-    es: ""
-    en: ""
+    es: "Simulación numérica de flujos con más de una fase, del transporte de sedimentos al aire que atraviesa un biofiltro."
+    en: "Numerical simulation of flows with more than one phase, from sediment transport to air moving through a biofilter."
   intro:
-    es: ""
-    en: ""
+    es: "Flujos multifásicos y turbulentos resueltos con CFD, DEM y el acoplamiento de ambos, a la escala en que el fenómeno ocurre: partículas individuales de sedimento en un flujo turbulento, olas de viento resuspendiendo el fondo de un lago, aire cargado de contaminantes atravesando un medio poroso. El objetivo no es la simulación en sí, sino entender procesos ambientales que no se dejan medir con facilidad en terreno."
+    en: "Multiphase and turbulent flows resolved with CFD, DEM and the coupling of the two, at the scale where the phenomenon happens: individual sediment particles in a turbulent flow, wind waves resuspending a lake bed, polluted air moving through a porous medium. The goal is not the simulation itself but understanding environmental processes that are hard to measure in the field."
   site: ""

@@ -47,22 +47,29 @@
   name: "Alberto Vergara Fernández"
   photo: ""
   role:
-    es: "POR COMPLETAR"
-    en: "TO BE COMPLETED"
+    es: "Profesor Titular · Director del área de Biofiltración y Tratamiento de Gases"
+    en: "Full Professor · Head of Gas Biofiltration and Treatment"
   affiliation:
     es: "Facultad de Ingeniería y Ciencias Aplicadas, Universidad de los Andes"
     en: "Faculty of Engineering and Applied Sciences, Universidad de los Andes"
   degree:
-    es: ""
-    en: ""
+    es: "Doctor en Ciencias de la Ingeniería Química, Universidad Autónoma Metropolitana – Iztapalapa (México) · Ingeniero Civil Bioquímico, Pontificia Universidad Católica de Valparaíso"
+    en: "PhD in Chemical Engineering Sciences, Universidad Autónoma Metropolitana – Iztapalapa (Mexico) · Biochemical Engineering, Pontificia Universidad Católica de Valparaíso"
   bio:
-    es: ""
-    en: ""
+    es: "Alberto Vergara-Fernández es fundador del Green Technologies Research Group y Profesor Titular de la Facultad de Ingeniería y Ciencias Aplicadas. Su trabajo se centra en la biofiltración de gases: hongos filamentosos puestos a degradar compuestos volátiles hidrofóbicos, biorreactores de alta transferencia de masa y el modelado matemático que permite escalarlos. Ha sido investigador y profesor visitante en la Universidad Autónoma Metropolitana (México), la Universidad de Valladolid (España) y la Universidad Pontificia Bolivariana (Colombia). Dirigió el Anillo ATE220045 sobre valorización de CO₂ con hidrógeno verde y es coautor de dos patentes de purificación de aire de interiores."
+    en: "Alberto Vergara-Fernández founded the Green Technologies Research Group and is a Full Professor in the Faculty of Engineering and Applied Sciences. His work centres on gas biofiltration: filamentous fungi put to work degrading hydrophobic volatile compounds, high-mass-transfer bioreactors and the mathematical modelling that makes scale-up possible. He has been a visiting researcher and professor at Universidad Autónoma Metropolitana (Mexico), Universidad de Valladolid (Spain) and Universidad Pontificia Bolivariana (Colombia). He directed the ATE220045 Anillo project on CO₂ upcycling with green hydrogen and co-holds two patents on indoor air purification."
   interests:
-    es: []
-    en: []
-  metrics: []
-  links: { email: "", orcid: "", linkedin: "", scholar: "" }
+    es: ["Biofiltración de gases", "Hongos filamentosos", "Biorreactores de alta transferencia de masa", "Tratamiento de aire de interiores", "Modelación de sistemas biológicos"]
+    en: ["Gas biofiltration", "Filamentous fungi", "High-mass-transfer bioreactors", "Indoor air treatment", "Modelling of biological systems"]
+  metrics:
+    - { label: { es: "Índice h", en: "h-index" }, value: "18" }
+    - { label: { es: "Citas", en: "Citations" }, value: "1.274" }
+    - { label: { es: "Productos de investigación", en: "Research outputs" }, value: "48" }
+  links:
+    email: "aovergara@miuandes.cl"
+    orcid: "0000-0002-6075-9137"
+    linkedin: "alberto-vergara-fernandez-83036b185"
+    scholar: "https://scholar.google.com/citations?user=BamCl30AAAAJ"
 
 - id: felipe-scott
   group: lead
@@ -70,22 +77,29 @@
   name: "Felipe Scott Contador"
   photo: ""
   role:
-    es: "POR COMPLETAR"
-    en: "TO BE COMPLETED"
+    es: "Profesor Asociado · Director del área de Ingeniería Metabólica y Bioprocesos"
+    en: "Associate Professor · Head of Metabolic Engineering and Bioprocesses"
   affiliation:
     es: "Facultad de Ingeniería y Ciencias Aplicadas, Universidad de los Andes"
     en: "Faculty of Engineering and Applied Sciences, Universidad de los Andes"
   degree:
-    es: ""
-    en: ""
+    es: "Doctor en Ciencias de la Ingeniería, Pontificia Universidad Católica de Valparaíso · Ingeniero Civil Bioquímico, Pontificia Universidad Católica de Valparaíso"
+    en: "PhD in Engineering Sciences, Pontificia Universidad Católica de Valparaíso · Biochemical Engineering, Pontificia Universidad Católica de Valparaíso"
   bio:
-    es: ""
-    en: ""
+    es: "Felipe Scott es Vicedecano Académico de la Facultad de Ingeniería y Ciencias Aplicadas y Director del Doctorado en Ciencias de la Ingeniería. Trabaja en ingeniería de bioprocesos, donde combina ingeniería metabólica, fermentación de precisión y modelación a escala genómica para convertir H₂, CO₂ y O₂ en productos químicos de valor. La otra mitad de su trabajo es el diseño y la optimización de procesos, incluido el abatimiento de contaminación atmosférica por biofiltración con bacterias y hongos. Ha sido consultor internacional, evaluador de proyectos dentro y fuera de Chile y miembro del Grupo de Estudio de Fondecyt."
+    en: "Felipe Scott is Academic Vice Dean of the Faculty of Engineering and Applied Sciences and director of the PhD programme in Engineering Sciences. He works in bioprocess engineering, combining metabolic engineering, precision fermentation and genome-scale modelling to turn H₂, CO₂ and O₂ into value-added chemicals. The other half of his work is process design and optimisation, including air pollution abatement by biofiltration with bacteria and fungi. He has served as an international consultant, a project evaluator in Chile and abroad, and a member of the Fondecyt study group."
   interests:
-    es: []
-    en: []
-  metrics: []
-  links: { email: "", orcid: "", linkedin: "", scholar: "" }
+    es: ["Ingeniería metabólica", "Fermentación de precisión", "Bioconversión de C1 (H₂, CO₂, O₂)", "Modelación a escala genómica", "Diseño y optimización de procesos"]
+    en: ["Metabolic engineering", "Precision fermentation", "C1 bioconversion (H₂, CO₂, O₂)", "Genome-scale modelling", "Process design and optimisation"]
+  metrics:
+    - { label: { es: "Índice h", en: "h-index" }, value: "15" }
+    - { label: { es: "Citas", en: "Citations" }, value: "654" }
+    - { label: { es: "Productos de investigación", en: "Research outputs" }, value: "42" }
+  links:
+    email: ""                  # POR CONFIRMAR: no figura en el perfil institucional
+    orcid: "0000-0003-2041-4641"
+    linkedin: "felipescott"
+    scholar: "https://scholar.google.cl/citations?user=7MPNMlkAAAAJ&hl=en"
 
 - id: sichem-guerrero
   group: lead
@@ -93,22 +107,29 @@
   name: "Sichem Guerrero Ruz"
   photo: ""
   role:
-    es: "POR COMPLETAR"
-    en: "TO BE COMPLETED"
+    es: "Profesor Titular · Director del área de Catálisis Heterogénea"
+    en: "Full Professor · Head of Heterogeneous Catalysis"
   affiliation:
     es: "Facultad de Ingeniería y Ciencias Aplicadas, Universidad de los Andes"
     en: "Faculty of Engineering and Applied Sciences, Universidad de los Andes"
   degree:
-    es: ""
-    en: ""
+    es: "Ph.D. en Ingeniería Química, University of Notre Dame (EE.UU.) · Ingeniero Civil Químico y Magíster en Ingeniería Civil Química, Universidad de Chile"
+    en: "PhD in Chemical Engineering, University of Notre Dame (USA) · Chemical Engineering and MSc in Chemical Engineering, Universidad de Chile"
   bio:
-    es: ""
-    en: ""
+    es: "Sichem Guerrero es Profesor Titular de la Facultad de Ingeniería y Ciencias Aplicadas y coordinador de la carrera de Ingeniería Civil Ambiental. Su área es la catálisis heterogénea: sintetiza catalizadores, los ensaya en reacciones de interés aplicado y los caracteriza con técnicas físicas y espectroscópicas. Entre esas reacciones están la reducción de óxido nítrico con absorbentes en base a cobre, la eliminación de contaminantes provenientes de la combustión de leña, la absorción y activación de CO₂ y la producción catalítica de biodiésel."
+    en: "Sichem Guerrero is a Full Professor in the Faculty of Engineering and Applied Sciences and coordinator of the Environmental Civil Engineering programme. His field is heterogeneous catalysis: he synthesises catalysts, tests them in reactions of applied interest and characterises them with physical and spectroscopic techniques. Those reactions include nitric oxide reduction over copper-based absorbents, the removal of pollutants from wood combustion, CO₂ absorption and activation, and catalytic biodiesel production."
   interests:
-    es: []
-    en: []
-  metrics: []
-  links: { email: "", orcid: "", linkedin: "", scholar: "" }
+    es: ["Catálisis heterogénea", "Reducción de óxido nítrico", "Absorción y activación de CO₂", "Combustión de leña", "Producción catalítica de biodiésel"]
+    en: ["Heterogeneous catalysis", "Nitric oxide reduction", "CO₂ absorption and activation", "Wood combustion", "Catalytic biodiesel production"]
+  metrics:
+    - { label: { es: "Índice h", en: "h-index" }, value: "20" }
+    - { label: { es: "Citas", en: "Citations" }, value: "1.003" }
+    - { label: { es: "Productos de investigación", en: "Research outputs" }, value: "47" }
+  links:
+    email: "sguerrero@uandes.cl"
+    orcid: "0000-0003-0281-3390"
+    linkedin: ""               # sin perfil público encontrado
+    scholar: "https://scholar.google.com/citations?user=4kKpzOUAAAAJ&hl=en"
 
 - id: patricio-moreno
   group: lead
@@ -116,19 +137,26 @@
   name: "Patricio Moreno Casas"
   photo: ""
   role:
-    es: "POR COMPLETAR"
-    en: "TO BE COMPLETED"
+    es: "Profesor Asociado · Director del área de Flujos Multifásicos y Simulación Numérica"
+    en: "Associate Professor · Head of Multiphase Flows and Numerical Simulation"
   affiliation:
     es: "Facultad de Ingeniería y Ciencias Aplicadas, Universidad de los Andes"
     en: "Faculty of Engineering and Applied Sciences, Universidad de los Andes"
   degree:
-    es: ""
-    en: ""
+    es: "Ph.D. en Ingeniería Civil y Ambiental, University of California, Davis (EE.UU.) · M.Sc. en Ingeniería Ambiental, University of Tennessee, Knoxville · Ingeniero Civil en Obras Civiles, Universidad de Santiago de Chile"
+    en: "PhD in Civil and Environmental Engineering, University of California, Davis (USA) · MSc in Environmental Engineering, University of Tennessee, Knoxville · Civil Engineering, Universidad de Santiago de Chile"
   bio:
-    es: ""
-    en: ""
+    es: "Patricio Moreno-Casas aborda problemas de importancia ambiental desde la modelación numérica de flujos complejos. Su especialidad son los flujos con más de una fase —sólidos, líquidos y gases— simulados con CFD, DEM y el acoplamiento de ambos. En los últimos años ha trabajado en la resuspensión de sedimentos en lagos por acción de las olas, en simulaciones a microescala de partículas sedimentarias en flujos turbulentos y en el transporte de contaminantes en flujos de aire a través de medios porosos, incluido el desempeño de biofiltros. Se incorporó a la Universidad de los Andes en 2014."
+    en: "Patricio Moreno-Casas approaches environmentally significant problems through the numerical modelling of complex flows. His speciality is flows with more than one phase —solids, liquids and gases— simulated with CFD, DEM and the coupling of the two. In recent years he has worked on wave-driven sediment resuspension in lakes, microscale simulations of sedimentary particles in turbulent flows, and pollutant transport in air flows through porous media, including biofilter performance. He joined Universidad de los Andes in 2014."
   interests:
-    es: []
-    en: []
-  metrics: []
-  links: { email: "", orcid: "", linkedin: "", scholar: "" }
+    es: ["Flujos multifásicos", "Flujos turbulentos", "Simulación CFD", "Acoplamiento CFD–DEM", "Transporte de sedimentos"]
+    en: ["Multiphase flows", "Turbulent flows", "CFD simulation", "CFD–DEM coupling", "Sediment transport"]
+  metrics:
+    - { label: { es: "Índice h", en: "h-index" }, value: "13" }
+    - { label: { es: "Citas", en: "Citations" }, value: "540" }
+    - { label: { es: "Productos de investigación", en: "Research outputs" }, value: "25" }
+  links:
+    email: ""                  # POR CONFIRMAR: no figura en el perfil institucional
+    orcid: "0000-0003-1348-8079"
+    linkedin: ""               # sin perfil público encontrado
+    scholar: "https://scholar.google.cl/citations?user=JgEQSacAAAAJ&hl=en"

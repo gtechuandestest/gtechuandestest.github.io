@@ -41,3 +41,103 @@
   lead: "César Huiliñir Curío"
   contact: "chuilinir@miuandes.cl"
   abstract: { es: "", en: "" }
+
+- id: fondecyt-1240411-transferencia-gas
+  areas: [vergara, scott, moreno]
+  title: "Decreasing specific volumetric energy consumption for gas mass transfer through different bioreactor configurations: CO₂ conversion to value-added products"
+  funding: "ANID · Fondecyt Regular"
+  code: "1240411"
+  period: "2024–2028"
+  lead: "Alberto Vergara-Fernández"
+  contact: "aovergara@miuandes.cl"
+  abstract: { es: "", en: "" }
+
+- id: anillo-ate220045-co2
+  areas: [vergara, scott, guerrero]
+  title: "Fueling a new sustainable industry in Chile via integrated and intensified bio-electro-chemical processes for CO₂ upcycling using green hydrogen"
+  funding: "ANID · Anillo de Tecnología"
+  code: "ATE220045"
+  period: "2022–2025"
+  lead: "Alberto Vergara-Fernández"
+  contact: "aovergara@miuandes.cl"
+  abstract: { es: "", en: "" }
+
+- id: app-biomet
+  areas: [vergara]
+  title: "Procédé de biofiltration fongique pour l'élimination du méthane à faible concentration (BIOMÉT)"
+  funding: "APP 2022 (Francia)"
+  code: ""
+  period: "2023–2025"
+  lead: "Alberto Vergara-Fernández"
+  contact: "aovergara@miuandes.cl"
+  abstract: { es: "", en: "" }
+
+- id: redes-190137
+  areas: [vergara, guerrero, moreno]
+  title: "International collaboration network for the development of advanced gaseous decontamination technologies"
+  funding: "ANID · REDES"
+  code: "190137"
+  period: "2020–2022"
+  lead: "Alberto Vergara-Fernández"
+  contact: "aovergara@miuandes.cl"
+  abstract: { es: "", en: "" }
+
+- id: fondecyt-1251864-isopropanol
+  areas: [scott]
+  title: "Increasing isopropanol and (R)-1,3-butanediol yields and titers from H₂, CO₂ and O₂ via pathway orthogonalization"
+  funding: "ANID · Fondecyt Regular"
+  code: "1251864"
+  period: "2025–2029"
+  lead: "Felipe Scott"
+  contact: ""                    # POR CONFIRMAR: correo
+  abstract: { es: "", en: "" }
+
+- id: fondecyt-1211434-hidroxiacidos
+  areas: [scott, vergara]
+  title: "Engineering Azohydromonas lata and Ralstonia eutropha for the production of hydroxy acids"
+  funding: "ANID · Fondecyt Regular"
+  code: "1211434"
+  period: "2021–2025"            # POR CONFIRMAR: término
+  lead: "Felipe Scott"
+  contact: ""
+  abstract: { es: "", en: "" }
+
+- id: fondef-unitair
+  areas: [scott, guerrero]
+  title: "UNITAIR — Sistema integrado de alta eficiencia para la captura y destrucción de contaminantes de aire de interior"
+  funding: "ANID · FONDEF IDeA I+D"
+  code: "ID22I10226"
+  period: "2022–2024"
+  lead: "Felipe Scott"
+  contact: ""
+  abstract: { es: "", en: "" }
+
+- id: fondecyt-1220582-no
+  areas: [guerrero]
+  title: "Uso simultáneo de compuestos aromáticos policíclicos y CO como agentes reductores de NO sobre catalizador core-shell YCeO₂@M (M = TiO₂, ZrO₂) soportado con Ca y Cu-Ni"
+  funding: "ANID · Fondecyt Regular"
+  code: "1220582"
+  period: "2022–2026"
+  lead: "Sichem Guerrero"
+  contact: "sguerrero@uandes.cl"
+  abstract: { es: "", en: "" }
+
+- id: fondecyt-1250683-uhpc
+  areas: [moreno]
+  title: "Assessing fiber orientation and distribution in ultra-high-performance concrete (UHPC) through advanced computational modeling and experimental analysis"
+  funding: "ANID · Fondecyt Regular"
+  code: "1250683"
+  period: "2025–2029"
+  lead: "Patricio Moreno-Casas"
+  contact: ""                    # POR CONFIRMAR: correo
+  abstract: { es: "", en: "" }
+
+- id: fai-puente-bedload
+  areas: [moreno]
+  title: "Numerical study of bedload sediment transport under dilute conditions"
+  funding: "Universidad de los Andes · FAI Puente Regular"
+  code: ""
+  period: "2022–2024"
+  lead: "Patricio Moreno-Casas"
+  contact: ""
+  abstract: { es: "", en: "" }

@@ -24,3 +24,15 @@
   role: { es: "Colaboración internacional", en: "International collaboration" }
   title: "Modelación CFD de bioclogging en medios porosos, con el grupo de la Dra. Verónica L. Morales (UC Davis)"
   period: "2023 –"
+
+- areas: [scott]
+  person: "Felipe Scott"
+  role: { es: "Coinvestigador", en: "Co-investigator" }
+  title: "Fondecyt Regular N.º 1211617 — control óptimo multiperiodo para el reemplazo de catalizadores en sistemas multienzimáticos"
+  period: "2021 –"
+
+- areas: [guerrero]
+  person: "Sichem Guerrero"
+  role: { es: "Investigador asociado", en: "Associate researcher" }
+  title: "Apoyo a Centros Regionales R23F0001 — investigación y desarrollo en el uso de hidrógeno verde desde la Región de Antofagasta"
+  period: "2023–2028"

@@ -41,3 +41,107 @@
   keywords:
     es: ["digestión anaerobia", "microaireación", "biosecado", "deshidratación de lodos", "biogás y bioH₂", "recuperación de N y P", "economía circular"]
     en: ["anaerobic digestion", "microaeration", "biodrying", "sludge dewatering", "biogas and bioH₂", "N and P recovery", "circular economy"]
+
+- id: biofiltracion-gases
+  areas: [vergara]
+  icon: reactor
+  title:
+    es: "Biofiltración de gases y biorreactores de alta transferencia de masa"
+    en: "Gas biofiltration and high-mass-transfer bioreactors"
+  body:
+    es: "Compuestos orgánicos volátiles hidrofóbicos, metano en baja concentración y CO₂ tratados con hongos filamentosos y bacterias, en lechos empacados y en biorreactores diseñados para forzar la transferencia gas–líquido. La pregunta de fondo es siempre la misma: cómo llevar el contaminante hasta el microorganismo sin gastar más energía de la que el proceso justifica. De ahí salen las configuraciones de reactor, los rellenos y las estrategias de operación que el grupo ensaya."
+    en: "Hydrophobic volatile organic compounds, low-concentration methane and CO₂ treated with filamentous fungi and bacteria, in packed beds and in bioreactors designed to force gas–liquid transfer. The underlying question is always the same: how to get the pollutant to the microorganism without spending more energy than the process justifies. Reactor configurations, packing materials and operating strategies all follow from it."
+  keywords:
+    es: ["biofiltración", "hongos filamentosos", "COV hidrofóbicos", "metano", "transferencia gas–líquido", "valorización de CO₂"]
+    en: ["biofiltration", "filamentous fungi", "hydrophobic VOCs", "methane", "gas–liquid transfer", "CO₂ upcycling"]
+
+- id: aire-interior
+  areas: [vergara]
+  icon: leaf
+  title:
+    es: "Tratamiento de aire de interiores"
+    en: "Indoor air treatment"
+  body:
+    es: "El aire de oficinas, salas de clase y viviendas concentra contaminantes que rara vez se miden. El grupo desarrolla equipos que combinan captura y destrucción —biológica o catalítica— de esos compuestos, una línea que ya dio dos patentes y el proyecto FONDEF UNITAIR. El trabajo va del diseño del medio filtrante a la puesta en marcha del prototipo."
+    en: "The air in offices, classrooms and homes concentrates pollutants that are rarely measured. The group develops units that combine capture and destruction —biological or catalytic— of those compounds, a line that has already produced two patents and the FONDEF UNITAIR project. The work runs from filter-medium design to prototype commissioning."
+  keywords:
+    es: ["calidad del aire interior", "biopurificadores", "captura y destrucción", "prototipos", "patentes"]
+    en: ["indoor air quality", "bio-purifiers", "capture and destruction", "prototypes", "patents"]
+
+- id: ingenieria-metabolica
+  areas: [scott]
+  icon: molecule
+  title:
+    es: "Ingeniería metabólica y fermentación de precisión"
+    en: "Metabolic engineering and precision fermentation"
+  body:
+    es: "Rutas metabólicas rediseñadas en bacterias como Azohydromonas lata y Ralstonia eutropha para producir isopropanol, (R)-1,3-butanodiol, hidroxiácidos y polímeros usando H₂, CO₂ y O₂ como fuentes de carbono y energía. La reconstrucción a escala genómica permite anticipar qué modificaciones tienen sentido antes de llevarlas al laboratorio, y la ortogonalización de rutas busca subir rendimientos y títulos hasta donde el proceso sea viable."
+    en: "Metabolic pathways redesigned in bacteria such as Azohydromonas lata and Ralstonia eutropha to produce isopropanol, (R)-1,3-butanediol, hydroxy acids and polymers using H₂, CO₂ and O₂ as carbon and energy sources. Genome-scale reconstruction anticipates which modifications are worth making before they reach the bench, and pathway orthogonalisation aims to raise yields and titres to the point where the process is viable."
+  keywords:
+    es: ["ingeniería metabólica", "modelos a escala genómica", "bioconversión de C1", "hidroxiácidos y PHA", "hidrógeno verde"]
+    en: ["metabolic engineering", "genome-scale models", "C1 bioconversion", "hydroxy acids and PHA", "green hydrogen"]
+
+- id: diseno-procesos
+  areas: [scott]
+  icon: flow
+  title:
+    es: "Diseño y optimización de procesos"
+    en: "Process design and optimisation"
+  body:
+    es: "Un bioproceso que funciona en el matraz no siempre funciona en la planta. Esta línea usa herramientas de Process Systems Engineering —simulación, optimización y control— para decidir configuraciones de reactor, integración energética y condiciones de operación, y para estimar lo que realmente cuesta producir un compuesto por vía biológica frente a la ruta petroquímica."
+    en: "A bioprocess that works in the flask does not always work in the plant. This line uses Process Systems Engineering tools —simulation, optimisation and control— to settle reactor configurations, energy integration and operating conditions, and to estimate what it actually costs to make a compound biologically compared with the petrochemical route."
+  keywords:
+    es: ["Process Systems Engineering", "simulación de procesos", "optimización", "escalamiento", "análisis tecnoeconómico"]
+    en: ["Process Systems Engineering", "process simulation", "optimisation", "scale-up", "technoeconomic analysis"]
+
+- id: catalisis-sintesis
+  areas: [guerrero]
+  icon: molecule
+  title:
+    es: "Síntesis y caracterización de catalizadores"
+    en: "Catalyst synthesis and characterisation"
+  body:
+    es: "Catalizadores heterogéneos preparados a medida —estructuras core-shell, soportes con calcio, cobre y níquel— y estudiados con técnicas físicas y espectroscópicas para relacionar estructura y actividad. Saber qué fase está presente, cómo se distribuye el metal y qué ocurre en la superficie durante la reacción es lo que permite mejorar un catalizador en vez de probar al azar."
+    en: "Heterogeneous catalysts prepared to order —core-shell structures, supports with calcium, copper and nickel— and studied with physical and spectroscopic techniques to relate structure to activity. Knowing which phase is present, how the metal is distributed and what happens at the surface during reaction is what makes it possible to improve a catalyst rather than test at random."
+  keywords:
+    es: ["catálisis heterogénea", "catalizadores core-shell", "caracterización espectroscópica", "cobre y níquel", "estructura y actividad"]
+    en: ["heterogeneous catalysis", "core-shell catalysts", "spectroscopic characterisation", "copper and nickel", "structure and activity"]
+
+- id: conversion-catalitica
+  areas: [guerrero]
+  icon: reactor
+  title:
+    es: "Conversión catalítica de contaminantes y valorización de CO₂"
+    en: "Catalytic conversion of pollutants and CO₂ upcycling"
+  body:
+    es: "Reducción de óxido nítrico usando monóxido de carbono y compuestos aromáticos policíclicos como agentes reductores, eliminación de los contaminantes que deja la combustión de leña, absorción de CO₂ y su activación hacia productos útiles, y producción catalítica de biodiésel. El hilo común es convertir una corriente problemática en algo inerte o vendible."
+    en: "Nitric oxide reduction using carbon monoxide and polycyclic aromatic compounds as reducing agents, removal of the pollutants left by wood combustion, CO₂ absorption and its activation towards useful products, and catalytic biodiesel production. The common thread is turning a problematic stream into something inert or saleable."
+  keywords:
+    es: ["reducción de NO", "combustión de leña", "absorción y activación de CO₂", "oxidación selectiva", "biodiésel"]
+    en: ["NO reduction", "wood combustion", "CO₂ absorption and activation", "selective oxidation", "biodiesel"]
+
+- id: flujos-multifasicos
+  areas: [moreno]
+  icon: flow
+  title:
+    es: "Flujos multifásicos y turbulentos"
+    en: "Multiphase and turbulent flows"
+  body:
+    es: "Simulación numérica de flujos donde coexisten sólidos, líquidos y gases, resueltos con CFD, DEM y el acoplamiento de ambos. La escala de trabajo es la del fenómeno: partículas individuales en un flujo turbulento, no promedios. Ahí entran el aire cargado de contaminantes atravesando un medio poroso —la física detrás del desempeño de un biofiltro— y la orientación de fibras en hormigones de ultra alto desempeño."
+    en: "Numerical simulation of flows where solids, liquids and gases coexist, resolved with CFD, DEM and the coupling of the two. The working scale is that of the phenomenon: individual particles in a turbulent flow, not averages. That includes polluted air moving through a porous medium —the physics behind a biofilter's performance— and fibre orientation in ultra-high-performance concrete."
+  keywords:
+    es: ["CFD", "DEM", "acoplamiento CFD–DEM", "medios porosos", "turbulencia", "alta resolución"]
+    en: ["CFD", "DEM", "CFD–DEM coupling", "porous media", "turbulence", "high resolution"]
+
+- id: sedimentos
+  areas: [moreno]
+  icon: drop
+  title:
+    es: "Transporte de sedimentos y dinámica de lagos"
+    en: "Sediment transport and lake dynamics"
+  body:
+    es: "Transporte de fondo en canales abiertos simulado con modelos lagrangianos de alta resolución, y resuspensión de sedimentos en lagos por acción de las olas generadas por el viento. Son procesos que gobiernan la calidad del agua y la forma del cauce, y que resultan difíciles de medir directamente en terreno: la simulación entrega lo que el muestreo no alcanza."
+    en: "Bedload transport in open channels simulated with high-resolution Lagrangian models, and sediment resuspension in lakes driven by wind-generated waves. These processes govern water quality and channel morphology and are hard to measure directly in the field: simulation supplies what sampling cannot reach."
+  keywords:
+    es: ["transporte de fondo", "modelos lagrangianos", "resuspensión", "olas de viento", "calidad del agua", "morfodinámica"]
+    en: ["bedload transport", "Lagrangian models", "resuspension", "wind waves", "water quality", "morphodynamics"]
