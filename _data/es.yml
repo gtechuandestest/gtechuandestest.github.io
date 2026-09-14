@@ -24,6 +24,8 @@ ui:
   contact_address: "Dirección"
   period: "Periodo"
   funding: "Financiamiento"
+  funding_kicker: "Apoyo"
+  funding_title: "Financiamiento e instituciones"
   role_in_project: "Rol"
   collaborations: "Colaboraciones"
 

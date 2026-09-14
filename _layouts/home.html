@@ -5,15 +5,37 @@ layout: default
 {% assign base = '' %}{% if page.lang == 'en' %}{% assign base = '/en' %}{% endif %}
 
 <section class="hero">
-  <div class="wrap">
-    <p class="hero__kicker">{{ site.lab.institution[page.lang] }}</p>
-    <h1 class="hero__title">{{ t.home.subtitle }}</h1>
-    <p class="hero__lead">{{ t.home.lead_in }}</p>
-    <ul class="hero__areas">
+  <div class="wrap hero__split">
+    <div class="hero__text">
+      <p class="hero__kicker">{{ site.lab.institution[page.lang] }}</p>
+      <h1 class="hero__title">{{ t.home.subtitle }}</h1>
+      <p class="hero__lead">{{ t.home.lead_in }}</p>
+      <ul class="hero__areas">
+        {% for a in site.data.areas %}
+        <li style="--c: {{ a.color }}">
+          <a href="{{ base | append: '/areas/' | append: a.id | append: '/' | relative_url }}">{{ a.name[page.lang] }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% comment %} Los jefes de área: foto (o iniciales), nombre y área. Sale de areas.yml + people.yml. {% endcomment %}
+    <ul class="hero__leads">
       {% for a in site.data.areas %}
+      {% assign jefe = site.data.people | where: "id", a.lead | first %}
+      {% if jefe %}
       <li style="--c: {{ a.color }}">
-        <a href="{{ base | append: '/areas/' | append: a.id | append: '/' | relative_url }}">{{ a.name[page.lang] }}</a>
+        <a href="{{ base | append: '/areas/' | append: a.id | append: '/' | relative_url }}">
+          <span class="hero__photo">
+            {% if jefe.photo != "" %}<img src="{{ '/assets/img/people/' | append: jefe.photo | relative_url }}" alt="{{ jefe.name }}">
+            {% else %}<span class="initials">{{ jefe.name | split: " " | first | slice: 0 }}{{ jefe.name | split: " " | last | slice: 0 }}</span>{% endif %}
+          </span>
+          <span class="hero__who">
+            <b>{{ jefe.name }}</b>
+            <small>{{ a.name[page.lang] }}</small>
+          </span>
+        </a>
       </li>
+      {% endif %}
       {% endfor %}
     </ul>
   </div>

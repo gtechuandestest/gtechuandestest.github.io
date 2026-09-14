@@ -4,8 +4,8 @@
 <header class="nav">
   <div class="wrap nav__in">
     <a class="nav__brand" href="{{ base | append: '/' | relative_url }}">
-      <span class="nav__mark">G-Tech</span>
-      <span class="nav__sub">{{ site.lab.fullname[page.lang] }}</span>
+      <img class="nav__logo" src="{{ '/assets/img/logos/logo_gtech.png' | relative_url }}" alt="G-Tech">
+      <span class="nav__tagline">{{ site.lab.fullname[page.lang] }}</span>
     </a>
     <button class="nav__toggle" aria-expanded="false" aria-controls="menu">Menú</button>
     <nav id="menu" class="nav__menu">

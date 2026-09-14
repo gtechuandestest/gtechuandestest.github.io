@@ -23,6 +23,13 @@ layout: default
     </div>
   </header>
 
+  {% comment %} Primero quién dirige el área, con su ficha completa; luego la presentación del área. {% endcomment %}
+  {% if jefe %}
+  <section class="wrap band">
+    {% include person-card.html person=jefe %}
+  </section>
+  {% endif %}
+
   {% if a.intro[page.lang] != "" %}
   <section class="wrap band"><p class="lede">{{ a.intro[page.lang] }}</p></section>
   {% endif %}
@@ -61,7 +68,7 @@ layout: default
   </section>
   {% endif %}
 
-  {% assign gente = site.data.people | where_exp: "p", "p.areas contains page.area_id" %}
+  {% assign gente = site.data.people | where_exp: "p", "p.areas contains page.area_id" | where_exp: "p", "p.id != a.lead" %}
   {% if gente.size > 0 %}
   <section class="wrap band">
     <h2>{{ t.pages.team }}</h2>

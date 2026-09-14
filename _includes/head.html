@@ -4,6 +4,11 @@
   {% assign t = site.data[page.lang] %}
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.lab.name }}</title>
   <meta name="description" content="{{ site.lab.fullname[page.lang] }} — {{ site.lab.institution[page.lang] }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} · {% endif %}{{ site.lab.fullname[page.lang] }}">
+  <meta property="og:image" content="{{ '/assets/img/logos/logo_gtech.png' | absolute_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   <link rel="icon" href="{{ '/assets/img/logos/favicon.svg' | relative_url }}" type="image/svg+xml">
 </head>

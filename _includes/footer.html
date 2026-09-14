@@ -1,7 +1,21 @@
 {% assign t = site.data[page.lang] %}
+{% if site.data.funding and site.data.funding.size > 0 %}
+<section class="funding">
+  <div class="wrap">
+    <p class="kicker">{{ t.ui.funding_kicker }}</p>
+    <h2 class="funding__title">{{ t.ui.funding_title }}</h2>
+    <ul class="funders">
+      {% for f in site.data.funding %}
+      <li><a href="{{ f.url }}"><img src="{{ '/assets/img/logos/' | append: f.file | relative_url }}" alt="{{ f.name }}" loading="lazy"></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
 <footer class="foot">
   <div class="wrap foot__in">
     <div>
+      <img class="foot__logo" src="{{ '/assets/img/logos/logo_gtech.png' | relative_url }}" alt="G-Tech">
       <p class="foot__name">{{ site.lab.fullname[page.lang] }}</p>
       <p>{{ site.lab.institution[page.lang] }}</p>
       <p>{{ site.lab.address[page.lang] }}</p>
@@ -14,13 +28,6 @@
       {% endfor %}
     </ul>
   </div>
-  {% if site.data.funding and site.data.funding.size > 0 %}
-  <div class="wrap foot__funding">
-    {% for f in site.data.funding %}
-      <img src="{{ '/assets/img/logos/' | append: f.file | relative_url }}" alt="{{ f.name }}" loading="lazy">
-    {% endfor %}
-  </div>
-  {% endif %}
   <div class="wrap foot__admin">
     <p>{{ t.ui.admin }}: {{ site.lab.admin }}</p>
   </div>
