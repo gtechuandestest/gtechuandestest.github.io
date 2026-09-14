@@ -11,36 +11,6 @@
 # El resto del equipo del área de aguas entra con herramientas/migrar-aguas.rb.
 # ---------------------------------------------------------------------------
 
-- id: cesar-huilinir
-  group: lead
-  areas: [aguas]
-  name: "César Huiliñir Curío"
-  photo: "cesar-huilinir.jpg"
-  role:
-    es: "Profesor Asociado · Director del área de Tecnologías del Agua"
-    en: "Associate Professor · Head of Water Technologies"
-  affiliation:
-    es: "Facultad de Ingeniería y Ciencias Aplicadas, Universidad de los Andes"
-    en: "Faculty of Engineering and Applied Sciences, Universidad de los Andes"
-  degree:
-    es: "Doctor en Ciencias de la Ingeniería, mención Ingeniería Química, Universidad de Concepción · Ingeniero Civil Industrial, Universidad de La Frontera"
-    en: "PhD in Engineering Sciences (Chemical Engineering), Universidad de Concepción · Industrial Engineering, Universidad de La Frontera"
-  bio:
-    es: "César Huiliñir dirige el Doctorado en Ciencias de la Ingeniería de la Universidad de los Andes. Con postdoctorado en la Technische Universität Berlin, trabaja desde hace dos décadas en el tratamiento biológico de aguas y residuos, y en la modelación matemática de los bioprocesos que lo hacen posible. Su trabajo cruza la digestión anaerobia, la remoción de nitrógeno y la valorización de residuos orgánicos, con más de 85 publicaciones indexadas y dos patentes."
-    en: "César Huiliñir directs the PhD programme in Engineering Sciences at Universidad de los Andes. Following a postdoctoral fellowship at Technische Universität Berlin, he has spent two decades working on the biological treatment of water and waste and on the mathematical modelling of the bioprocesses behind it, spanning anaerobic digestion, nitrogen removal and organic-waste valorisation, with more than 85 indexed publications and two patents."
-  interests:
-    es: ["Digestión anaerobia", "Remoción biológica de nitrógeno", "Biosecado de lodos", "Zeolita natural", "Economía circular del agua"]
-    en: ["Anaerobic digestion", "Biological nitrogen removal", "Sludge biodrying", "Natural zeolite", "Water circular economy"]
-  metrics:
-    - { label: { es: "Índice h", en: "h-index" }, value: "24" }
-    - { label: { es: "Citas", en: "Citations" }, value: "1.776" }
-    - { label: { es: "Productos de investigación", en: "Research outputs" }, value: "89" }
-  links:
-    email: "chuilinir@miuandes.cl"
-    orcid: "0000-0002-3487-684X"
-    linkedin: "cesar-huilinir-4b8a2a30"
-    scholar: ""
-
 - id: alberto-vergara
   group: lead
   areas: [vergara]
@@ -70,6 +40,36 @@
     orcid: "0000-0002-6075-9137"
     linkedin: "alberto-vergara-fernandez-83036b185"
     scholar: "https://scholar.google.com/citations?user=BamCl30AAAAJ"
+
+- id: cesar-huilinir
+  group: lead
+  areas: [aguas]
+  name: "César Huiliñir Curío"
+  photo: "cesar-huilinir.jpg"
+  role:
+    es: "Profesor Asociado · Director del área de Tecnologías del Agua"
+    en: "Associate Professor · Head of Water Technologies"
+  affiliation:
+    es: "Facultad de Ingeniería y Ciencias Aplicadas, Universidad de los Andes"
+    en: "Faculty of Engineering and Applied Sciences, Universidad de los Andes"
+  degree:
+    es: "Doctor en Ciencias de la Ingeniería, mención Ingeniería Química, Universidad de Concepción · Ingeniero Civil Industrial, Universidad de La Frontera"
+    en: "PhD in Engineering Sciences (Chemical Engineering), Universidad de Concepción · Industrial Engineering, Universidad de La Frontera"
+  bio:
+    es: "César Huiliñir dirige el Doctorado en Ciencias de la Ingeniería de la Universidad de los Andes. Con postdoctorado en la Technische Universität Berlin, trabaja desde hace dos décadas en el tratamiento biológico de aguas y residuos, y en la modelación matemática de los bioprocesos que lo hacen posible. Su trabajo cruza la digestión anaerobia, la remoción de nitrógeno y la valorización de residuos orgánicos, con más de 85 publicaciones indexadas y dos patentes."
+    en: "César Huiliñir directs the PhD programme in Engineering Sciences at Universidad de los Andes. Following a postdoctoral fellowship at Technische Universität Berlin, he has spent two decades working on the biological treatment of water and waste and on the mathematical modelling of the bioprocesses behind it, spanning anaerobic digestion, nitrogen removal and organic-waste valorisation, with more than 85 indexed publications and two patents."
+  interests:
+    es: ["Digestión anaerobia", "Remoción biológica de nitrógeno", "Biosecado de lodos", "Zeolita natural", "Economía circular del agua"]
+    en: ["Anaerobic digestion", "Biological nitrogen removal", "Sludge biodrying", "Natural zeolite", "Water circular economy"]
+  metrics:
+    - { label: { es: "Índice h", en: "h-index" }, value: "24" }
+    - { label: { es: "Citas", en: "Citations" }, value: "1.776" }
+    - { label: { es: "Productos de investigación", en: "Research outputs" }, value: "89" }
+  links:
+    email: "chuilinir@miuandes.cl"
+    orcid: "0000-0002-3487-684X"
+    linkedin: "cesar-huilinir-4b8a2a30"
+    scholar: ""
 
 - id: felipe-scott
   group: lead
