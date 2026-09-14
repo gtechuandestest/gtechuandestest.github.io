@@ -6,7 +6,7 @@
     <h2 class="funding__title">{{ t.ui.funding_title }}</h2>
     <ul class="funders">
       {% for f in site.data.funding %}
-      <li><a href="{{ f.url }}"><img src="{{ '/assets/img/logos/' | append: f.file | relative_url }}" alt="{{ f.name }}" loading="lazy"></a></li>
+      <li{% if f.height %} style="--h: {{ f.height }}px"{% endif %}><a href="{{ f.url }}"><img src="{{ '/assets/img/logos/' | append: f.file | relative_url }}" alt="{{ f.name }}" loading="lazy"></a></li>
       {% endfor %}
     </ul>
   </div>

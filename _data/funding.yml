@@ -2,6 +2,7 @@
 # informacion/logos/; acá van copias recortadas al contenido visible y llevadas
 # a una altura común, o se ven diminutas. Ojo con los logos blancos sobre
 # transparente: no dan error, simplemente desaparecen sobre fondo claro.
+# `height` (opcional, px) sube la altura máxima de ese logo; el resto va a 72.
 - { name: "Universidad de los Andes", file: "logo_uandes.png", url: "https://www.uandes.cl" }
-- { name: "ANID", file: "logo_anid.png", url: "https://www.anid.cl" }
+- { name: "ANID", file: "logo_anid.png", url: "https://www.anid.cl", height: 100 }
 - { name: "CORFO", file: "logo_corfo.png", url: "https://www.corfo.cl" }
