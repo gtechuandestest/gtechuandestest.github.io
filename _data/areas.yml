@@ -10,6 +10,20 @@
 # entre sí y que todos tengan contraste sobre fondo claro.
 # ---------------------------------------------------------------------------
 
+- id: vergara
+  lead: alberto-vergara
+  color: "#3f7f8c"
+  name:
+    es: "Biofiltración y Tratamiento de Gases"
+    en: "Gas Biofiltration and Treatment"
+  tagline:
+    es: "Hongos y bacterias puestos a degradar contaminantes en fase gaseosa, y los biorreactores que lo hacen posible a escala."
+    en: "Fungi and bacteria put to work degrading gas-phase pollutants, and the bioreactors that make it work at scale."
+  intro:
+    es: "Compuestos orgánicos volátiles, metano en baja concentración y CO₂ tratados por vía biológica en biofiltros y biorreactores de alta transferencia de masa. El foco está en lo que limita el proceso: la transferencia de masa hacia la biopelícula, el comportamiento de los hongos filamentosos frente a compuestos hidrofóbicos y el costo energético de mover el gas. Todo sostenido por modelación matemática, que es lo que permite pasar del laboratorio al aire de un espacio interior o a la chimenea de un proceso."
+    en: "Volatile organic compounds, low-concentration methane and CO₂ treated biologically in biofilters and high-mass-transfer bioreactors. The focus is on what limits the process: mass transfer into the biofilm, how filamentous fungi behave towards hydrophobic compounds, and the energy cost of moving the gas. All of it underpinned by mathematical modelling, which is what bridges the laboratory and the air of an indoor space or a process stack."
+  site: ""
+
 - id: aguas
   lead: cesar-huilinir
   color: "#5b8f4e"
@@ -26,20 +40,6 @@
   site_label:
     es: "Sitio del área"
     en: "Area website"
-
-- id: vergara
-  lead: alberto-vergara
-  color: "#3f7f8c"
-  name:
-    es: "Biofiltración y Tratamiento de Gases"
-    en: "Gas Biofiltration and Treatment"
-  tagline:
-    es: "Hongos y bacterias puestos a degradar contaminantes en fase gaseosa, y los biorreactores que lo hacen posible a escala."
-    en: "Fungi and bacteria put to work degrading gas-phase pollutants, and the bioreactors that make it work at scale."
-  intro:
-    es: "Compuestos orgánicos volátiles, metano en baja concentración y CO₂ tratados por vía biológica en biofiltros y biorreactores de alta transferencia de masa. El foco está en lo que limita el proceso: la transferencia de masa hacia la biopelícula, el comportamiento de los hongos filamentosos frente a compuestos hidrofóbicos y el costo energético de mover el gas. Todo sostenido por modelación matemática, que es lo que permite pasar del laboratorio al aire de un espacio interior o a la chimenea de un proceso."
-    en: "Volatile organic compounds, low-concentration methane and CO₂ treated biologically in biofilters and high-mass-transfer bioreactors. The focus is on what limits the process: mass transfer into the biofilm, how filamentous fungi behave towards hydrophobic compounds, and the energy cost of moving the gas. All of it underpinned by mathematical modelling, which is what bridges the laboratory and the air of an indoor space or a process stack."
-  site: ""
 
 - id: scott
   lead: felipe-scott
