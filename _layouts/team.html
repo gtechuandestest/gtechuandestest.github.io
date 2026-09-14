@@ -1,0 +1,40 @@
+---
+layout: default
+---
+{% assign t = site.data[page.lang] %}
+<div class="wrap">
+  <header class="phead"><h1>{{ t.pages.team }}</h1><p class="phead__intro">{{ t.pages.team_intro }}</p></header>
+
+  {% assign grupos = "lead,postdoc,staff,phd,undergrad" | split: "," %}
+  {% for g in grupos %}
+    {% assign delgrupo = site.data.people | where: "group", g %}
+    {% if delgrupo.size > 0 %}
+      <h2 class="sub">{{ t.team[g] }}</h2>
+      {% for p in delgrupo %}{% if p.bio and p.bio[page.lang] != '' %}{% include person-card.html person=p %}{% endif %}{% endfor %}
+      <div class="pgrid">
+        {% for p in delgrupo %}{% unless p.bio and p.bio[page.lang] != '' %}{% include person-mini.html person=p %}{% endunless %}{% endfor %}
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  {% if site.data.alumni.size > 0 %}
+  <h2 class="sub">{{ t.team.alumni }}</h2>
+  <table class="alumni">
+    <thead><tr>
+      <th>{{ t.team.alumni_name }}</th><th>{{ t.team.alumni_role }}</th><th>{{ t.team.alumni_period }}</th>
+    </tr></thead>
+    <tbody>
+      {% for x in site.data.alumni %}
+      <tr>
+        <td>
+          {% if x.linkedin != "" %}<a href="https://www.linkedin.com/in/{{ x.linkedin }}/">{{ x.name }}</a>{% else %}{{ x.name }}{% endif %}
+          {% if x.thesis[page.lang] != "" %}<span class="alumni__thesis">{{ x.thesis[page.lang] }}</span>{% endif %}
+        </td>
+        <td>{{ x.role[page.lang] | default: "—" }}</td>
+        <td>{{ x.period | default: "—" }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+</div>

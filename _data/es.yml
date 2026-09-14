@@ -1,0 +1,84 @@
+# Todos los textos de interfaz en español. Su gemelo es en.yml: cualquier clave
+# que se agregue acá tiene que existir allá, o la página sale con el hueco.
+nav:
+  home: "Inicio"
+  areas: "Áreas"
+  research: "Investigación"
+  projects: "Proyectos"
+  publications: "Publicaciones"
+  team: "Equipo"
+  news: "Noticias"
+  contact: "Contacto"
+  lang: "English"
+
+ui:
+  admin: "Administra el sitio"
+  read_more: "Ver el área"
+  lead: "Dirige"
+  area_site: "Sitio propio del área"
+  all_areas: "Todas las áreas"
+  filter_by_area: "Filtrar por área"
+  empty: "Sin contenido cargado todavía."
+  back_to_areas: "Volver a las áreas"
+  contact_email: "Correo"
+  contact_address: "Dirección"
+  period: "Periodo"
+  funding: "Financiamiento"
+  role_in_project: "Rol"
+  collaborations: "Colaboraciones"
+
+home:
+  title: "G-Tech"
+  subtitle: "Green Technologies Research Group · Universidad de los Andes"
+  lead_in: "Cinco áreas de investigación, un mismo propósito: procesos que traten, recuperen y devuelvan."
+  about_title: "Quiénes somos"
+  areas_title: "Áreas de investigación"
+  areas_intro: "Cada área trabaja su propia pregunta y tiene su página, con su equipo, sus proyectos y sus publicaciones."
+  news_title: "Novedades"
+  featured_title: "Publicaciones destacadas"
+
+pages:
+  research: "Investigación"
+  research_intro: "Las líneas de trabajo del grupo, agrupadas por área."
+  projects: "Proyectos"
+  projects_intro: "Proyectos en curso con financiamiento propio, y colaboraciones con otros equipos."
+  publications: "Publicaciones"
+  publications_intro: "Artículos indexados del grupo."
+  team: "Equipo"
+  team_intro: "Quienes hacen la investigación."
+  news: "Noticias"
+  contact: "Contacto"
+
+team:
+  lead: "Dirección"
+  postdoc: "Investigadores postdoctorales"
+  staff: "Equipo técnico y de gestión"
+  phd: "Estudiantes de doctorado"
+  undergrad: "Memoristas y tesistas"
+  alumni: "Ex integrantes"
+  alumni_name: "Nombre"
+  alumni_role: "Rol"
+  alumni_period: "Periodo"
+  alumni_thesis: "Tema"
+
+news:
+  templates:
+    defensa:
+      - "{nombre} defendió su memoria, «{titulo}», guiada por {profesores}."
+      - "Nueva defensa en el grupo: {nombre} presentó «{titulo}», bajo la guía de {profesores}."
+      - "{nombre} cerró su etapa de tesista defendiendo «{titulo}». La guiaron {profesores}."
+      - "Con «{titulo}», {nombre} defendió su memoria ante la comisión. Guía: {profesores}."
+    titulacion:
+      - "{nombre} recibió su título. La guiaron {profesores}."
+      - "Ceremonia de titulación de {nombre}, tesista de {profesores}."
+    premio:
+      - "{nombre} recibió el {premio}."
+      - "El {premio} fue para {nombre}."
+      - "Reconocimiento para {nombre}: {premio}."
+    congreso:
+      - "{nombre} presentó «{contribucion}» en el {congreso}, en {lugar}."
+      - "El grupo estuvo en el {congreso} ({lugar}): {nombre} expuso «{contribucion}»."
+      - "En {lugar}, {nombre} llevó «{contribucion}» al {congreso}."
+    proyecto:
+      - "{nombre} se adjudicó el {proyecto}."
+      - "Nuevo proyecto en el grupo: {nombre} dirige el {proyecto}."

@@ -1,0 +1,44 @@
+---
+layout: default
+---
+{% assign t = site.data[page.lang] %}
+{% assign base = '' %}{% if page.lang == 'en' %}{% assign base = '/en' %}{% endif %}
+
+<section class="hero">
+  <div class="wrap">
+    <p class="hero__kicker">{{ site.lab.institution[page.lang] }}</p>
+    <h1 class="hero__title">{{ t.home.subtitle }}</h1>
+    <p class="hero__lead">{{ t.home.lead_in }}</p>
+    <ul class="hero__areas">
+      {% for a in site.data.areas %}
+      <li style="--c: {{ a.color }}">
+        <a href="{{ base | append: '/areas/' | append: a.id | append: '/' | relative_url }}">{{ a.name[page.lang] }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="wrap band" id="areas">
+  <h2>{{ t.home.areas_title }}</h2>
+  <p class="band__intro">{{ t.home.areas_intro }}</p>
+  <div class="agrid">
+    {% for a in site.data.areas %}{% include area-card.html area=a %}{% endfor %}
+  </div>
+</section>
+
+{% assign noticias = site.data.news | sort: "date" | reverse %}
+{% if noticias.size > 0 %}
+<section class="wrap band">
+  <h2>{{ t.home.news_title }}</h2>
+  {% include news-carousel.html items=noticias %}
+</section>
+{% endif %}
+
+{% assign destacadas = site.data.publications.indexed | where: "featured", true %}
+{% if destacadas.size > 0 %}
+<section class="wrap band">
+  <h2>{{ t.home.featured_title }}</h2>
+  <ul class="pubs">{% for p in destacadas %}{% include pub-item.html pub=p %}{% endfor %}</ul>
+</section>
+{% endif %}

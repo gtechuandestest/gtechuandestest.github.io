@@ -1,0 +1,10 @@
+{% assign p = include.person %}
+{% assign t = site.data[page.lang] %}
+{% if p.links %}
+<ul class="plinks">
+  {% if p.links.email != "" %}<li><a href="mailto:{{ p.links.email }}">{{ t.ui.contact_email }}</a></li>{% endif %}
+  {% if p.links.orcid != "" %}<li><a href="https://orcid.org/{{ p.links.orcid }}">ORCID</a></li>{% endif %}
+  {% if p.links.scholar and p.links.scholar != "" %}<li><a href="{{ p.links.scholar }}">Google Scholar</a></li>{% endif %}
+  {% if p.links.linkedin != "" %}<li><a href="https://www.linkedin.com/in/{{ p.links.linkedin }}/">LinkedIn</a></li>{% endif %}
+</ul>
+{% endif %}

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% assign t = site.data[page.lang] %}
+<div class="wrap">
+  <header class="phead"><h1>{{ t.pages.research }}</h1><p class="phead__intro">{{ t.pages.research_intro }}</p></header>
+  {% for a in site.data.areas %}
+    {% assign lineas = site.data.research | where_exp: "r", "r.areas contains a.id" %}
+    {% if lineas.size > 0 %}
+    <section class="band" style="--c: {{ a.color }}">
+      <h2 class="areamark">{{ a.name[page.lang] }}</h2>
+      <div class="rgrid">
+        {% for r in lineas %}
+        <article class="rline">
+          <span class="rline__icon">{% include icons.html name=r.icon %}</span>
+          <h3>{{ r.title[page.lang] }}</h3>
+          <p>{{ r.body[page.lang] }}</p>
+          {% if r.keywords[page.lang].size > 0 %}<ul class="tags">{% for k in r.keywords[page.lang] %}<li>{{ k }}</li>{% endfor %}</ul>{% endif %}
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+  {% endfor %}
+</div>

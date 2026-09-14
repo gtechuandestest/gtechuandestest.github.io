@@ -1,0 +1,84 @@
+# ---------------------------------------------------------------------------
+# Las áreas del grupo. Este archivo manda: de aquí salen el menú "Áreas", las
+# tarjetas de la portada y una página por área, y contra estos `id` se filtran
+# personas, proyectos, publicaciones, noticias y líneas de investigación.
+#
+# Agregar un área = agregar un bloque acá y dos archivos de cuatro líneas
+# (areas/<id>.html y en/areas/<id>.html). Nada más.
+#
+# `color` identifica al área en el sitio; conviene que sean distinguibles
+# entre sí y que todos tengan contraste sobre fondo claro.
+# ---------------------------------------------------------------------------
+
+- id: aguas
+  lead: cesar-huilinir
+  color: "#5b8f4e"
+  name:
+    es: "Tecnologías del Agua"
+    en: "Water Technologies"
+  tagline:
+    es: "Tratamiento biológico de aguas y residuos, y modelación de los bioprocesos que lo hacen posible."
+    en: "Biological treatment of water and waste, and modelling of the bioprocesses behind it."
+  intro:
+    es: "Microorganismos puestos a trabajar en reactores para tratar aguas y residuos, estudiados con la precisión suficiente para llevarlos a escala real: del agua subterránea con nitrato y residuos de fármacos a los lodos de las plantas de tratamiento y los rechazos de la desalación."
+    en: "Microorganisms put to work in reactors to treat water and waste, studied precisely enough to scale them up: from nitrate- and pharmaceutical-laden groundwater to treatment-plant sludge and desalination brine."
+  site: "https://labgtechaguas.github.io"
+  site_label:
+    es: "Sitio del área"
+    en: "Area website"
+
+- id: vergara
+  lead: alberto-vergara
+  color: "#3f7f8c"
+  name:
+    es: "POR COMPLETAR"          # nombre temático del área, no el del PI
+    en: "TO BE COMPLETED"
+  tagline:
+    es: ""
+    en: ""
+  intro:
+    es: ""
+    en: ""
+  site: ""
+
+- id: scott
+  lead: felipe-scott
+  color: "#8a7a3e"
+  name:
+    es: "POR COMPLETAR"
+    en: "TO BE COMPLETED"
+  tagline:
+    es: ""
+    en: ""
+  intro:
+    es: ""
+    en: ""
+  site: ""
+
+- id: guerrero
+  lead: sichem-guerrero
+  color: "#7d5a86"
+  name:
+    es: "POR COMPLETAR"
+    en: "TO BE COMPLETED"
+  tagline:
+    es: ""
+    en: ""
+  intro:
+    es: ""
+    en: ""
+  site: ""
+
+- id: moreno
+  lead: patricio-moreno
+  color: "#a9663f"
+  name:
+    es: "POR COMPLETAR"
+    en: "TO BE COMPLETED"
+  tagline:
+    es: ""
+    en: ""
+  intro:
+    es: ""
+    en: ""
+  site: ""

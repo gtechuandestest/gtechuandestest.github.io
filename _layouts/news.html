@@ -1,0 +1,9 @@
+---
+layout: default
+---
+{% assign t = site.data[page.lang] %}
+<div class="wrap">
+  <header class="phead"><h1>{{ t.pages.news }}</h1></header>
+  {% assign noticias = site.data.news | sort: "date" | reverse %}
+  {% include news-carousel.html items=noticias %}
+</div>

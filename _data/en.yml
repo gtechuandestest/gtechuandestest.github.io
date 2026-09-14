@@ -1,0 +1,84 @@
+# All interface copy in English. Twin of es.yml: any key added there must exist
+# here too, or the page renders with a gap.
+nav:
+  home: "Home"
+  areas: "Areas"
+  research: "Research"
+  projects: "Projects"
+  publications: "Publications"
+  team: "Team"
+  news: "News"
+  contact: "Contact"
+  lang: "Español"
+
+ui:
+  admin: "Site maintained by"
+  read_more: "View area"
+  lead: "Head"
+  area_site: "Area website"
+  all_areas: "All areas"
+  filter_by_area: "Filter by area"
+  empty: "Nothing loaded here yet."
+  back_to_areas: "Back to areas"
+  contact_email: "Email"
+  contact_address: "Address"
+  period: "Period"
+  funding: "Funding"
+  role_in_project: "Role"
+  collaborations: "Collaborations"
+
+home:
+  title: "G-Tech"
+  subtitle: "Green Technologies Research Group · Universidad de los Andes"
+  lead_in: "Five research areas, one purpose: processes that treat, recover and give back."
+  about_title: "About us"
+  areas_title: "Research areas"
+  areas_intro: "Each area works on its own question and has its own page, with its team, projects and publications."
+  news_title: "News"
+  featured_title: "Featured publications"
+
+pages:
+  research: "Research"
+  research_intro: "The group's research lines, grouped by area."
+  projects: "Projects"
+  projects_intro: "Funded projects led by the group, and collaborations with other teams."
+  publications: "Publications"
+  publications_intro: "Indexed articles by the group."
+  team: "Team"
+  team_intro: "The people behind the research."
+  news: "News"
+  contact: "Contact"
+
+team:
+  lead: "Direction"
+  postdoc: "Postdoctoral researchers"
+  staff: "Technical and management staff"
+  phd: "PhD students"
+  undergrad: "Undergraduate researchers"
+  alumni: "Alumni"
+  alumni_name: "Name"
+  alumni_role: "Role"
+  alumni_period: "Period"
+  alumni_thesis: "Topic"
+
+news:
+  templates:
+    defensa:
+      - "{nombre} defended their thesis, \"{titulo}\", supervised by {profesores}."
+      - "A new defence in the group: {nombre} presented \"{titulo}\", supervised by {profesores}."
+      - "{nombre} closed their time as a student researcher defending \"{titulo}\". Supervisors: {profesores}."
+      - "With \"{titulo}\", {nombre} defended before the committee. Supervised by {profesores}."
+    titulacion:
+      - "{nombre} graduated. Supervised by {profesores}."
+      - "Graduation ceremony for {nombre}, student researcher with {profesores}."
+    premio:
+      - "{nombre} received the {premio}."
+      - "The {premio} went to {nombre}."
+      - "Recognition for {nombre}: {premio}."
+    congreso:
+      - "{nombre} presented \"{contribucion}\" at {congreso}, in {lugar}."
+      - "The group attended {congreso} ({lugar}): {nombre} presented \"{contribucion}\"."
+      - "In {lugar}, {nombre} took \"{contribucion}\" to {congreso}."
+    proyecto:
+      - "{nombre} was awarded the {proyecto}."
+      - "A new project in the group: {nombre} leads the {proyecto}."

@@ -1,0 +1,15 @@
+{% assign p = include.person %}
+<article class="pmini">
+  <div class="pmini__photo">
+    {% if p.photo != "" %}
+      <img src="{{ '/assets/img/people/' | append: p.photo | relative_url }}" alt="{{ p.name }}" loading="lazy">
+    {% else %}
+      <span class="initials">{{ p.name | split: " " | first | slice: 0 }}{{ p.name | split: " " | last | slice: 0 }}</span>
+    {% endif %}
+  </div>
+  <h3>{{ p.name }}</h3>
+  {% if p.role[page.lang] != "" %}<p class="pmini__role">{{ p.role[page.lang] }}</p>{% endif %}
+  {% if p.program[page.lang] and p.program[page.lang] != "" %}<p class="pmini__prog">{{ p.program[page.lang] }}</p>{% endif %}
+  {% if p.focus[page.lang] and p.focus[page.lang] != "" %}<p class="pmini__focus">{{ p.focus[page.lang] }}</p>{% endif %}
+  {% include person-links.html person=p %}
+</article>

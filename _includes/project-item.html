@@ -1,0 +1,11 @@
+{% assign pr = include.project %}
+{% assign t = site.data[page.lang] %}
+<article class="proj">
+  <h3>{{ pr.title }}</h3>
+  <dl>
+    <div><dt>{{ t.ui.funding }}</dt><dd>{{ pr.funding }}{% if pr.code != "" %} · {{ pr.code }}{% endif %}</dd></div>
+    <div><dt>{{ t.ui.period }}</dt><dd>{{ pr.period }}</dd></div>
+    <div><dt>{{ t.ui.lead }}</dt><dd>{{ pr.lead }}{% if pr.contact != "" %} · <a href="mailto:{{ pr.contact }}">{{ pr.contact }}</a>{% endif %}</dd></div>
+  </dl>
+  {% if pr.abstract[page.lang] != "" %}<p class="proj__abs">{{ pr.abstract[page.lang] }}</p>{% endif %}
+</article>

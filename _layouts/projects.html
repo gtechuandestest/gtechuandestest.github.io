@@ -1,0 +1,21 @@
+---
+layout: default
+---
+{% assign t = site.data[page.lang] %}
+<div class="wrap">
+  <header class="phead"><h1>{{ t.pages.projects }}</h1><p class="phead__intro">{{ t.pages.projects_intro }}</p></header>
+  {% for a in site.data.areas %}
+    {% assign proyectos = site.data.projects | where_exp: "p", "p.areas contains a.id" %}
+    {% assign colabs = site.data.collaborations | where_exp: "c", "c.areas contains a.id" %}
+    {% if proyectos.size > 0 or colabs.size > 0 %}
+    <section class="band" style="--c: {{ a.color }}">
+      <h2 class="areamark">{{ a.name[page.lang] }}</h2>
+      {% for pr in proyectos %}{% include project-item.html project=pr %}{% endfor %}
+      {% if colabs.size > 0 %}
+        <h3 class="sub">{{ t.ui.collaborations }}</h3>
+        <ul class="colabs">{% for c in colabs %}<li><b>{{ c.person }}</b> · {{ c.role[page.lang] }} — {{ c.title }} ({{ c.period }})</li>{% endfor %}</ul>
+      {% endif %}
+    </section>
+    {% endif %}
+  {% endfor %}
+</div>

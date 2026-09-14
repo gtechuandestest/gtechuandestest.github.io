@@ -1,0 +1,98 @@
+---
+layout: default
+---
+{% comment %}
+  La página de un área NO se escribe: se genera filtrando las mismas listas que
+  alimentan las secciones globales. El archivo de cada área solo declara su
+  `area_id`; todo lo de abajo sale de los _data/*.yml donde ese id aparece en
+  el campo `areas:`.
+{% endcomment %}
+{% assign t = site.data[page.lang] %}
+{% assign base = '' %}{% if page.lang == 'en' %}{% assign base = '/en' %}{% endif %}
+{% assign a = site.data.areas | where: "id", page.area_id | first %}
+{% assign jefe = site.data.people | where: "id", a.lead | first %}
+
+<div class="area" style="--c: {{ a.color }}">
+  <header class="ahead">
+    <div class="wrap">
+      <p class="ahead__kicker"><a href="{{ base | append: '/#areas' | relative_url }}">{{ t.ui.all_areas }}</a></p>
+      <h1>{{ a.name[page.lang] }}</h1>
+      {% if a.tagline[page.lang] != "" %}<p class="ahead__tag">{{ a.tagline[page.lang] }}</p>{% endif %}
+      {% if jefe %}<p class="ahead__lead">{{ t.ui.lead }}: {{ jefe.name }}</p>{% endif %}
+      {% if a.site and a.site != "" %}<p><a class="btn" href="{{ a.site }}">{{ a.site_label[page.lang] | default: t.ui.area_site }}</a></p>{% endif %}
+    </div>
+  </header>
+
+  {% if a.intro[page.lang] != "" %}
+  <section class="wrap band"><p class="lede">{{ a.intro[page.lang] }}</p></section>
+  {% endif %}
+
+  {% assign lineas = site.data.research | where_exp: "r", "r.areas contains page.area_id" %}
+  {% if lineas.size > 0 %}
+  <section class="wrap band">
+    <h2>{{ t.pages.research }}</h2>
+    <div class="rgrid">
+      {% for r in lineas %}
+      <article class="rline">
+        <span class="rline__icon">{% include icons.html name=r.icon %}</span>
+        <h3>{{ r.title[page.lang] }}</h3>
+        <p>{{ r.body[page.lang] }}</p>
+        {% if r.keywords[page.lang].size > 0 %}
+        <ul class="tags">{% for k in r.keywords[page.lang] %}<li>{{ k }}</li>{% endfor %}</ul>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% assign proyectos = site.data.projects | where_exp: "p", "p.areas contains page.area_id" %}
+  {% if proyectos.size > 0 %}
+  <section class="wrap band">
+    <h2>{{ t.pages.projects }}</h2>
+    {% for pr in proyectos %}{% include project-item.html project=pr %}{% endfor %}
+    {% assign colabs = site.data.collaborations | where_exp: "c", "c.areas contains page.area_id" %}
+    {% if colabs.size > 0 %}
+    <h3 class="sub">{{ t.ui.collaborations }}</h3>
+    <ul class="colabs">
+      {% for c in colabs %}<li><b>{{ c.person }}</b> · {{ c.role[page.lang] }} — {{ c.title }} ({{ c.period }})</li>{% endfor %}
+    </ul>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  {% assign gente = site.data.people | where_exp: "p", "p.areas contains page.area_id" %}
+  {% if gente.size > 0 %}
+  <section class="wrap band">
+    <h2>{{ t.pages.team }}</h2>
+    {% assign grupos = "lead,postdoc,staff,phd,undergrad" | split: "," %}
+    {% for g in grupos %}
+      {% assign delgrupo = gente | where: "group", g %}
+      {% if delgrupo.size > 0 %}
+        <h3 class="sub">{{ t.team[g] }}</h3>
+        {% comment %} Con bio → ficha ancha. Sin bio → tarjeta compacta. {% endcomment %}
+        {% for p in delgrupo %}{% if p.bio and p.bio[page.lang] != '' %}{% include person-card.html person=p %}{% endif %}{% endfor %}
+        <div class="pgrid">
+          {% for p in delgrupo %}{% unless p.bio and p.bio[page.lang] != '' %}{% include person-mini.html person=p %}{% endunless %}{% endfor %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% assign papers = site.data.publications.indexed | where_exp: "p", "p.areas contains page.area_id" | sort: "year" | reverse %}
+  {% if papers.size > 0 %}
+  <section class="wrap band">
+    <h2>{{ t.pages.publications }}</h2>
+    <ul class="pubs">{% for p in papers %}{% include pub-item.html pub=p %}{% endfor %}</ul>
+  </section>
+  {% endif %}
+
+  {% assign noticias = site.data.news | where_exp: "n", "n.areas contains page.area_id" | sort: "date" | reverse %}
+  {% if noticias.size > 0 %}
+  <section class="wrap band">
+    <h2>{{ t.pages.news }}</h2>
+    {% include news-carousel.html items=noticias %}
+  </section>
+  {% endif %}
+</div>

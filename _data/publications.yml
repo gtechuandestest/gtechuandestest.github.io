@@ -1,0 +1,16 @@
+# Artículos indexados. Se cargan con herramientas/migrar-aguas.rb desde el sitio
+# de aguas (que ya los tiene) y a mano para el resto de las áreas.
+#
+# Cada entrada:
+#   - areas: [ids]        un paper con dos PI lleva las dos áreas y aparece en ambas
+#     year, authors, title, journal, doi, featured
+#
+# group_authors marca en negrita los apellidos del grupo en la lista de autores.
+# Al sumar un PI nuevo hay que agregar su apellido acá.
+
+group_authors:
+  - "Carreño-López"
+  - "Huiliñir"
+  - "Quezada-Cáceres"
+
+indexed: []

@@ -1,0 +1,17 @@
+{% assign n = include.item %}
+{% assign t = site.data[page.lang] %}
+{% assign plantillas = t.news.templates[n.kind] %}
+{% assign texto = plantillas[n.template] %}
+{% assign texto = texto | replace: '{nombre}', n.nombre | replace: '{titulo}', n.titulo | replace: '{profesores}', n.profesores | replace: '{premio}', n.premio | replace: '{congreso}', n.congreso | replace: '{contribucion}', n.contribucion | replace: '{lugar}', n.lugar | replace: '{proyecto}', n.proyecto %}
+<article class="slide">
+  {% if n.photo and n.photo != "" %}
+  <div class="slide__img" style="background-image:url('{{ '/assets/img/news/' | append: n.photo | relative_url }}')">
+    <img src="{{ '/assets/img/news/' | append: n.photo | relative_url }}" alt="" loading="lazy">
+  </div>
+  {% endif %}
+  <div class="slide__body">
+    <p class="slide__date">{{ n.date | date: "%-d/%m/%Y" }}</p>
+    <p class="slide__text">{{ texto }}{% if n.extra[page.lang] and n.extra[page.lang] != "" %} {{ n.extra[page.lang] }}{% endif %}</p>
+    {% if n.link and n.link != "" %}<a class="slide__link" href="{{ n.link }}">{{ n.link_label[page.lang] }}</a>{% endif %}
+  </div>
+</article>

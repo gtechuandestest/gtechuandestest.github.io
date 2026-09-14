@@ -1,0 +1,43 @@
+# Proyectos propios del grupo. El `title` va TAL CUAL la postulación, sin
+# traducir, en los dos idiomas. Hoy ningún proyecto publica resumen: `abstract`
+# existe y va vacío; si algún día se quiere publicar uno, se pega ahí y aparece.
+
+- id: fondecyt-regular-mps
+  areas: [aguas]
+  title: "Removal of micropollutants and their influence on N₂O emissions and microbial communities in elemental sulfur-based SBR and biofilter systems treating groundwater"
+  funding: "ANID · Fondecyt Regular"
+  code: ""                       # POR CONFIRMAR: folio
+  period: "2026–2029"
+  lead: "César Huiliñir Curío"
+  contact: "chuilinir@miuandes.cl"
+  abstract: { es: "", en: "" }
+
+- id: fondecyt-postdoc-biofilm
+  areas: [aguas]
+  title: "Assessing biofilm and elemental sulfur dynamics in a groundwater elemental sulfur-based autotrophic denitrification fixed bed reactor through computational fluid dynamics simulations coupled with digital imaging techniques"
+  funding: "ANID · Fondecyt de Postdoctorado N.º 3250412"
+  code: "3250412"
+  period: "2025–2028"
+  lead: "Felipe A. Carreño López"
+  contact: "facarreno@miuandes.cl"
+  abstract: { es: "", en: "" }
+
+- id: fondef-idea-lodos
+  areas: [aguas]
+  title: "Nuevo proceso de pretratamiento para la mejora de la deshidratación de lodos secundarios y la remoción simultánea de N, P y materia orgánica desde el líquido de filtrado"
+  funding: "ANID · FONDEF IDeA I+D 2025"
+  code: "ID25I10071"
+  period: "2025–2027"
+  lead: "César Huiliñir Curío"
+  contact: "chuilinir@miuandes.cl"
+  abstract: { es: "", en: "" }
+
+- id: corfo-electrocoagulacion
+  areas: [aguas]
+  title: "Desarrollo de una nueva tecnología de electrocoagulación para la recuperación de agua en los caudales de rechazo del proceso de desalación por ósmosis inversa"
+  funding: "CORFO"
+  code: "24CVCS-255807"
+  period: "2024–2025"           # POR CONFIRMAR si sigue vigente
+  lead: "César Huiliñir Curío"
+  contact: "chuilinir@miuandes.cl"
+  abstract: { es: "", en: "" }

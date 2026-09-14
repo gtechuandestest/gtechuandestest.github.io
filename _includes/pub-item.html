@@ -1,0 +1,13 @@
+{% assign pub = include.pub %}
+{%- assign lista = pub.authors -%}
+{%- for apellido in site.data.publications.group_authors -%}
+  {%- capture marca %}<strong>{{ apellido }}</strong>{% endcapture -%}
+  {%- assign lista = lista | replace: apellido, marca -%}
+{%- endfor -%}
+<li class="pub">
+  <p class="pub__authors">{{ lista }} <span class="pub__year">({{ pub.year }})</span></p>
+  <p class="pub__title">{{ pub.title }}</p>
+  <p class="pub__journal">
+    <i>{{ pub.journal }}</i>{% if pub.doi and pub.doi != "" %} · <a href="https://doi.org/{{ pub.doi }}">DOI</a>{% endif %}
+  </p>
+</li>

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% assign t = site.data[page.lang] %}
+<div class="wrap">
+  <header class="phead"><h1>{{ t.pages.publications }}</h1><p class="phead__intro">{{ t.pages.publications_intro }}</p></header>
+  {% assign todas = site.data.publications.indexed | sort: "year" | reverse %}
+  {% if todas.size > 0 %}
+    {% assign anios = todas | map: "year" | uniq %}
+    {% for y in anios %}
+      <h2 class="sub">{{ y }}</h2>
+      <ul class="pubs">
+        {% assign delanio = todas | where: "year", y %}
+        {% for p in delanio %}{% include pub-item.html pub=p %}{% endfor %}
+      </ul>
+    {% endfor %}
+  {% else %}
+    <p class="empty">{{ t.ui.empty }}</p>
+  {% endif %}
+</div>

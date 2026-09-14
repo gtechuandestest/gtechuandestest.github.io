@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% assign t = site.data[page.lang] %}
+<div class="wrap">
+  <header class="phead"><h1>{{ t.pages.contact }}</h1></header>
+  <dl class="contact">
+    <div><dt>{{ t.ui.contact_email }}</dt><dd><a href="mailto:{{ site.lab.email }}">{{ site.lab.email }}</a></dd></div>
+    <div><dt>{{ t.ui.contact_address }}</dt><dd>{{ site.lab.address[page.lang] }}<br>{{ site.lab.institution[page.lang] }}</dd></div>
+  </dl>
+  <h2 class="sub">{{ t.nav.areas }}</h2>
+  <ul class="clist">
+    {% for a in site.data.areas %}
+      {% assign jefe = site.data.people | where: "id", a.lead | first %}
+      <li style="--c: {{ a.color }}"><span class="dot"></span><b>{{ a.name[page.lang] }}</b> — {{ jefe.name }}{% if jefe.links.email != "" %} · <a href="mailto:{{ jefe.links.email }}">{{ jefe.links.email }}</a>{% endif %}</li>
+    {% endfor %}
+  </ul>
+</div>

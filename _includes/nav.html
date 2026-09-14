@@ -1,0 +1,33 @@
+{% assign t = site.data[page.lang] %}
+{% if page.lang == 'en' %}{% assign base = '/en' %}{% else %}{% assign base = '' %}{% endif %}
+<a class="skip" href="#contenido">{{ t.nav.home }}</a>
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="nav__brand" href="{{ base | append: '/' | relative_url }}">
+      <span class="nav__mark">G-Tech</span>
+      <span class="nav__sub">{{ site.lab.fullname[page.lang] }}</span>
+    </a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="menu">Menú</button>
+    <nav id="menu" class="nav__menu">
+      <details class="nav__areas">
+        <summary>{{ t.nav.areas }}</summary>
+        <ul>
+          {% for a in site.data.areas %}
+          <li>
+            <a href="{{ base | append: '/areas/' | append: a.id | append: '/' | relative_url }}">
+              <span class="dot" style="--c: {{ a.color }}"></span>{{ a.name[page.lang] }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </details>
+      <a href="{{ base | append: '/investigacion/' | relative_url }}">{{ t.nav.research }}</a>
+      <a href="{{ base | append: '/proyectos/' | relative_url }}">{{ t.nav.projects }}</a>
+      <a href="{{ base | append: '/publicaciones/' | relative_url }}">{{ t.nav.publications }}</a>
+      <a href="{{ base | append: '/equipo/' | relative_url }}">{{ t.nav.team }}</a>
+      <a href="{{ base | append: '/noticias/' | relative_url }}">{{ t.nav.news }}</a>
+      <a href="{{ base | append: '/contacto/' | relative_url }}">{{ t.nav.contact }}</a>
+      <a class="nav__lang" href="{{ page.alt | default: '/' | relative_url }}">{{ t.nav.lang }}</a>
+    </nav>
+  </div>
+</header>

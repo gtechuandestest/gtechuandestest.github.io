@@ -1,0 +1,11 @@
+{% assign items = include.items %}
+{% assign t = site.data[page.lang] %}
+{% if items.size > 0 %}
+<div class="carousel">
+  <div class="carousel__track">
+    {% for n in items %}{% include news-slide.html item=n %}{% endfor %}
+  </div>
+</div>
+{% else %}
+<p class="empty">{{ t.ui.empty }}</p>
+{% endif %}

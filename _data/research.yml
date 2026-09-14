@@ -1,0 +1,43 @@
+# Líneas de investigación. Cada una pertenece a un área (o a varias, si la
+# comparten). Las líneas se escriben a propósito MÁS AMPLIAS que los proyectos
+# adjudicados: un proyecto entra y sale, la línea se mantiene.
+# icon: molecule | flow | reactor | leaf | drop   (ver _includes/icons.html)
+
+- id: nutrientes
+  areas: [aguas]
+  icon: molecule
+  title:
+    es: "Nutrientes, contaminantes emergentes y emisiones de N₂O"
+    en: "Nutrients, emerging contaminants and N₂O emissions"
+  body:
+    es: "Nitrógeno y fósforo removidos por vías biológicas —nitrificación, desnitrificación autótrofa y heterótrofa, anammox, feammox— en reactores de biomasa suspendida y de biopelícula. Sobre eso se monta la pregunta abierta: qué ocurre con los fármacos, herbicidas e hidrocarburos presentes en microgramos por litro, cuánto se degrada y cuánto se adsorbe, y cómo cambian las emisiones de óxido nitroso cuando están presentes."
+    en: "Nitrogen and phosphorus removed through biological routes —nitrification, autotrophic and heterotrophic denitrification, anammox, feammox— in suspended-biomass and biofilm reactors. On top of that sits the open question: what happens to pharmaceuticals, herbicides and hydrocarbons present at micrograms per litre, how much is degraded and how much adsorbed, and how nitrous oxide emissions change in their presence."
+  keywords:
+    es: ["nitrificación", "desnitrificación autótrofa", "anammox y feammox", "fármacos y pesticidas", "óxido nitroso", "azufre elemental", "zeolita natural"]
+    en: ["nitrification", "autotrophic denitrification", "anammox and feammox", "pharmaceuticals and pesticides", "nitrous oxide", "elemental sulfur", "natural zeolite"]
+
+- id: modelacion
+  areas: [aguas]
+  icon: flow
+  title:
+    es: "Modelación y simulación de biorreactores y sistemas multifásicos"
+    en: "Modelling and simulation of bioreactors and multiphase systems"
+  body:
+    es: "El rendimiento de un biorreactor no depende solo de la cinética, sino de cómo circula el fluido en el lecho, dónde se forma la biopelícula y qué tan rápido llega el sustrato. CFD acoplada a transporte y cinética biológica, geometrías reales obtenidas por tomografía computarizada y acoplamiento CFD–DEM permiten abrir esa caja. La validación es parte del método: los modelos se confrontan con distribuciones de tiempo de residencia medidas en el reactor."
+    en: "A bioreactor's performance depends not only on kinetics but on how fluid moves through the bed, where biofilm forms and how fast substrate arrives. CFD coupled to transport and biological kinetics, real geometries from computed tomography and CFD–DEM coupling open up that box. Validation is part of the method: models are confronted with residence time distributions measured in the reactor."
+  keywords:
+    es: ["CFD", "OpenFOAM", "CFD–DEM", "tomografía computarizada", "distribución de tiempos de residencia", "flujo multifásico", "gemelos digitales"]
+    en: ["CFD", "OpenFOAM", "CFD–DEM", "computed tomography", "residence time distribution", "multiphase flow", "digital twins"]
+
+- id: lodos
+  areas: [aguas]
+  icon: reactor
+  title:
+    es: "Tratamiento de lodos: microaireación y digestión anaerobia"
+    en: "Sludge treatment: microaeration and anaerobic digestion"
+  body:
+    es: "Los lodos son el mayor problema de manejo de una planta de tratamiento —salen con humedad muy alta— y a la vez una fuente de energía y de nutrientes. La diferencia la hace el pretratamiento: dosis controladas de oxígeno en ambiente anaerobio para mejorar la hidrólisis, digestión anaerobia para convertir materia orgánica en metano e hidrógeno, biosecado aprovechando el calor de la propia actividad biológica, y recuperación de nitrógeno y fósforo desde el líquido de filtrado."
+    en: "Sludge is a treatment plant's biggest handling problem —it leaves with very high moisture— and at the same time a source of energy and nutrients. Pretreatment makes the difference: controlled oxygen dosing under anaerobic conditions to improve hydrolysis, anaerobic digestion to convert organic matter into methane and hydrogen, biodrying using the heat of biological activity itself, and nitrogen and phosphorus recovery from the filtrate."
+  keywords:
+    es: ["digestión anaerobia", "microaireación", "biosecado", "deshidratación de lodos", "biogás y bioH₂", "recuperación de N y P", "economía circular"]
+    en: ["anaerobic digestion", "microaeration", "biodrying", "sludge dewatering", "biogas and bioH₂", "N and P recovery", "circular economy"]

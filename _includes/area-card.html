@@ -1,0 +1,12 @@
+{% assign a = include.area %}
+{% assign t = site.data[page.lang] %}
+{% assign base = '' %}{% if page.lang == 'en' %}{% assign base = '/en' %}{% endif %}
+{% assign jefe = site.data.people | where: "id", a.lead | first %}
+<article class="acard" style="--c: {{ a.color }}">
+  <h3 class="acard__name">
+    <a href="{{ base | append: '/areas/' | append: a.id | append: '/' | relative_url }}">{{ a.name[page.lang] }}</a>
+  </h3>
+  {% if jefe %}<p class="acard__lead">{{ t.ui.lead }}: {{ jefe.name }}</p>{% endif %}
+  {% if a.tagline[page.lang] != "" %}<p class="acard__line">{{ a.tagline[page.lang] }}</p>{% endif %}
+  <a class="acard__go" href="{{ base | append: '/areas/' | append: a.id | append: '/' | relative_url }}">{{ t.ui.read_more }}</a>
+</article>

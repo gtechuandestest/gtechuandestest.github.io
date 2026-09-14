@@ -1,0 +1,25 @@
+{% assign p = include.person %}
+{% assign t = site.data[page.lang] %}
+<article class="pcard">
+  <div class="pcard__photo">
+    {% if p.photo != "" %}
+      <img src="{{ '/assets/img/people/' | append: p.photo | relative_url }}" alt="{{ p.name }}" loading="lazy">
+    {% else %}
+      <span class="initials">{{ p.name | split: " " | first | slice: 0 }}{{ p.name | split: " " | last | slice: 0 }}</span>
+    {% endif %}
+  </div>
+  <div class="pcard__body">
+    <h3>{{ p.name }}</h3>
+    {% if p.role[page.lang] != "" %}<p class="pcard__role">{{ p.role[page.lang] }}</p>{% endif %}
+    {% if p.affiliation[page.lang] != "" %}<p class="pcard__aff">{{ p.affiliation[page.lang] }}</p>{% endif %}
+    {% if p.degree[page.lang] != "" %}<p class="pcard__degree">{{ p.degree[page.lang] }}</p>{% endif %}
+    {% if p.bio[page.lang] != "" %}<p class="pcard__bio">{{ p.bio[page.lang] }}</p>{% endif %}
+    {% if p.interests[page.lang] and p.interests[page.lang].size > 0 %}
+      <ul class="tags">{% for i in p.interests[page.lang] %}<li>{{ i }}</li>{% endfor %}</ul>
+    {% endif %}
+    {% if p.metrics and p.metrics.size > 0 %}
+      <ul class="metrics">{% for m in p.metrics %}<li><b>{{ m.value }}</b> {{ m.label[page.lang] }}</li>{% endfor %}</ul>
+    {% endif %}
+    {% include person-links.html person=p %}
+  </div>
+</article>

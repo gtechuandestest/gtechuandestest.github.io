@@ -1,0 +1,8 @@
+# Noticias del carrusel. El texto NO se escribe: se elige una plantilla de
+# news.templates en es.yml / en.yml con el campo `template` (el índice empieza
+# en 0). Al agregar una noticia, usa un índice distinto al de la anterior del
+# mismo tipo, para que dos seguidas no repitan la fórmula.
+#
+# kind: defensa | titulacion | premio | congreso | proyecto
+# Marcadores por tipo: ver informacion/LEEME.md
+[]

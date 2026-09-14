@@ -1,0 +1,7 @@
+# Logos de la franja de financiamiento. Los originales se quedan en
+# informacion/logos/; acá van copias recortadas al contenido visible y llevadas
+# a una altura común, o se ven diminutas. Ojo con los logos blancos sobre
+# transparente: no dan error, simplemente desaparecen sobre fondo claro.
+- { name: "Universidad de los Andes", file: "logo_uandes.png", url: "https://www.uandes.cl" }
+- { name: "ANID", file: "logo_anid.png", url: "https://www.anid.cl" }
+- { name: "CORFO", file: "logo_corfo.png", url: "https://www.corfo.cl" }

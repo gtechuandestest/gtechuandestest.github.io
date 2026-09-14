@@ -1,0 +1,48 @@
+# ---------------------------------------------------------------------------
+# G-Tech — Green Technologies Research Group · Universidad de los Andes
+# Sitio paraguas. El contenido vive en _data/*.yml; casi nada se edita en HTML.
+# ---------------------------------------------------------------------------
+
+# URL. Hoy el sitio se publica desde la cuenta faclopez91.
+# Si mañana se muda a una organización o a otra cuenta, se cambian estas dos
+# líneas y nada más: todos los enlaces del sitio usan relative_url / absolute_url.
+url: "https://faclopez91.github.io"
+baseurl: ""
+
+lab:
+  name: "G-Tech"
+  fullname:
+    es: "Green Technologies Research Group"
+    en: "Green Technologies Research Group"
+  institution:
+    es: "Facultad de Ingeniería y Ciencias Aplicadas, Universidad de los Andes"
+    en: "Faculty of Engineering and Applied Sciences, Universidad de los Andes"
+  email: "labgtechaguas@uandes.cl"        # POR CONFIRMAR: ¿correo propio del paraguas?
+  address:
+    es: "Av. Monseñor Álvaro del Portillo 12.455, Las Condes, Santiago"
+    en: "Av. Monseñor Álvaro del Portillo 12.455, Las Condes, Santiago, Chile"
+  admin: "Felipe A. Carreño López"
+  founded: 2023                            # POR CONFIRMAR para el paraguas
+
+# Cifras de la portada. Se editan a mano; si un valor va en "", su casilla no se dibuja.
+metrics:
+  areas: "5"
+  publications: ""
+  projects: ""
+  people: ""
+
+defaults:
+  - scope: { path: "" }
+    values: { lang: "es" }
+  - scope: { path: "en" }
+    values: { lang: "en" }
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - herramientas/
+  - vendor/
