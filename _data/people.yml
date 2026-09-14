@@ -15,7 +15,7 @@
   group: lead
   areas: [aguas]
   name: "César Huiliñir Curío"
-  photo: ""
+  photo: "cesar-huilinir.jpg"
   role:
     es: "Profesor Asociado · Director del área de Tecnologías del Agua"
     en: "Associate Professor · Head of Water Technologies"
@@ -45,7 +45,7 @@
   group: lead
   areas: [vergara]
   name: "Alberto Vergara Fernández"
-  photo: ""
+  photo: "alberto-vergara.jpg"
   role:
     es: "Profesor Titular · Director del área de Biofiltración y Tratamiento de Gases"
     en: "Full Professor · Head of Gas Biofiltration and Treatment"
@@ -75,7 +75,7 @@
   group: lead
   areas: [scott]
   name: "Felipe Scott Contador"
-  photo: ""
+  photo: "felipe-scott.jpg"
   role:
     es: "Profesor Asociado · Director del área de Ingeniería Metabólica y Bioprocesos"
     en: "Associate Professor · Head of Metabolic Engineering and Bioprocesses"
@@ -105,7 +105,7 @@
   group: lead
   areas: [guerrero]
   name: "Sichem Guerrero Ruz"
-  photo: ""
+  photo: "sichem-guerrero.jpg"
   role:
     es: "Profesor Titular · Director del área de Catálisis Heterogénea"
     en: "Full Professor · Head of Heterogeneous Catalysis"
@@ -135,7 +135,7 @@
   group: lead
   areas: [moreno]
   name: "Patricio Moreno Casas"
-  photo: ""
+  photo: "patricio-moreno.jpg"
   role:
     es: "Profesor Asociado · Director del área de Flujos Multifásicos y Simulación Numérica"
     en: "Associate Professor · Head of Multiphase Flows and Numerical Simulation"
