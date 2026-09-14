@@ -160,3 +160,298 @@
     orcid: "0000-0003-1348-8079"
     linkedin: ""               # sin perfil público encontrado
     scholar: "https://scholar.google.cl/citations?user=JgEQSacAAAAJ&hl=en"
+
+# ---- Equipo del área de aguas (traído del sitio de aguas; se mantiene con herramientas/migrar-aguas.rb) ----
+
+- id: felipe-carreno
+  group: postdoc
+  areas: [aguas]
+  name: "Felipe A. Carreño López"
+  photo: "felipe-carreno.jpg"
+  role:
+    es: "Investigador Postdoctoral"
+    en: "Postdoctoral Researcher"
+  affiliation:
+    es: "Facultad de Ingeniería y Ciencias Aplicadas, Universidad de los Andes"
+    en: "Faculty of Engineering and Applied Sciences, Universidad de los Andes"
+  degree:
+    es: "Doctor en Ciencias de la Ingeniería, Universidad de los Andes · Ingeniero Civil Químico, Universidad de Santiago de Chile"
+    en: "PhD in Engineering Sciences, Universidad de los Andes · Chemical Civil Engineer, Universidad de Santiago de Chile"
+  bio:
+    es: >-
+      En el Fondecyt de Postdoctorado N.º 3250412, que dirige, estudia cómo se
+      comportan la biopelícula y el azufre elemental dentro de un biofiltro de
+      desnitrificación autótrofa para aguas subterráneas. Simula el reactor con
+      dinámica de fluidos computacional y contrasta los resultados con técnicas de
+      imagen digital, para entender qué gobierna su rendimiento: cómo circula el flujo
+      entre las partículas, dónde crece la biopelícula y cómo se consume el azufre.
+      Aporta al grupo la capa de modelación —CFD, distribuciones de tiempo de
+      residencia, acoplamiento CFD–DEM— que convierte los ensayos de laboratorio en
+      herramientas de diseño, con colaboraciones en la University of California, Davis
+      y la Universidad de Valladolid.
+    en: >-
+      In Fondecyt Postdoctoral grant No. 3250412, which he leads, he studies how
+      biofilm and elemental sulfur behave inside an autotrophic denitrification
+      biofilter for groundwater. He simulates the reactor with computational fluid
+      dynamics and contrasts the results with digital imaging, to work out what governs
+      its performance: how flow moves between the particles, where biofilm grows and
+      how the sulfur is consumed. He brings the group its modelling layer — CFD,
+      residence time distributions, CFD–DEM coupling — that turns laboratory trials
+      into design tools, with collaborations at the University of California, Davis and
+      Universidad de Valladolid.
+  interests:
+    es: ["CFD y OpenFOAM", "Biopelículas en medios porosos", "Distribución de tiempos de residencia", "Acoplamiento CFD–DEM", "Gemelos digitales de reactores"]
+    en: ["CFD and OpenFOAM", "Biofilms in porous media", "Residence time distributions", "CFD–DEM coupling", "Digital twins of reactors"]
+  metrics:
+    - { label: { es: "Publicaciones", en: "Publications" }, value: "4" }
+    - { label: { es: "Índice h", en: "h-index" }, value: "2" }
+    - { label: { es: "Citas", en: "Citations" }, value: "30" }
+  links:
+    email: "facarreno@miuandes.cl"
+    orcid: "0000-0002-5255-2363"
+    linkedin: "faclopez91"
+    scholar: "https://scholar.google.com/citations?user=OsNFId8AAAAJ"
+    github: "facarreno"
+    website: "https://facarreno.github.io"
+
+# --- Estudiantes -------------------------------------------------------------
+# Tarjeta compacta: usa 'program' y 'focus' (una línea) en vez de 'degree',
+# 'bio', 'interests' y 'metrics'. photo: "" muestra las iniciales.
+
+# --- Equipo técnico y de gestión ---------------------------------------------
+
+- id: cristobal-gallardo
+  group: staff
+  areas: [aguas]
+  name: "Cristóbal Gallardo Balladares"
+  photo: "cristobal-gallardo.jpg"
+  role:
+    es: "Jefe de laboratorio"
+    en: "Lab manager"
+  affiliation:
+    es: "Facultad de Ingeniería y Ciencias Aplicadas, Universidad de los Andes"
+    en: "Faculty of Engineering and Applied Sciences, Universidad de los Andes"
+  degree:
+    es: "Ingeniero Civil Químico, Universidad de Santiago de Chile"
+    en: "Chemical Civil Engineer, Universidad de Santiago de Chile"
+  bio:
+    es: >-
+      En el CORFO de electrocoagulación está a cargo del sistema piloto que trata
+      residuos líquidos industriales y salmueras, desde su diseño y montaje hasta la
+      operación diaria. En el FONDEF de deshidratación de lodos coordina el proyecto:
+      el cronograma, los recursos y el enlace con la empresa asociada. Aporta al grupo
+      el escalamiento y la puesta en marcha —es quien lleva un proceso del ensayo de
+      laboratorio al equipo que funciona— y sostiene la infraestructura de la que
+      dependen todas las líneas: los análisis fisicoquímicos, los equipos y reactivos
+      de cada proyecto, y la formación de estudiantes e investigadores en métodos
+      analíticos y buenas prácticas de laboratorio.
+    en: >-
+      In the CORFO electrocoagulation project he is responsible for the pilot system
+      treating industrial wastewater and brines, from its design and assembly through
+      to daily operation. In the FONDEF sludge-dewatering project he coordinates the
+      work: the schedule, the resources and the liaison with the partner company. He
+      brings the group scale-up and commissioning —he is the one who takes a process
+      from a laboratory trial to equipment that runs— and sustains the infrastructure
+      every research line depends on: the physicochemical analyses, the equipment and
+      reagents of each project, and the training of students and researchers in
+      analytical methods and good laboratory practice.
+  interests:
+    es: ["Electrocoagulación", "Precipitación química", "Tratamiento de RIL y salmueras", "Plantas piloto", "Gestión de laboratorio"]
+    en: ["Electrocoagulation", "Chemical precipitation", "Industrial wastewater and brine treatment", "Pilot plants", "Laboratory management"]
+  links:
+    email: ""
+    orcid: ""
+    linkedin: ""
+
+- id: karina-roa
+  group: staff
+  areas: [aguas]
+  name: "Karina Roa Ruiz"
+  photo: "karina-roa.jpg"
+  role:
+    es: "Ingeniera de proyectos"
+    en: "Project engineer"
+  affiliation:
+    es: "Facultad de Ingeniería y Ciencias Aplicadas, Universidad de los Andes"
+    en: "Faculty of Engineering and Applied Sciences, Universidad de los Andes"
+  degree:
+    es: "Doctora en Ciencias de la Ingeniería, mención Ciencia e Ingeniería de Materiales, Universidad de Santiago de Chile · Magíster, Universidad Tecnológica Metropolitana · Ingeniera Civil Química, Universidad de Santiago de Chile"
+    en: "PhD in Engineering Sciences (Materials Science and Engineering), Universidad de Santiago de Chile · Master's degree, Universidad Tecnológica Metropolitana · Chemical Civil Engineer, Universidad de Santiago de Chile"
+  bio:
+    es: >-
+      En el FONDEF de deshidratación de lodos evalúa estrategias de pretratamiento y
+      microaireación de lodos secundarios: mide cómo afectan la deshidratación del
+      lodo, sus propiedades fisicoquímicas y la liberación de materia orgánica,
+      nitrógeno y fósforo hacia el líquido de filtrado. Combina el seguimiento de
+      variables operacionales con la caracterización química y el análisis de
+      desempeño, y con eso va ajustando las condiciones del proceso. Aporta al grupo
+      su formación en ciencia e ingeniería de materiales y en ingeniería química, que
+      sostiene la caracterización fisicoquímica de los lodos.
+    en: >-
+      In the FONDEF sludge-dewatering project she evaluates pretreatment and
+      micro-aeration strategies for secondary sludge: she measures how they affect the
+      dewatering of the sludge, its physicochemical properties and the release of
+      organic matter, nitrogen and phosphorus into the filtrate. She combines the
+      monitoring of operational variables with chemical characterisation and
+      performance analysis, and uses that to adjust the process conditions. She brings
+      the group her background in materials science and engineering and in chemical
+      engineering, which underpins the physicochemical characterisation of the
+      sludge.
+  interests:
+    es: ["Microaireación de lodos", "Deshidratación de lodos", "Tratamiento de aguas residuales", "Nitrógeno y fósforo", "Caracterización fisicoquímica"]
+    en: ["Sludge micro-aeration", "Sludge dewatering", "Wastewater treatment", "Nitrogen and phosphorus", "Physicochemical characterisation"]
+  metrics:
+    - { label: { es: "Publicaciones", en: "Publications" }, value: "25" }
+    - { label: { es: "Índice h", en: "h-index" }, value: "13" }
+    - { label: { es: "Citas", en: "Citations" }, value: "583" }
+  links:
+    email: ""
+    orcid: ""
+    scholar: ""
+    linkedin: "karina-roa-ruiz-00614a97"
+
+- id: judith-quezada
+  group: phd
+  areas: [aguas]
+  name: "Judith Quezada Cáceres"
+  photo: "judith-quezada.jpg"
+  role:
+    es: "Estudiante de doctorado"
+    en: "PhD Student"
+  affiliation:
+    es: "Facultad de Ingeniería y Ciencias Aplicadas, Universidad de los Andes"
+    en: "Faculty of Engineering and Applied Sciences, Universidad de los Andes"
+  degree:
+    es: "Doctorado en Ciencias de la Ingeniería (en curso), Universidad de los Andes · Ingeniera en Biotecnología, Universidad de Santiago de Chile"
+    en: "PhD in Engineering Sciences (in progress), Universidad de los Andes · Biotechnology Engineer, Universidad de Santiago de Chile"
+  bio:
+    es: >-
+      Estudiante de Doctorado en Ciencias de la Ingeniería de la Universidad de los
+      Andes e ingeniera en biotecnología de la Universidad de Santiago de Chile,
+      becada por ANID en el concurso de Doctorado Nacional 2026. Apasionada por la
+      línea de tratamiento de aguas y actual tesista de doctorado del Fondecyt Regular
+      N°1260328.
+    en: >-
+      PhD student in Engineering Sciences at Universidad de los Andes and a
+      biotechnology engineer from Universidad de Santiago de Chile, holder of an ANID
+      National Doctorate scholarship (2026 call). She is passionate about the water
+      treatment line and is currently the doctoral thesis student on Fondecyt Regular
+      No. 1260328.
+  links:
+    email: ""
+    orcid: ""
+    linkedin: "judith-quezada-caceres"
+
+- id: cristobal-nunez
+  group: undergrad
+  areas: [aguas]
+  name: "Cristóbal Núñez"
+  photo: "cristobal-nunez.jpg"
+  role:
+    es: "Estudiante de pregrado"
+    en: "Undergraduate Student"
+  program:
+    es: "Ingeniería Civil Química"
+    en: "Chemical Engineering"
+  focus:
+    es: "Contaminantes emergentes en la desnitrificación autótrofa en biofiltros para aguas subterráneas."
+    en: "Emerging contaminants in autotrophic denitrification biofilters for groundwater."
+  links:
+    email: ""
+    orcid: ""
+    linkedin: "crist%C3%B3bal-n%C3%BA%C3%B1ez-maldonado-62b039323"
+
+- id: sara-stevanovic
+  group: undergrad
+  areas: [aguas]
+  name: "Sara Stevanovic"
+  photo: ""
+  role:
+    es: "Estudiante de pregrado"
+    en: "Undergraduate Student"
+  program:
+    es: "Ingeniería Civil Química"
+    en: "Chemical Engineering"
+  focus:
+    es: "Modelo de orden reducido (POD) alimentado por simulaciones CFD de lechos empacados aleatorios, para estudiar parámetros geométricos de diseño en un biofiltro de desnitrificación autótrofa."
+    en: "Proper orthogonal decomposition reduced-order model, driven by CFD simulations of random packed beds, to study geometric design parameters in an autotrophic denitrification biofilter."
+  links:
+    email: ""
+    orcid: ""
+    linkedin: ""
+
+- id: javiera-riderelli
+  group: undergrad
+  areas: [aguas]
+  name: "Javiera Riderelli"
+  photo: ""
+  role:
+    es: "Estudiante de pregrado"
+    en: "Undergraduate Student"
+  program:
+    es: "Ingeniería Civil Química"
+    en: "Chemical Engineering"
+  focus:
+    es: "Destino de las descargas de nitrógeno en el Lago Llanquihue, acoplando transporte reactivo al modelo hidrodinámico tridimensional Si3D."
+    en: "Fate of nitrogen discharges in Lake Llanquihue, coupling reactive transport to the three-dimensional hydrodynamic model Si3D."
+  links:
+    email: ""
+    orcid: ""
+    linkedin: ""
+
+- id: mariano-guajardo
+  group: undergrad
+  areas: [aguas]
+  name: "Mariano Guajardo Jofré"
+  photo: "mariano-guajardo.jpg"
+  role:
+    es: "Estudiante de pregrado"
+    en: "Undergraduate Student"
+  program:
+    es: "Ingeniería Civil Química, mención Ambiental"
+    en: "Chemical Engineering, environmental track"
+  focus:
+    es: "Remoción simultánea de C/N/P en reactores biológicos: efecto de la zeolita natural en el proceso."
+    en: "Simultaneous C/N/P removal in biological reactors: effect of natural zeolite on the process."
+  links:
+    email: ""
+    orcid: ""
+    linkedin: "mariano-guajardo-jofr%C3%A9-007ab1285"
+
+- id: ignacia-gana
+  group: undergrad
+  areas: [aguas]
+  name: "Ignacia Gana Bustamante"
+  photo: "ignacia-gana.jpg"
+  role:
+    es: "Estudiante de pregrado"
+    en: "Undergraduate Student"
+  program:
+    es: "Ingeniería Civil Química"
+    en: "Chemical Engineering"
+  focus:
+    es: "Efecto de los contaminantes emergentes en la desnitrificación autótrofa de agua subterránea, con biomasa suspendida en reactores secuenciales batch."
+    en: "Effect of emerging contaminants on the autotrophic denitrification of groundwater, using suspended biomass in sequencing batch reactors."
+  links:
+    email: ""
+    orcid: ""
+    linkedin: "ignaciaganabustamante"
+
+- id: mariajose-nunez
+  group: undergrad
+  areas: [aguas]
+  name: "María José Núñez Echazarreta"
+  photo: "mariajose-nunez.jpg"
+  role:
+    es: "Estudiante de pregrado"
+    en: "Undergraduate Student"
+  program:
+    es: "Ingeniería Civil Química"
+    en: "Chemical Engineering"
+  focus:
+    es: "Remoción simultánea de C/N/S en reactores biológicos: efecto de la zeolita natural en el proceso."
+    en: "Simultaneous C/N/S removal in biological reactors: effect of natural zeolite on the process."
+  links:
+    email: ""
+    orcid: ""
+    linkedin: "mar%C3%ADa-jos%C3%A9-n%C3%BA%C3%B1ez-echazarreta-379a24361"

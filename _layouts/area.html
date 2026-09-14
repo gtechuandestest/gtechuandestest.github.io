@@ -87,13 +87,7 @@ layout: default
   </section>
   {% endif %}
 
-  {% assign papers = site.data.publications.indexed | where_exp: "p", "p.areas contains page.area_id" | sort: "year" | reverse %}
-  {% if papers.size > 0 %}
-  <section class="wrap band">
-    <h2>{{ t.pages.publications }}</h2>
-    <ul class="pubs">{% for p in papers %}{% include pub-item.html pub=p %}{% endfor %}</ul>
-  </section>
-  {% endif %}
+  {% comment %} Las publicaciones viven solo en /publicaciones/, filtrables por área. {% endcomment %}
 
   {% assign noticias = site.data.news | where_exp: "n", "n.areas contains page.area_id" | sort: "date" | reverse %}
   {% if noticias.size > 0 %}

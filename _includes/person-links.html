@@ -6,5 +6,6 @@
   {% if p.links.orcid != "" %}<li><a href="https://orcid.org/{{ p.links.orcid }}">ORCID</a></li>{% endif %}
   {% if p.links.scholar and p.links.scholar != "" %}<li><a href="{{ p.links.scholar }}">Google Scholar</a></li>{% endif %}
   {% if p.links.linkedin != "" %}<li><a href="https://www.linkedin.com/in/{{ p.links.linkedin }}/">LinkedIn</a></li>{% endif %}
+  {% if p.links.github and p.links.github != "" %}<li><a href="https://github.com/{{ p.links.github }}">GitHub</a></li>{% endif %}
 </ul>
 {% endif %}

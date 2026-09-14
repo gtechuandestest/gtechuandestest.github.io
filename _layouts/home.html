@@ -10,13 +10,6 @@ layout: default
       <p class="hero__kicker">{{ site.lab.institution[page.lang] }}</p>
       <h1 class="hero__title">{{ t.home.subtitle }}</h1>
       <p class="hero__lead">{{ t.home.lead_in }}</p>
-      <ul class="hero__areas">
-        {% for a in site.data.areas %}
-        <li style="--c: {{ a.color }}">
-          <a href="{{ base | append: '/areas/' | append: a.id | append: '/' | relative_url }}">{{ a.name[page.lang] }}</a>
-        </li>
-        {% endfor %}
-      </ul>
     </div>
     {% comment %} Los jefes de área: foto (o iniciales), nombre y área. Sale de areas.yml + people.yml. {% endcomment %}
     <ul class="hero__leads">
@@ -57,7 +50,8 @@ layout: default
 </section>
 {% endif %}
 
-{% assign destacadas = site.data.publications.indexed | where: "featured", true %}
+{% comment %} Destacadas: las marcadas con featured, las 6 más recientes. El listado completo vive en /publicaciones/. {% endcomment %}
+{% assign destacadas = site.data.publications.indexed | where: "featured", true | sort: "year" | reverse | slice: 0, 6 %}
 {% if destacadas.size > 0 %}
 <section class="wrap band">
   <h2>{{ t.home.featured_title }}</h2>

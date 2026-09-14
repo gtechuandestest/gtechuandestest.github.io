@@ -1,3 +1,90 @@
 # Ex integrantes. Tabla al final de Equipo. Cualquier campo vacío se dibuja como
-# guion, así que se puede completar de a poco.
-[]
+# guion, así que se puede completar de a poco. `areas` dice de qué área fue.
+
+- areas: [aguas]
+  name: "Josefina Viotti Marelli"
+  linkedin: "josefina-viotti"
+  role:
+    es: "Tesista de pregrado · Ingeniería Civil Ambiental"
+    en: "Undergraduate researcher · Environmental Engineering"
+  period: "2025–2026"
+  thesis:
+    es: "Producción de H₂ y CH₄ desde aguas residuales: efecto de la presencia de compuestos farmacéuticos en el proceso"
+    en: "H₂ and CH₄ production from wastewater: effect of pharmaceutical compounds on the process"
+
+- areas: [aguas]
+  name: "Andrés Orellana Molnar"
+  linkedin: "andr%C3%A9s-orellana-molnar-617175256"
+  role:
+    es: "Tesista de pregrado · Ingeniería Civil Ambiental"
+    en: "Undergraduate researcher · Environmental Engineering"
+  period: "2025–2026"
+  thesis:
+    es: "Modelación y simulación de una biopelícula desnitrificante autótrofa con S⁰ como donador de electrones"
+    en: "Modelling and simulation of an autotrophic denitrifying biofilm with S⁰ as electron donor"
+
+- areas: [aguas]
+  name: "Samuel Abogabir Schacht"
+  linkedin: "samuel-abogabir-schacht-0806b5258"
+  role:
+    es: "Tesista de pregrado · Ingeniería Civil Ambiental"
+    en: "Undergraduate researcher · Environmental Engineering"
+  period: "2025–2026"
+  thesis:
+    es: "Desarrollo y validación experimental de un modelo CFD tridimensional para un reactor de lecho fijo aplicado a la desnitrificación autótrofa con azufre elemental mediante análisis de distribución de tiempos de residencia"
+    en: "Development and experimental validation of a three-dimensional CFD model of a fixed-bed reactor for sulfur-based autotrophic denitrification through residence time distribution analysis"
+
+- areas: [aguas]
+  name: "Santiago Vila"
+  linkedin: ""
+  role:
+    es: "Tesista de pregrado · Ingeniería Civil Química"
+    en: "Undergraduate researcher · Chemical Engineering"
+  period: "2025–2026"
+  thesis:
+    es: "Puesta en marcha y evaluación operacional de un biofiltro desnitrificante autótrofo con azufre elemental para la remoción de nitrato en aguas subterráneas"
+    en: "Start-up and operational assessment of an elemental sulfur autotrophic denitrifying biofilter for nitrate removal from groundwater"
+
+- areas: [aguas]
+  name: "Sofía Belén Hernández Honorato"
+  linkedin: "sof%C3%ADa-hern%C3%A1ndez-568286196"
+  role:
+    es: "Tesista de pregrado · Ingeniería Civil Ambiental"
+    en: "Undergraduate researcher · Environmental Engineering"
+  period: "2025"
+  thesis:
+    es: "Simulación y modelación de un sistema acoplado Anammox–Feammox en reactores batch secuenciales"
+    en: "Simulation and modelling of a coupled Anammox–Feammox system in sequencing batch reactors"
+
+- areas: [aguas]
+  name: "Amanda Espinosa Peña"
+  linkedin: "amanda-espinosa-pe%C3%B1a-5b3b1b269"
+  role:
+    es: "Tesista de pregrado · Ingeniería Civil Ambiental"
+    en: "Undergraduate researcher · Environmental Engineering"
+  period: "2025"
+  thesis:
+    es: "Efecto de la zeolita natural sobre la desnitrificación heterótrofa, incluyendo la remoción de productos farmacéuticos (ibuprofeno y diclofenaco)"
+    en: "Effect of natural zeolite on heterotrophic denitrification, including the removal of pharmaceuticals (ibuprofen and diclofenac)"
+
+- areas: [aguas]
+  name: "Valentina Guajardo Jofré"
+  linkedin: "valentina-guajardo-jofr%C3%A9-156b85160"
+  role:
+    es: "Tesista de pregrado · Ingeniería Civil Ambiental"
+    en: "Undergraduate researcher · Environmental Engineering"
+  period: "2025"
+  thesis:
+    es: "Degradación de ibuprofeno y diclofenaco en reactores nitrificantes en presencia de zeolita: contribución de microorganismos nitrito-oxidantes al proceso"
+    en: "Degradation of ibuprofen and diclofenac in nitrifying reactors in the presence of zeolite: contribution of nitrite-oxidising microorganisms to the process"
+
+- areas: [aguas]
+  name: "Margarita María Fernanda Toro Gaete"
+  linkedin: "margarita-mar%C3%ADa-fernanda-toro-gaete-88aa61216"
+  role:
+    es: "Tesista de pregrado · Ingeniería Civil Ambiental"
+    en: "Undergraduate researcher · Environmental Engineering"
+  period: "2024–2025"
+  thesis:
+    es: "Título de memoria por confirmar"
+    en: "Thesis title to be confirmed"
