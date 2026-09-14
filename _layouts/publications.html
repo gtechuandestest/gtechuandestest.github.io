@@ -6,15 +6,48 @@ layout: default
   <header class="phead"><h1>{{ t.pages.publications }}</h1><p class="phead__intro">{{ t.pages.publications_intro }}</p></header>
   {% assign todas = site.data.publications.indexed | sort: "year" | reverse %}
   {% if todas.size > 0 %}
+    {% comment %} Filtro por área: solo oculta/muestra con JS; sin JS se ven todas. {% endcomment %}
+    <div class="filter" role="group" aria-label="{{ t.ui.filter_by_area }}">
+      <span class="filter__label">{{ t.ui.filter_by_area }}:</span>
+      <button class="filter__btn is-active" data-area="">{{ t.ui.all_areas }}</button>
+      {% for a in site.data.areas %}
+      <button class="filter__btn" data-area="{{ a.id }}" style="--c: {{ a.color }}"><span class="dot"></span>{{ a.name[page.lang] }}</button>
+      {% endfor %}
+    </div>
     {% assign anios = todas | map: "year" | uniq %}
     {% for y in anios %}
+      <section class="pubyear">
       <h2 class="sub">{{ y }}</h2>
       <ul class="pubs">
         {% assign delanio = todas | where: "year", y %}
         {% for p in delanio %}{% include pub-item.html pub=p %}{% endfor %}
       </ul>
+      </section>
     {% endfor %}
+    <p class="empty filter__empty" hidden>{{ t.ui.empty }}</p>
   {% else %}
     <p class="empty">{{ t.ui.empty }}</p>
   {% endif %}
 </div>
+<script>
+  (function () {
+    var botones = document.querySelectorAll('.filter__btn');
+    var pubs = document.querySelectorAll('.pub');
+    var anios = document.querySelectorAll('.pubyear');
+    var vacio = document.querySelector('.filter__empty');
+    var inicial = (location.hash || '').replace('#', '');
+    function filtrar(area) {
+      var visibles = 0;
+      pubs.forEach(function (p) {
+        var ok = !area || (' ' + p.getAttribute('data-areas') + ' ').indexOf(' ' + area + ' ') !== -1;
+        p.hidden = !ok; if (ok) visibles++;
+      });
+      anios.forEach(function (s) { s.hidden = !s.querySelector('.pub:not([hidden])'); });
+      if (vacio) vacio.hidden = visibles > 0;
+      botones.forEach(function (b) { b.classList.toggle('is-active', b.getAttribute('data-area') === area); });
+      if (history.replaceState) history.replaceState(null, '', area ? '#' + area : location.pathname);
+    }
+    botones.forEach(function (b) { b.addEventListener('click', function () { filtrar(b.getAttribute('data-area')); }); });
+    if (inicial && document.querySelector('.filter__btn[data-area="' + inicial + '"]')) filtrar(inicial);
+  })();
+</script>

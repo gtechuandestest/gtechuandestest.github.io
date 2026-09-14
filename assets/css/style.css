@@ -197,11 +197,33 @@ a:hover { text-decoration-thickness: 2px; color: var(--green-deep); }
 
 /* --- publicaciones ------------------------------------------------------- */
 .pubs { list-style: none; padding: 0; margin: 1rem 0 0; }
-.pub { padding-block: 1rem; border-top: 1px solid var(--line); }
-.pub p { margin: 0; }
-.pub__authors { font-size: .88rem; color: var(--ink-2); }
-.pub__title { margin: .2rem 0; }
-.pub__journal { font-size: .88rem; color: var(--ink-2); }
+.pub { display: grid; grid-template-columns: 4.5rem 1fr; gap: 1rem; padding: 1.4rem 0; border-top: 1px solid var(--line); }
+.pub:last-child { border-bottom: 1px solid var(--line); }
+.pub p { margin: 0; max-width: none; }
+.pub__year { font-family: var(--serif); font-size: 1.05rem; color: var(--green-deep); font-weight: 600; }
+.pub__authors { font-size: .9rem; color: var(--ink-faint); margin-bottom: .3em; }
+.pub__authors strong { color: var(--ink); font-weight: 600; }
+.pub__title { font-size: 1.05rem; margin: 0 0 .35em; }
+.pub__meta { font-size: .9rem; color: var(--ink-2); }
+.pub__doi { text-decoration: none; }
+.pub__doi:hover { text-decoration: underline; }
+.pub__areas { list-style: none; display: flex; flex-wrap: wrap; gap: .25rem .9rem; padding: 0; margin: .5rem 0 0;
+              font-size: .78rem; color: var(--ink-2); }
+.pubyear[hidden], .pub[hidden] { display: none; }
+/* en Publicaciones el año ya va como título de bloque: no se repite en cada ítem */
+.pubyear .pub { grid-template-columns: 1fr; }
+.pubyear .pub__year { display: none; }
+
+/* filtro por área (Publicaciones) */
+.filter { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin: 0 0 1.5rem; }
+.filter__label { font-size: .82rem; color: var(--ink-2); margin-right: .25rem; }
+.filter__btn { display: inline-flex; align-items: center; gap: .4em; padding: .35rem .85rem; border-radius: 100px;
+               border: 1px solid var(--line); background: var(--paper); color: var(--ink-2); font: inherit;
+               font-size: .85rem; font-weight: 500; cursor: pointer; }
+.filter__btn .dot { margin: 0; }
+.filter__btn:hover { background: var(--paper-2); color: var(--ink); }
+.filter__btn.is-active { background: var(--ink); color: #fff; border-color: var(--ink); }
+@media (max-width: 560px) { .pub { grid-template-columns: 1fr; gap: .2rem; } }
 
 /* --- noticias ------------------------------------------------------------ */
 .carousel { overflow-x: auto; scroll-snap-type: x mandatory; margin-top: 1.5rem; padding-bottom: 1rem; }

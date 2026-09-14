@@ -27,7 +27,7 @@ lab:
 # Cifras de la portada. Se editan a mano; si un valor va en "", su casilla no se dibuja.
 metrics:
   areas: "5"
-  publications: ""
+  publications: "68"
   projects: ""
   people: ""
 

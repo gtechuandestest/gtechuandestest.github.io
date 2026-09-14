@@ -1,20 +1,647 @@
-# Artículos indexados. Se cargan con herramientas/migrar-aguas.rb desde el sitio
-# de aguas (que ya los tiene) y a mano para el resto de las áreas.
+# Artículos indexados, 2020 a la fecha, de las cinco áreas.
 #
 # Cada entrada:
 #   - areas: [ids]        un paper con dos PI lleva las dos áreas y aparece en ambas
-#     year, authors, title, journal, doi, featured
+#     year, authors, title, journal, details, doi, featured
 #
+# Origen (barrido del 14-09-2026):
+#   · bloque 1: las del sitio de aguas (2023+), con `aguas` más el área de cualquier
+#     otro PI que firme; se mantienen sincronizadas con herramientas/migrar-aguas.rb
+#   · bloque 2: Vergara, Scott, Guerrero y Moreno, 2020–2026, desde sus perfiles de
+#     Google Scholar contrastados con Crossref (DOI, autores completos, revista)
+#   · bloque 3: Huiliñir 2020–2022 (Crossref). OJO: el sitio de aguas las excluye a
+#     propósito porque son de su etapa anterior a G-Tech. Si se decide lo mismo acá,
+#     basta borrar el bloque 3 completo.
+#
+# Se dejaron fuera patentes, capítulos de libro, preprints (SSRN), actas y corrigenda.
 # group_authors marca en negrita los apellidos del grupo en la lista de autores.
 # Al sumar un PI nuevo hay que agregar su apellido acá.
 
 group_authors:
   - "Carreño-López"
+  - "Carreno-Lopez"
   - "Huiliñir"
   - "Quezada-Cáceres"
+  - "Roa"
   - "Vergara-Fernández"
-  - "Scott"
-  - "Guerrero"
+  - "Vergara-Fernandez"
+  - "Scott, F."
+  - "Guerrero, S."
   - "Moreno-Casas"
 
-indexed: []
+indexed:
+  # ---- bloque 1: publicaciones del sitio de aguas (2023+) ----
+  - areas: [vergara, aguas, scott, moreno]
+    year: 2026
+    authors: "Carreño-López, F. A., Moreno-Casas, P. A., Scott, F., Vergara-Fernández, A., Sierra-Pallares, J., Muñoz, R."
+    title: "Hybrid section-based modeling of gas-phase hydrodynamics in biotrickling filters: influence of packing material on residence time distributions"
+    journal: "Biochemical Engineering Journal"
+    details: "227, 110049"
+    doi: "10.1016/j.bej.2025.110049"
+    featured: true
+
+  - areas: [aguas]
+    year: 2026
+    authors: "Yánez, D., Manterola, J., Guerrero, L., Carreño-López, F. A., Huiliñir, C."
+    title: "Enhancing sulfur-based denitrification with natural zeolite: performance under autotrophic and mixotrophic operation"
+    journal: "Biodegradation"
+    details: "37(4), 128"
+    doi: "10.1007/s10532-026-10352-4"
+    featured: true
+
+  - areas: [aguas]
+    year: 2025
+    authors: "Leiva-González, J., Hernández-Vélez, L., Quezada-Cáceres, J., Pagés-Diaz, J., Huiliñir, C"
+    title: "Pharmaceutical micropollutants removal and N2O production by nitrification process in SBR and SBBR: a review"
+    journal: "Biodegradation"
+    details: "36(3), 41"
+    doi: "10.1007/s10532-025-10130-8"
+    featured: false
+
+  - areas: [aguas]
+    year: 2025
+    authors: "Pagés-Díaz, J., Huiliñir, C., Lorenzo-Llanes, J., López Gónzalez, L.M., Barrera, E.L"
+    title: "Techno-economic and environmental assessment of hydrothermal carbonization coupled with anaerobic digestion for sewage sludge and municipal solid waste co-treatment in Chile"
+    journal: "Biomass and Bioenergy"
+    details: "201, 108105"
+    doi: "10.1016/j.biombioe.2025.108105"
+    featured: false
+
+  - areas: [aguas]
+    year: 2025
+    authors: "Palominos, N., Pagés-Díaz, J., Tello, M., Guerrero, L., Huiliñir, C"
+    title: "Sequential nitrification/mixotrophic denitrification process in single bioreactor: Performance and microbiology of two types of sequencing batch bioreactors"
+    journal: "Bioresource Technology"
+    details: "438, 133200"
+    doi: "10.1016/j.biortech.2025.133200"
+    featured: false
+
+  - areas: [vergara, aguas, scott]
+    year: 2025
+    authors: "Saleh-Cumsille, J., Cruz, P., Huiliñir, C., Scott, F., Vergara-Fernández, A"
+    title: "A new methodology to determine kLa in airlift reactors based on a non-intrusive image analysis technique"
+    journal: "Journal of Chemical Technology and Biotechnology"
+    details: "100(7), 1403–1412"
+    doi: "10.1002/jctb.7836"
+    featured: false
+
+  - areas: [aguas]
+    year: 2025
+    authors: "Tapiero, Y., Aravena, Y., Vargas, G., Sánchez, J., Huiliñir, C"
+    title: "Removal of ammoniacal nitrogen from aqueous medium through ultrafiltration assisted by cation-exchange-water-soluble polymers"
+    journal: "Journal of Water Process Engineering"
+    details: "71, 107148"
+    doi: "10.1016/j.jwpe.2025.107148"
+    featured: false
+
+  - areas: [aguas]
+    year: 2025
+    authors: "Vargas-Morales, G., Lauzurique, Y., Huiliñir, C"
+    title: "Inclusion of fly ash effects in ADM1: calibration and validation of a simple function using real wastewater"
+    journal: "Biodegradation"
+    details: "36(3), 38"
+    doi: "10.1007/s10532-025-10134-4"
+    featured: false
+
+  - areas: [aguas]
+    year: 2024
+    authors: "Corbalán, M., Da Silva, C., Barahona, A., Huiliñir, C., Guerrero, L"
+    title: "Nitrification–Autotrophic Denitrification Using Elemental Sulfur as an Electron Donor in a Sequencing Batch Reactor (SBR): Performance and Kinetic Analysis"
+    journal: "Sustainability (Switzerland)"
+    details: "16(10), 4269"
+    doi: "10.3390/su16104269"
+    featured: true
+
+  - areas: [aguas]
+    year: 2024
+    authors: "Hernández L.; Tello M.; Vargas R.; Leiva-González J.; Salazar-González R.; Calzadilla W.; Guerrero L.; Huiliñir C"
+    title: "Can natural zeolite improve the removal of micropollutants in a nitrifying sequencing batch reactor? Insights on bioreactor performance, kinetics, and microbial community using Ibuprofen and Diclofenac as model micropollutants"
+    journal: "Chemosphere"
+    details: "366, 143455"
+    doi: "10.1016/j.chemosphere.2024.143455"
+    featured: false
+
+  - areas: [aguas]
+    year: 2024
+    authors: "Lauzurique, Yeney; Segura, Sofia; Guerra, Silvana; Carvajal, Andrea; Huiliñir, Cesar; Poblete-Castro, Ignacio"
+    title: "Enhancing methane production using various forms of steel shavings and their effect on microbial consortia during anaerobic digestion of swine wastewater"
+    journal: "Journal of Environmental Chemical Engineering"
+    details: "12(5), 113764"
+    doi: "10.1016/j.jece.2024.113764"
+    featured: false
+
+  - areas: [aguas]
+    year: 2024
+    authors: "Pagés-Díaz, J. Vidal, I., Huiliñir, C., Hernández-Velez, L., Lorenzo-Llanes, J"
+    title: "Enhanced methane production from protein and lipid-rich wastewater using powdered oat husk-biochar"
+    journal: "Journal of Chemical Technology and Biotechnology"
+    details: ""
+    doi: "10.1002/jctb.7726"
+    featured: false
+
+  - areas: [vergara, aguas, scott]
+    year: 2024
+    authors: "San Martín-Davison, Jessica; Lebrero, Raquel; Vergara-Ojeda, Christian; Scott, Felipe; Huiliñir, Cesar; Vergara-Fernández, Alberto"
+    title: "Exploring naphthalene vapor biofiltration: performance and microbial community dynamics with diverse inoculums"
+    journal: "Journal of Chemical Technology and Biotechnology"
+    details: "99(12), 2639–2647"
+    doi: "10.1002/jctb.7744"
+    featured: false
+
+  - areas: [aguas]
+    year: 2023
+    authors: "Barahona A, Guerrero L, Rubio J.C., Gómez R., Huiliñir C., Borja R"
+    title: "Sequential Nitrification - Autotrophic Denitrification using sulfur as an electron donor and Chilean zeolite as microbial support"
+    journal: "Water (Switzerland)"
+    details: "15(1), 95"
+    doi: "10.3390/w15010095"
+    featured: false
+
+  - areas: [vergara, aguas, scott, moreno]
+    year: 2023
+    authors: "Carreño-López, F. A., Moreno-Casas, P. A., Scott, F., Iza, J., Sierra-Pallares, J., Muñoz, R., Vergara-Fernández, A."
+    title: "A convenient method to validate the gas flow of a CFD–CT simulation applied to a packed bed used in gas biofiltration through residence time distributions"
+    journal: "Chemical Engineering Journal"
+    details: "451(4), 138795"
+    doi: "10.1016/j.cej.2022.138795"
+    featured: false
+
+  - areas: [aguas]
+    year: 2023
+    authors: "Escobar, Jenny; Hernández, Leslie; Leiva González, Jorge; Salazar-González, Ricardo; Calzadilla, Wendy, Guerrero, Lorna; Escalona, Néstor and Huiliñir, César"
+    title: "Removal of Ibuprofen and Diclofenac in Batch Nitrifying Reactors: Effect of Natural Zeolite on the Process"
+    journal: "Water (Switzerland)"
+    details: "15(14), 2665"
+    doi: "10.3390/w15142665"
+    featured: false
+
+  - areas: [aguas]
+    year: 2023
+    authors: "Huiliñir C., Pagés-Díaz J., Vargas G., Vega S., Lauzurique Y. and Palominos N"
+    title: "Microaerobic condition as pretreatment for improving anaerobic digestion: A review"
+    journal: "Bioresource Technology"
+    details: "384, 129249"
+    doi: "10.1016/j.biortech.2023.129249"
+    featured: false
+
+  - areas: [aguas]
+    year: 2023
+    authors: "Lauzurique, Y., Miralles-Cuevas, S., Godoy, M., Sepúlveda, P., Bollo, S., Cabrera-Reina, A., Huiliñir, C., Malato, S., Oller, I., Salazar-González, R"
+    title: "Elimination of sulfamethoxazole by anodic oxidation using mixed metal oxide anodes"
+    journal: "Journal of Water Process Engineering"
+    details: "54, 103922"
+    doi: "10.1016/j.jwpe.2023.103922"
+    featured: false
+
+  - areas: [aguas]
+    year: 2023
+    authors: "Mendes C., Queiroz L.M., Esquerre, K., Huiliñir, C"
+    title: "Modeling of simultaneous carbon and nitrogen removal (SCNR) in an anaerobic/anoxic reactor treating salmon fishery wastewater"
+    journal: "Journal of Water Process Engineering"
+    details: "56, 104442"
+    doi: "10.1016/j.jwpe.2023.104442"
+    featured: false
+
+  # ---- bloque 2: Vergara / Scott / Guerrero / Moreno, 2020–2026 ----
+  - areas: [vergara, scott]
+    year: 2026
+    authors: "Araya, B., Torres-Praderio, P., Conejeros, R., Vergara-Fernández, A., Scott, F."
+    title: "Triacylglycerol accumulation in Rhodococcus opacus DSM 43205 from Knallgas and Knallgas-derived soluble intermediates"
+    journal: "Journal of Environmental Chemical Engineering"
+    details: "14(1), 120959"
+    doi: "10.1016/j.jece.2025.120959"
+    featured: false
+
+  - areas: [scott]
+    year: 2026
+    authors: "Bobillier, P., Scott, F., Bolivar, J. M., Illanes, A., Wilson, L., Conejeros, R."
+    title: "Modeling-based optimal control policies for a multienzymatic system with distinct thermal stabilities in packed-bed reactors"
+    journal: "Chemical Engineering Science"
+    details: "334, 124275"
+    doi: "10.1016/j.ces.2026.124275"
+    featured: false
+
+  - areas: [guerrero]
+    year: 2026
+    authors: "Díaz-Ulloa, P., Garrido-Figueroa, B., Guerrero, S., Cornejo, I."
+    title: "Nusselt number correlation for convective heat transfer in dual core-ring packed beds"
+    journal: "Chemical Engineering Science"
+    details: "322, 123067"
+    doi: "10.1016/j.ces.2025.123067"
+    featured: false
+
+  - areas: [vergara, guerrero]
+    year: 2026
+    authors: "Martín-Dávison, J. S., Vergara-Fernández, A., Guerrero, S., Pulido, N. A."
+    title: "Catalytic oxidation of biomass combustion emissions over K-M/MgO (M = Cu, Mn, Fe) mixed oxide catalysts"
+    journal: "Reaction Kinetics, Mechanisms and Catalysis"
+    details: "139(3), 1789-1813"
+    doi: "10.1007/s11144-026-03104-1"
+    featured: true
+
+  - areas: [guerrero]
+    year: 2026
+    authors: "Silva, O., Maxwell, L., Guerrero, S., Creaser, D., Cornejo, I."
+    title: "Techno-economic evaluation and carbon balance of multiple process routes for light olefin production from green hydrogen and captured CO2"
+    journal: "Chemical Engineering Research and Design"
+    details: "230, 111-127"
+    doi: "10.1016/j.cherd.2026.04.037"
+    featured: true
+
+  - areas: [vergara]
+    year: 2025
+    authors: "Cruz, P., Lebrero, R., Vergara-Fernández, A., Muñoz, R."
+    title: "Airlift Taylor Flow bioreactors as a novel platform to enhance H2-assisted CO2 bioconversion processes"
+    journal: "Chemical Engineering Journal"
+    details: "522, 167871"
+    doi: "10.1016/j.cej.2025.167871"
+    featured: true
+
+  - areas: [scott]
+    year: 2025
+    authors: "Silva, P., Scott, F., Adloor, S. D., Vassiliadis, V. S., Illanes, A., Wilson, L., Conejeros, R."
+    title: "Optimal control of scheduling and production for a multienzymatic system in continuous reactors"
+    journal: "Computers & Chemical Engineering"
+    details: "201, 109209"
+    doi: "10.1016/j.compchemeng.2025.109209"
+    featured: false
+
+  - areas: [moreno]
+    year: 2025
+    authors: "Toro, J. P., Sepúlveda, S., Bombardelli, F. A., Moreno-Casas, P. A., Meireles, I., Matos, J., Blanc, A."
+    title: "Influence of step height on turbulence statistics in the non-aerated skimming flow in steep-stepped spillways"
+    journal: "Water"
+    details: "17(22), 3256"
+    doi: "10.3390/w17223256"
+    featured: true
+
+  - areas: [moreno]
+    year: 2024
+    authors: "Abell, J. A., Moreno-Casas, P. A., Recabarren, M."
+    title: "Integrating advanced computational skills into engineering education: a discipline-based approach"
+    journal: "Computer Applications in Engineering Education"
+    details: "32(6), e22784"
+    doi: "10.1002/cae.22784"
+    featured: false
+
+  - areas: [scott]
+    year: 2024
+    authors: "González, E., Vera, F., Scott, F., Guerrero, C., Bolívar, J. M., Aroca, G., Muñoz, J. Á., Ladero, M., Santos, V. E."
+    title: "Acidophilic heterotrophs: basic aspects and technological applications"
+    journal: "Frontiers in Microbiology"
+    details: "15, 1374800"
+    doi: "10.3389/fmicb.2024.1374800"
+    featured: false
+
+  - areas: [scott]
+    year: 2024
+    authors: "Lueckel, F. B., Scott, F., Aroca, G."
+    title: "Comparative techno-economic and carbon footprint analysis of 2,3-butanediol production through aerobic and anaerobic bioconversion of carbon dioxide with green hydrogen"
+    journal: "Chemical Engineering Journal Advances"
+    details: "20, 100659"
+    doi: "10.1016/j.ceja.2024.100659"
+    featured: false
+
+  - areas: [scott]
+    year: 2023
+    authors: "González, E., Zuleta, C., Zamora, G., Maturana, N., Ponce, B., Rivero, M. V., Rodríguez, A., Soto, J. P., Scott, F., Díaz-Barrera, Á."
+    title: "Production of poly(3-hydroxybutyrate) and extracellular polymeric substances from glycerol by the acidophile Acidiphilium cryptum"
+    journal: "Extremophiles"
+    details: "27(3), 30"
+    doi: "10.1007/s00792-023-01313-3"
+    featured: false
+
+  - areas: [guerrero]
+    year: 2023
+    authors: "López, N., Monte, M., Iglesias-Juez, A., Portela, R., Xuyun, G., Ye, Z., Aguila, G., Araya, P., Guerrero, S."
+    title: "Effect of alkali addition on a Cu/SmCeO2@TiO2 catalyst for NO reduction with CO under oxidizing conditions"
+    journal: "Catalysis Today"
+    details: "423, 114247"
+    doi: "10.1016/j.cattod.2023.114247"
+    featured: false
+
+  - areas: [vergara, scott]
+    year: 2022
+    authors: "Araya, B., Diaz, C., Martín, J. S., Vergara-Fernández, A., Aroca, G., Scott, F."
+    title: "Biodegradation of 2,5-dimethylpyrazine in gas and liquid phase by the fungus Fusarium solani"
+    journal: "Journal of Chemical Technology & Biotechnology"
+    details: "97(6), 1408-1415"
+    doi: "10.1002/jctb.6903"
+    featured: false
+
+  - areas: [scott]
+    year: 2022
+    authors: "Morales-Vera, R., Vásquez-Ibarra, L., Scott, F., Puettmann, M., Gustafson, R."
+    title: "Life cycle assessment of bioethanol production: a case study from poplar biomass growth in the U.S. Pacific Northwest"
+    journal: "Fermentation"
+    details: "8(12), 734"
+    doi: "10.3390/fermentation8120734"
+    featured: false
+
+  - areas: [moreno]
+    year: 2022
+    authors: "Moreno-Casas, P. A., Toro, J. P., Sepúlveda, S., Abell, J. A., González, E., Paik, J."
+    title: "The effect of particle concentration on bed particle diffusion in dilute flows"
+    journal: "Water"
+    details: "14(19), 3105"
+    doi: "10.3390/w14193105"
+    featured: false
+
+  - areas: [vergara, scott]
+    year: 2022
+    authors: "Yáñez, L., Rodríguez, Y., Scott, F., Vergara-Fernández, A., Muñoz, R."
+    title: "Production of (R)-3-hydroxybutyric acid from methane by in vivo depolymerization of polyhydroxybutyrate in Methylocystis parvus OBBP"
+    journal: "Bioresource Technology"
+    details: "353, 127141"
+    doi: "10.1016/j.biortech.2022.127141"
+    featured: false
+
+  - areas: [guerrero]
+    year: 2021
+    authors: "Aguila, G., Calle, R., Guerrero, S., Baeza, P., Araya, P."
+    title: "Improvement of thermal stability of highly active species on SiO2 supported copper-ceria catalysts"
+    journal: "RSC Advances"
+    details: "11(53), 33271-33275"
+    doi: "10.1039/d1ra06204b"
+    featured: false
+
+  - areas: [vergara, scott]
+    year: 2021
+    authors: "Aguirre, A., Gentina, J. C., Malhautier, L., Fanlo, J., Vergara-Fernandez, A., Scott, F., Aroca, G."
+    title: "Characterization of the microbial community in a biotrickling filter treating a complex mixture of gaseous compounds causing odor nuisance"
+    journal: "Journal of Chemical Technology & Biotechnology"
+    details: "96(6), 1720-1731"
+    doi: "10.1002/jctb.6697"
+    featured: false
+
+  - areas: [moreno]
+    year: 2021
+    authors: "Galano, N., Moreno-Casas, P. A., Abell, J. A."
+    title: "Extending the Particle Finite Element Method for sediment transport simulation"
+    journal: "Computer Methods in Applied Mechanics and Engineering"
+    details: "380, 113772"
+    doi: "10.1016/j.cma.2021.113772"
+    featured: true
+
+  - areas: [scott]
+    year: 2021
+    authors: "Nolasco, E., Vassiliadis, V. S., Kähm, W., Adloor, S. D., Ismaili, R. A., Conejeros, R., Espaas, T., Gangadharan, N., Mappas, V., Scott, F., Zhang, Q."
+    title: "Optimal control in chemical engineering: past, present and future"
+    journal: "Computers & Chemical Engineering"
+    details: "155, 107528"
+    doi: "10.1016/j.compchemeng.2021.107528"
+    featured: true
+
+  - areas: [scott]
+    year: 2021
+    authors: "Núñez-Montero, K., Salazar, R., Santos, A., Gómez-Espinoza, O., Farah, S., Troncoso, C., Hoffmann, C., Melivilu, D., Scott, F., Barrientos Díaz, L."
+    title: "Antarctic Rahnella inusitata: a producer of cold-stable β-galactosidase enzymes"
+    journal: "International Journal of Molecular Sciences"
+    details: "22(8), 4144"
+    doi: "10.3390/ijms22084144"
+    featured: false
+
+  - areas: [moreno]
+    year: 2021
+    authors: "Paul, A., Murgadas, S., Delpiano, J., Moreno-Casas, P. A., Walczak, M., Lopez, M."
+    title: "The role of moisture transport mechanisms on the performance of lightweight aggregates in internal curing"
+    journal: "Construction and Building Materials"
+    details: "268, 121191"
+    doi: "10.1016/j.conbuildmat.2020.121191"
+    featured: false
+
+  - areas: [vergara, scott]
+    year: 2021
+    authors: "Scott, F., Yañez, L., Conejeros, R., Araya, B., Vergara-Fernández, A."
+    title: "Two internal bottlenecks cause the overflow metabolism leading to poly(3-hydroxybutyrate) production in Azohydromonas lata DSM1123"
+    journal: "Journal of Environmental Chemical Engineering"
+    details: "9(4), 105665"
+    doi: "10.1016/j.jece.2021.105665"
+    featured: false
+
+  - areas: [guerrero]
+    year: 2021
+    authors: "Sánchez, L., Aguila, G., Araya, P., Quijada, S., Guerrero, S."
+    title: "A highly active Ca/Cu/YCeO2–TiO2 catalyst for the transient reduction of NO with CO and naphthalene under oxidizing conditions"
+    journal: "RSC Advances"
+    details: "11(63), 39896-39906"
+    doi: "10.1039/d1ra08412g"
+    featured: false
+
+  - areas: [vergara]
+    year: 2020
+    authors: "Carrasco, S., Silva, J., Pino-Cortés, E., Gómez, J., Vallejo, F., Díaz-Robles, L., Campos, V., Cubillos, F., Pelz, S., Paczkowski, S., Cereceda-Balic, F., Vergara-Fernández, A., Lapuerta, M., Pazo, A., Monedero, E., Hoekman, K."
+    title: "Experimental study on hydrothermal carbonization of lignocellulosic biomass with magnesium chloride for solid fuel production"
+    journal: "Processes"
+    details: "8(4), 444"
+    doi: "10.3390/pr8040444"
+    featured: false
+
+  - areas: [vergara, scott, moreno]
+    year: 2020
+    authors: "Moreno-Casas, P. A., Scott, F., Delpiano, J., Abell, J. A., Caicedo, F., Muñoz, R., Vergara-Fernández, A."
+    title: "Mechanistic description of convective gas–liquid mass transfer in biotrickling filters using CFD modeling"
+    journal: "Environmental Science & Technology"
+    details: "54(1), 419-426"
+    doi: "10.1021/acs.est.9b02662"
+    featured: true
+
+  - areas: [vergara, scott, moreno]
+    year: 2020
+    authors: "Moreno-Casas, P. A., Scott, F., Delpiano, J., Vergara-Fernández, A."
+    title: "Computational tomography and CFD simulation of a biofilter treating a toluene, formaldehyde and benzo[α]pyrene vapor mixture"
+    journal: "Chemosphere"
+    details: "240, 124924"
+    doi: "10.1016/j.chemosphere.2019.124924"
+    featured: false
+
+  - areas: [guerrero]
+    year: 2020
+    authors: "Salinas, D., Guerrero, S., Campos, C. H., Bustamante, T. M., Pecchi, G."
+    title: "The effect of the ZrO2 loading in SiO2@ZrO2-CaO catalysts for transesterification reaction"
+    journal: "Materials"
+    details: "13(1), 221"
+    doi: "10.3390/ma13010221"
+    featured: false
+
+  - areas: [vergara, aguas, scott, moreno]
+    year: 2020
+    authors: "Vergara-Fernandez, A., Scott, F., Carreno-Lopez, F., Aroca, G., Moreno-Casas, P., Gonzalez-Sanchez, A., Munoz, R."
+    title: "A comparative assessment of the performance of fungal-bacterial and fungal biofilters for methane abatement"
+    journal: "Journal of Environmental Chemical Engineering"
+    details: "8(5), 104421"
+    doi: "10.1016/j.jece.2020.104421"
+    featured: false
+
+  - areas: [vergara, scott]
+    year: 2020
+    authors: "Yañez, L., Conejeros, R., Vergara-Fernández, A., Scott, F."
+    title: "Beyond intracellular accumulation of polyhydroxyalkanoates: chiral hydroxyalkanoic acids and polymer secretion"
+    journal: "Frontiers in Bioengineering and Biotechnology"
+    details: "8, 248"
+    doi: "10.3389/fbioe.2020.00248"
+    featured: false
+
+  # ---- bloque 3: Huiliñir 2020–2022 (etapa previa a G-Tech; ver nota arriba) ----
+  - areas: [aguas]
+    year: 2022
+    authors: "Castillo, A., Ortega-Martínez, E., Pagés-Díaz, J., Montalvo, S., Huiliñir, C."
+    title: "Micro-aerobic pre-treatment vs. thermal pre-treatment of waste activated sludge for its subsequent anaerobic digestion in semi-continuous digesters: a comparative study"
+    journal: "Fermentation"
+    details: "8(10), 565"
+    doi: "10.3390/fermentation8100565"
+    featured: false
+
+  - areas: [aguas]
+    year: 2022
+    authors: "Lauzurique, Y., Espinoza, L. C., Huiliñir, C., García, V., Salazar, R."
+    title: "Anodic oxidation of industrial winery wastewater using different anodes"
+    journal: "Water"
+    details: "14(1), 95"
+    doi: "10.3390/w14010095"
+    featured: false
+
+  - areas: [aguas]
+    year: 2022
+    authors: "Lauzurique, Y., Fermoso, F. G., Sánchez, N., Castillo, A., Salazar, R., García, V., Huiliñir, C."
+    title: "Biogas production from winery wastewater: effect of the substrate-inoculum ratio on fly ash addition and iron availability"
+    journal: "Journal of Water Process Engineering"
+    details: "47, 102826"
+    doi: "10.1016/j.jwpe.2022.102826"
+    featured: false
+
+  - areas: [aguas]
+    year: 2022
+    authors: "Murillo, H. A., Pagés-Díaz, J., Díaz-Robles, L. A., Vallejo, F., Huiliñir, C."
+    title: "Valorization of oat husk by hydrothermal carbonization: optimization of process parameters and anaerobic digestion of spent liquors"
+    journal: "Bioresource Technology"
+    details: "343, 126112"
+    doi: "10.1016/j.biortech.2021.126112"
+    featured: false
+
+  - areas: [aguas]
+    year: 2021
+    authors: "Huiliñir, C., Fuentes, V., Estuardo, C., Antileo, C., Pino-Cortés, E."
+    title: "Partial nitrification in a sequencing moving bed biofilm reactor (SMBBR) with zeolite as biomass carrier: effect of sulfide pulses and organic matter presence"
+    journal: "Water"
+    details: "13(18), 2484"
+    doi: "10.3390/w13182484"
+    featured: false
+
+  - areas: [aguas]
+    year: 2021
+    authors: "Lauzurique, Y., Fermoso, F. G., Sánchez, N., Castillo, A., Valdés, N., Tello, M., Salazar, R., García, V., Huiliñir, C."
+    title: "Effect of the addition of fly ash on the specific methane production and microbial communities in the anaerobic digestion of real winery wastewater"
+    journal: "Journal of Chemical Technology & Biotechnology"
+    details: "96(10), 2882-2890"
+    doi: "10.1002/jctb.6840"
+    featured: false
+
+  - areas: [aguas]
+    year: 2021
+    authors: "Lauzurique, Y., Montalvo, S., Salazar, R., García, V., Huiliñir, C."
+    title: "Fly ash from coal combustion as improver of anaerobic digestion: a review"
+    journal: "Journal of Environmental Chemical Engineering"
+    details: "9(6), 106422"
+    doi: "10.1016/j.jece.2021.106422"
+    featured: false
+
+  - areas: [aguas]
+    year: 2021
+    authors: "Palominos, N., Castillo, A., Guerrero, L., Borja, R., Huiliñir, C."
+    title: "Coupling of anaerobic digestion and struvite precipitation in the same reactor: effect of zeolite and bischofite as Mg2+ source"
+    journal: "Frontiers in Environmental Science"
+    details: "9, 706730"
+    doi: "10.3389/fenvs.2021.706730"
+    featured: false
+
+  - areas: [aguas]
+    year: 2021
+    authors: "Pérez-Pérez, T., Pereda-Reyes, I., Correia, G. T., Pozzi, E., Kwong, W. H., Oliva-Merencio, D., Zaiat, M., Montalvo, S., Huiliñir, C."
+    title: "Performance of EGSB reactor using natural zeolite as support for treatment of synthetic swine wastewater"
+    journal: "Journal of Environmental Chemical Engineering"
+    details: "9(1), 104922"
+    doi: "10.1016/j.jece.2020.104922"
+    featured: false
+
+  - areas: [aguas]
+    year: 2021
+    authors: "Yánez, D., Guerrero, L., Borja, R., Huiliñir, C."
+    title: "Sulfur-based mixotrophic denitrification with the stoichiometric S0/N ratio and methanol supplementation: effect of the C/N ratio on the process"
+    journal: "Journal of Environmental Science and Health, Part A"
+    details: "56(13), 1420-1427"
+    doi: "10.1080/10934529.2021.2004839"
+    featured: false
+
+  - areas: [aguas]
+    year: 2020
+    authors: "Acosta-Cordero, L., Carrera-Chapela, F., Montalvo, S., Guerrero, L., Palominos, N., Borja, R., Huiliñir, C."
+    title: "Modeling of the effect of zeolite concentration on the biological nitrification process in the presence of sulfide and organic matter"
+    journal: "Journal of Environmental Science and Health, Part A"
+    details: "56(1), 1-12"
+    doi: "10.1080/10934529.2020.1852011"
+    featured: false
+
+  - areas: [aguas]
+    year: 2020
+    authors: "Huiliñir, C., Acosta, L., Yanez, D., Montalvo, S., Esposito, G., Retamales, G., Levicán, G., Guerrero, L."
+    title: "Elemental sulfur-based autotrophic denitrification in stoichiometric S0/N ratio: calibration and validation of a kinetic model"
+    journal: "Bioresource Technology"
+    details: "307, 123229"
+    doi: "10.1016/j.biortech.2020.123229"
+    featured: true
+
+  - areas: [aguas]
+    year: 2020
+    authors: "Huiliñir, C., Fuentes, V., Esposito, G., Montalvo, S., Guerrero, L."
+    title: "Nitrification in the presence of sulfide and organic matter in a sequencing moving bed biofilm reactor (SMBBR) with zeolite as biomass carrier"
+    journal: "Journal of Chemical Technology & Biotechnology"
+    details: "95(5), 1614"
+    doi: "10.1002/jctb.6346"
+    featured: false
+
+  - areas: [aguas]
+    year: 2020
+    authors: "Montalvo, S., Huiliñir, C., Borja, R., Sánchez, E., Herrmann, C."
+    title: "Application of zeolites for biological treatment processes of solid wastes and wastewaters – a review"
+    journal: "Bioresource Technology"
+    details: "301, 122808"
+    doi: "10.1016/j.biortech.2020.122808"
+    featured: true
+
+  - areas: [aguas]
+    year: 2020
+    authors: "Montalvo, S., Huiliñir, C., Castillo, A., Pagés-Díaz, J., Guerrero, L."
+    title: "Carbon, nitrogen and phosphorus recovery from liquid swine wastes: a review"
+    journal: "Journal of Chemical Technology & Biotechnology"
+    details: "95(9), 2335-2347"
+    doi: "10.1002/jctb.6336"
+    featured: false
+
+  - areas: [aguas]
+    year: 2020
+    authors: "Montalvo, S., Martinez, J., Castillo, A., Huiliñir, C., Borja, R., García, V., Salazar, R."
+    title: "Sustainable energy for a winery through biogas production and its utilization: a Chilean case study"
+    journal: "Sustainable Energy Technologies and Assessments"
+    details: "37, 100640"
+    doi: "10.1016/j.seta.2020.100640"
+    featured: false
+
+  - areas: [aguas]
+    year: 2020
+    authors: "Pagés-Díaz, J., Huiliñir, C."
+    title: "Valorization of the liquid fraction of co-hydrothermal carbonization of mixed biomass by anaerobic digestion: effect of the substrate to inoculum ratio and hydrochar addition"
+    journal: "Bioresource Technology"
+    details: "317, 123989"
+    doi: "10.1016/j.biortech.2020.123989"
+    featured: false
+
+  - areas: [aguas]
+    year: 2020
+    authors: "Pino-Cortés, E., Montalvo, S., Huiliñir, C., Cubillos, F., Gacitúa, J."
+    title: "Characteristics and treatment of wastewater from the mercaptan oxidation process: a comprehensive review"
+    journal: "Processes"
+    details: "8(4), 425"
+    doi: "10.3390/pr8040425"
+    featured: false
+

@@ -4,10 +4,21 @@
   {%- capture marca %}<strong>{{ apellido }}</strong>{% endcapture -%}
   {%- assign lista = lista | replace: apellido, marca -%}
 {%- endfor -%}
-<li class="pub">
-  <p class="pub__authors">{{ lista }} <span class="pub__year">({{ pub.year }})</span></p>
-  <p class="pub__title">{{ pub.title }}</p>
-  <p class="pub__journal">
-    <i>{{ pub.journal }}</i>{% if pub.doi and pub.doi != "" %} · <a href="https://doi.org/{{ pub.doi }}">DOI</a>{% endif %}
-  </p>
+<li class="pub" data-areas="{{ pub.areas | join: ' ' }}">
+  <span class="pub__year">{{ pub.year }}</span>
+  <div class="pub__body">
+    <p class="pub__authors">{{ lista }}</p>
+    <h3 class="pub__title">{{ pub.title }}</h3>
+    <p class="pub__meta">
+      <em>{{ pub.journal }}</em>{% if pub.details and pub.details != "" %}, {{ pub.details }}{% endif %}{% if pub.doi and pub.doi != "" %} ·
+      <a href="https://doi.org/{{ pub.doi }}" class="pub__doi">doi: {{ pub.doi }}</a>{% endif %}
+    </p>
+    {% if pub.areas.size > 0 %}
+    <ul class="pub__areas">
+      {% for id in pub.areas %}{% assign ar = site.data.areas | where: "id", id | first %}{% if ar %}
+      <li style="--c: {{ ar.color }}"><span class="dot"></span>{{ ar.name[page.lang] }}</li>
+      {% endif %}{% endfor %}
+    </ul>
+    {% endif %}
+  </div>
 </li>
