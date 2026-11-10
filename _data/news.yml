@@ -62,7 +62,7 @@
 - date: 2026-10-27 23:00:00   # keynote: va primero entre las del 27
   kind: congreso
   areas: [scott]
-  nombre: { es: "El profesor Felipe Scott Contador, fundador de G-Tech,", en: "Professor Felipe Scott Contador, founder of G-Tech," }
+  nombre: { es: "El profesor Felipe Scott Contador", en: "Professor Felipe Scott Contador" }
   texto:
     es: "{nombre} dictó la conferencia keynote «{contribucion}» en el {congreso}, en {lugar}."
     en: "{nombre} delivered the keynote lecture \"{contribucion}\" at {congreso}, in {lugar}."
