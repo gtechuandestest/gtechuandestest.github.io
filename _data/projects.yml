@@ -6,7 +6,7 @@
   areas: [aguas]
   title: "Removal of micropollutants and their influence on N₂O emissions and microbial communities in elemental sulfur-based SBR and biofilter systems treating groundwater"
   funding: "ANID · Fondecyt Regular"
-  code: ""                       # POR CONFIRMAR: folio
+  code: "1260328"
   period: "2026–2029"
   lead: "César Huiliñir Curío"
   contact: "chuilinir@miuandes.cl"
@@ -89,7 +89,7 @@
   code: "1251864"
   period: "2025–2029"
   lead: "Felipe Scott"
-  contact: ""                    # POR CONFIRMAR: correo
+  contact: "fscott@uandes.cl"
   abstract: { es: "", en: "" }
 
 - id: fondecyt-1211434-hidroxiacidos
@@ -129,7 +129,7 @@
   code: "1250683"
   period: "2025–2029"
   lead: "Patricio Moreno-Casas"
-  contact: ""                    # POR CONFIRMAR: correo
+  contact: "patriciomoreno@miuandes.cl"
   abstract: { es: "", en: "" }
 
 - id: fai-puente-bedload
