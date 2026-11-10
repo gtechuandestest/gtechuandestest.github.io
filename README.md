@@ -3,7 +3,8 @@
 Sitio paraguas del grupo, con **Jekyll** y **GitHub Pages**. Bilingüe español /
 inglés, sin base de datos: todo el contenido vive en archivos YAML de `_data/`.
 
-- **En línea:** https://faclopez91.github.io
+- **En línea:** https://gtechuandestest.github.io
+- **Repositorio:** `gtechuandestest/gtechuandestest.github.io` (owner `faclopez91`)
 - **Material fuente:** `../informacion/` — fuera del repositorio, no se publica.
 
 ---
@@ -16,7 +17,9 @@ cinco sitios pegados, **nada se escribe dos veces**:
 1. Cada entrada de `_data/` lleva un campo **`areas:`**, que es una **lista** de
    ids de `areas.yml`.
 2. Las páginas globales (Investigación, Proyectos, Publicaciones, Equipo,
-   Noticias) muestran todo, agrupado por área.
+   Noticias) muestran todo. Proyectos y Publicaciones son una lista única con
+   filtro por área (cada entrada sale una vez, con todas sus áreas); las demás
+   agrupan por área.
 3. La página de cada área **no se escribe**: `_layouts/area.html` filtra esas
    mismas listas por el `area_id` que declara el archivo de la página.
 
@@ -43,9 +46,9 @@ El menú, la portada, el pie y la página del área salen solos.
 | Quiero… | Archivo |
 |---|---|
 | agregar a alguien | `_data/people.yml` — `group` decide la sección, `areas` el área, y tener o no `bio` decide el formato (ficha ancha o tarjeta compacta) |
-| agregar un proyecto | `_data/projects.yml` — el `title` va tal cual la postulación, sin traducir; `abstract` vacío |
+| agregar un proyecto | `_data/projects.yml` — una sola entrada aunque sea compartido: `areas` lista todas las participantes (la del IR primero). El `title` va tal cual la postulación, sin traducir; `abstract` vacío. Pasa solo a «Finalizados» cuando termina el año de `period`; `status: finished` lo adelanta |
 | agregar un paper | `_data/publications.yml`, bloque `indexed`, y el apellido en `group_authors` para que salga en negrita |
-| agregar una noticia | `_data/news.yml` — el texto no se escribe: se elige una plantilla de `news.templates` con `template:` (índice distinto al de la anterior del mismo tipo) |
+| agregar una noticia | `_data/news.yml` — normalmente el texto no se escribe: se elige una plantilla de `news.templates` con `template:` (índice distinto al de la anterior del mismo tipo). Si la noticia necesita su propia frase, `texto: {es:, en:}` reemplaza la plantilla y admite los mismos marcadores; `nombre` y `congreso` aceptan un valor por idioma. La hora de `date` no se muestra: ordena las del mismo día. Fotos: máximo 1400 px, en `assets/img/news/` |
 | cambiar una línea de investigación | `_data/research.yml` — se escriben más amplias que los proyectos vigentes, a propósito |
 | cambiar un texto de interfaz | `_data/es.yml` **y** su gemelo `_data/en.yml` |
 | cambiar correo, dirección, cifras | `_config.yml` |
@@ -65,6 +68,11 @@ ruby herramientas/migrar-aguas.rb --escribir   # copia y agrega areas: [aguas]
 Lee `_data/*.yml` del repo de aguas, agrega el campo de área y fusiona sin
 duplicar. Deja `.bak` de lo anterior. Las fotos se copian a mano.
 
+## Portada
+
+Orden de bloques: encabezado con los cinco directores → **Novedades** (carrusel de
+`news.yml`, con flechas en escritorio) → áreas → publicaciones destacadas.
+
 ## Ver y publicar
 
 ```bash
@@ -76,13 +84,17 @@ Validar los YAML sin Jekyll:
 
 ```bash
 ruby -ryaml -rdate -e 'Dir.glob("_data/*.yml").each { |f|
-  YAML.safe_load(File.read(f), permitted_classes:[Date]); puts "OK #{f}" }'
+  YAML.safe_load(File.read(f), permitted_classes:[Date, Time]); puts "OK #{f}" }'
 ```
 
-El `permitted_classes: [Date]` hace falta porque `news.yml` trae fechas.
+El `permitted_classes: [Date, Time]` hace falta porque `news.yml` trae fechas con hora.
 
-Publicar: `git add -A && git commit -m "…" && git push`. GitHub Pages recompila
-solo en un par de minutos.
+Publicar: `git add -A && git commit -m "…" && git push origin main`. GitHub Pages
+recompila solo, normalmente en uno o dos minutos (a veces hasta siete). El push
+necesita la llave SSH del Mac (`github-gtech-general`, ver
+`../informacion/ACCESOS-Y-COMANDOS.md`), así que se hace desde su Terminal.
+Si se hacen dos push seguidos, GitHub cancela la compilación intermedia y publica
+la última.
 
 ## Notas de operación
 
