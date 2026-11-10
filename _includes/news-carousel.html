@@ -1,11 +1,27 @@
 {% assign items = include.items %}
 {% assign t = site.data[page.lang] %}
 {% if items.size > 0 %}
-<div class="carousel">
-  <div class="carousel__track">
-    {% for n in items %}{% include news-slide.html item=n %}{% endfor %}
+<div class="carousel-wrap">
+  <button class="carousel__btn carousel__btn--prev" type="button" aria-label="{% if page.lang == 'en' %}Previous{% else %}Anterior{% endif %}">&#8249;</button>
+  <div class="carousel">
+    <div class="carousel__track">
+      {% for n in items %}{% include news-slide.html item=n %}{% endfor %}
+    </div>
   </div>
+  <button class="carousel__btn carousel__btn--next" type="button" aria-label="{% if page.lang == 'en' %}Next{% else %}Siguiente{% endif %}">&#8250;</button>
 </div>
+<script>
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  var box = wrap.querySelector('.carousel');
+  var prev = wrap.querySelector('.carousel__btn--prev'), next = wrap.querySelector('.carousel__btn--next');
+  function step() { var s = box.querySelector('.slide'); return s ? s.getBoundingClientRect().width + 24 : box.clientWidth; }
+  function update() { prev.disabled = box.scrollLeft < 5; next.disabled = box.scrollLeft + box.clientWidth > box.scrollWidth - 5; }
+  prev.addEventListener('click', function () { box.scrollBy({ left: -step(), behavior: 'smooth' }); });
+  next.addEventListener('click', function () { box.scrollBy({ left: step(), behavior: 'smooth' }); });
+  box.addEventListener('scroll', update, { passive: true }); window.addEventListener('resize', update); update();
+})();
+</script>
 {% else %}
 <p class="empty">{{ t.ui.empty }}</p>
 {% endif %}

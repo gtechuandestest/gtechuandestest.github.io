@@ -2,7 +2,10 @@
 {% assign t = site.data[page.lang] %}
 {% assign plantillas = t.news.templates[n.kind] %}
 {% assign texto = plantillas[n.template] %}
-{% assign texto = texto | replace: '{nombre}', n.nombre | replace: '{titulo}', n.titulo | replace: '{profesores}', n.profesores | replace: '{premio}', n.premio | replace: '{congreso}', n.congreso | replace: '{contribucion}', n.contribucion | replace: '{lugar}', n.lugar | replace: '{proyecto}', n.proyecto %}
+{% if n.texto[page.lang] %}{% assign texto = n.texto[page.lang] %}{% endif %}
+{% assign nombre = n.nombre[page.lang] | default: n.nombre %}
+{% assign congreso = n.congreso[page.lang] | default: n.congreso %}
+{% assign texto = texto | replace: '{nombre}', nombre | replace: '{titulo}', n.titulo | replace: '{profesores}', n.profesores | replace: '{premio}', n.premio | replace: '{congreso}', congreso | replace: '{contribucion}', n.contribucion | replace: '{lugar}', n.lugar | replace: '{proyecto}', n.proyecto %}
 <article class="slide">
   {% if n.photo and n.photo != "" %}
   <div class="slide__img" style="background-image:url('{{ '/assets/img/news/' | append: n.photo | relative_url }}')">

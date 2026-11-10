@@ -5,4 +5,62 @@
 #
 # kind: defensa | titulacion | premio | congreso | proyecto
 # Marcadores por tipo: ver informacion/LEEME.md
-[]
+# `nombre` y `congreso` aceptan un texto único o uno por idioma ({es:, en:}).
+# `texto` ({es:, en:}) reemplaza la plantilla cuando una noticia necesita su
+# propia frase; admite los mismos marcadores. Úsalo solo como excepción.
+# La hora de `date` no se muestra: solo ordena las noticias del mismo día.
+
+# --- I Congreso Chileno de Bioprocesos (Talca, 26–30 oct 2026) -------------
+- date: 2026-10-30 11:01:00
+  kind: congreso
+  areas: [aguas]
+  nombre: { es: "Ignacia Gana y Judith Quezada", en: "Ignacia Gana and Judith Quezada" }
+  texto:
+    es: "{nombre} presentaron el póster «{contribucion}» en el {congreso}, en {lugar}."
+    en: "{nombre} presented the poster \"{contribucion}\" at {congreso}, in {lugar}."
+  contribucion: "Puesta en marcha de un reactor batch secuencial (SBR) para la remoción de microcontaminantes mediante desnitrificación autótrofa utilizando azufre elemental como dador de electrones para el tratamiento de aguas subterráneas"
+  congreso: { es: "I Congreso Chileno de Bioprocesos", en: "the 1st Chilean Congress of Bioprocesses" }
+  lugar: "Talca"
+  photo: "congreso-bioprocesos-judith-ignacia.jpg"
+
+- date: 2026-10-30 11:00:00
+  kind: congreso
+  areas: [aguas]
+  nombre: "Felipe Carreño"
+  texto:
+    es: "{nombre} presentó el trabajo de tesis de Cristóbal Núñez, «{contribucion}», en el {congreso}, en {lugar}."
+    en: "{nombre} presented Cristóbal Núñez's thesis work, \"{contribucion}\", at {congreso}, in {lugar}."
+  contribucion: "Efecto de contaminantes emergentes sobre un biofiltro de desnitrificación autótrofa con azufre elemental para el tratamiento de aguas subterráneas"
+  congreso: { es: "I Congreso Chileno de Bioprocesos", en: "the 1st Chilean Congress of Bioprocesses" }
+  lugar: "Talca"
+  photo: "congreso-bioprocesos-felipe-carreno-cristobal-nunez.jpg"
+
+- date: 2026-10-27 16:05:00
+  kind: congreso
+  template: 1
+  areas: [scott]
+  nombre: "Violeta Gómez"
+  contribucion: "Modelamiento de un sistema de regeneración de cofactores no canónicos para la producción de metabolitos acoplada al crecimiento celular"
+  congreso: { es: "I Congreso Chileno de Bioprocesos", en: "the 1st Chilean Congress of Bioprocesses" }
+  lugar: "Talca"
+  photo: "congreso-bioprocesos-violeta-gomez.jpg"
+
+- date: 2026-10-27 15:45:00
+  kind: congreso
+  template: 0
+  areas: [scott]
+  nombre: "Paz Torres"
+  contribucion: "Crecimiento autotrófico de <em>Cupriavidus necator</em> en sistemas de alta transferencia gas-líquido con recirculación gaseosa: evaluación experimental y modelamiento"
+  congreso: { es: "I Congreso Chileno de Bioprocesos", en: "the 1st Chilean Congress of Bioprocesses" }
+  lugar: "Talca"
+  photo: "congreso-bioprocesos-paz-torres.jpg"
+
+- date: 2026-10-27 14:45:00
+  kind: congreso
+  template: 2
+  areas: [scott]
+  nombre: "Felipe Scott"
+  contribucion: "Reprogramación del metabolismo para la fermentación de compuestos C1: chasis no convencionales y nuevas estrategias redox"
+  congreso: { es: "I Congreso Chileno de Bioprocesos", en: "the 1st Chilean Congress of Bioprocesses" }
+  lugar: "Talca"
+  photo: "congreso-bioprocesos-felipe-scott.jpg"
