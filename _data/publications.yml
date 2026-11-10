@@ -26,6 +26,8 @@ group_authors:
   - "Vergara-Fernández"
   - "Vergara-Fernandez"
   - "Scott, F."
+  - "Scott, Felipe"                 # por si migrar-aguas.rb vuelve a traer autores con nombre completo
+  - "Torres-Praderio"               # Paz Torres, doctorado (área scott)
   - "Guerrero, S."
   - "Moreno-Casas"
 
@@ -141,7 +143,7 @@ indexed:
 
   - areas: [vergara, aguas, scott]
     year: 2024
-    authors: "San Martín-Davison, Jessica; Lebrero, Raquel; Vergara-Ojeda, Christian; Scott, Felipe; Huiliñir, Cesar; Vergara-Fernández, Alberto"
+    authors: "San Martín-Davison, J., Lebrero, R., Vergara-Ojeda, C., Scott, F., Huiliñir, C., Vergara-Fernández, A."
     title: "Exploring naphthalene vapor biofiltration: performance and microbial community dynamics with diverse inoculums"
     journal: "Journal of Chemical Technology and Biotechnology"
     details: "99(12), 2639–2647"
