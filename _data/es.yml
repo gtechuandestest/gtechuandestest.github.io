@@ -28,6 +28,8 @@ ui:
   funding_title: "Financiamiento e instituciones"
   role_in_project: "Rol"
   collaborations: "Colaboraciones"
+  ongoing: "En ejecución"
+  finished: "Finalizados"
 
 home:
   title: "G-Tech"
@@ -43,7 +45,7 @@ pages:
   research: "Investigación"
   research_intro: "Las líneas de trabajo del grupo, agrupadas por área."
   projects: "Proyectos"
-  projects_intro: "Proyectos en curso con financiamiento propio, y colaboraciones con otros equipos."
+  projects_intro: "Proyectos con financiamiento propio, en ejecución y finalizados, y colaboraciones con otros equipos. Cada proyecto aparece una vez, con todas las áreas que participan en él."
   publications: "Publicaciones"
   publications_intro: "Artículos en revistas indexadas de las cinco áreas, desde 2020. Los apellidos del grupo van en negrita; un artículo firmado por dos áreas aparece en ambas."
   team: "Equipo"

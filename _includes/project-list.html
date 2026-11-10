@@ -1,0 +1,27 @@
+{% comment %}
+  Lista de proyectos en dos grupos, «En ejecución» y «Finalizados», del más
+  reciente al más antiguo. Un proyecto pasa a finalizado solo, cuando el año de
+  término de `period` ya pasó; `status: finished` lo adelanta (p. ej. un
+  proyecto que terminó en marzo del año en curso).
+  Parámetros: items (lista de proyectos), chips (true = mostrar siempre las áreas).
+{% endcomment %}
+{% assign t = site.data[page.lang] %}
+{% assign anio = site.time | date: "%Y" | plus: 0 %}
+{% assign ordenados = include.items | sort: "period" | reverse %}
+{% assign vigentes = "" | split: "" %}{% assign cerrados = "" | split: "" %}
+{% for pr in ordenados %}
+  {% assign fin = pr.period | split: "–" | last | strip | plus: 0 %}
+  {% if pr.status == "finished" or fin < anio %}{% assign cerrados = cerrados | push: pr %}{% else %}{% assign vigentes = vigentes | push: pr %}{% endif %}
+{% endfor %}
+{% if vigentes.size > 0 %}
+<section class="projgroup">
+  <h3 class="sub projgroup__title">{{ t.ui.ongoing }}</h3>
+  {% for pr in vigentes %}{% include project-item.html project=pr chips=include.chips %}{% endfor %}
+</section>
+{% endif %}
+{% if cerrados.size > 0 %}
+<section class="projgroup">
+  <h3 class="sub projgroup__title">{{ t.ui.finished }}</h3>
+  {% for pr in cerrados %}{% include project-item.html project=pr chips=include.chips %}{% endfor %}
+</section>
+{% endif %}

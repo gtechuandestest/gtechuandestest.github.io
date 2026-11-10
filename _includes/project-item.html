@@ -1,11 +1,18 @@
 {% assign pr = include.project %}
 {% assign t = site.data[page.lang] %}
-<article class="proj">
+<article class="proj" data-areas="{{ pr.areas | join: ' ' }}">
   <h3>{{ pr.title }}</h3>
   <dl>
     <div><dt>{{ t.ui.funding }}</dt><dd>{{ pr.funding }}{% if pr.code != "" %} · {{ pr.code }}{% endif %}</dd></div>
     <div><dt>{{ t.ui.period }}</dt><dd>{{ pr.period }}</dd></div>
     <div><dt>{{ t.ui.lead }}</dt><dd>{{ pr.lead }}{% if pr.contact != "" %} · <a href="mailto:{{ pr.contact }}">{{ pr.contact }}</a>{% endif %}</dd></div>
   </dl>
+  {% if pr.areas.size > 1 or include.chips %}
+  <ul class="pub__areas">
+    {% for id in pr.areas %}{% assign ar = site.data.areas | where: "id", id | first %}{% if ar %}
+    <li style="--c: {{ ar.color }}"><span class="dot"></span>{{ ar.name[page.lang] }}</li>
+    {% endif %}{% endfor %}
+  </ul>
+  {% endif %}
   {% if pr.abstract[page.lang] != "" %}<p class="proj__abs">{{ pr.abstract[page.lang] }}</p>{% endif %}
 </article>

@@ -1,9 +1,14 @@
 # Proyectos propios del grupo. El `title` va TAL CUAL la postulación, sin
 # traducir, en los dos idiomas. Hoy ningún proyecto publica resumen: `abstract`
 # existe y va vacío; si algún día se quiere publicar uno, se pega ahí y aparece.
+#
+# Cada proyecto va UNA sola vez; `areas` lista todas las áreas que participan
+# (la del IR primero). En /proyectos/ sale una vez con todas sus áreas y en la
+# página de cada área participante. Pasa solo a «Finalizados» cuando el año de
+# término de `period` ya pasó; `status: finished` lo adelanta.
 
 - id: fondecyt-regular-mps
-  areas: [aguas]
+  areas: [aguas, vergara]        # Alberto Vergara es coinvestigador
   title: "Removal of micropollutants and their influence on N₂O emissions and microbial communities in elemental sulfur-based SBR and biofilter systems treating groundwater"
   funding: "ANID · Fondecyt Regular"
   code: "1260328"
@@ -15,7 +20,7 @@
 - id: fondecyt-postdoc-biofilm
   areas: [aguas]
   title: "Assessing biofilm and elemental sulfur dynamics in a groundwater elemental sulfur-based autotrophic denitrification fixed bed reactor through computational fluid dynamics simulations coupled with digital imaging techniques"
-  funding: "ANID · Fondecyt de Postdoctorado N.º 3250412"
+  funding: "ANID · Fondecyt de Postdoctorado"
   code: "3250412"
   period: "2025–2028"
   lead: "Felipe A. Carreño López"
@@ -83,7 +88,7 @@
   abstract: { es: "", en: "" }
 
 - id: fondecyt-1251864-isopropanol
-  areas: [scott]
+  areas: [scott, vergara]        # Alberto Vergara es coinvestigador
   title: "Increasing isopropanol and (R)-1,3-butanediol yields and titers from H₂, CO₂ and O₂ via pathway orthogonalization"
   funding: "ANID · Fondecyt Regular"
   code: "1251864"
@@ -99,7 +104,7 @@
   code: "1211434"
   period: "2021–2025"            # POR CONFIRMAR: término
   lead: "Felipe Scott"
-  contact: ""
+  contact: "fscott@uandes.cl"
   abstract: { es: "", en: "" }
 
 - id: fondef-unitair
@@ -109,7 +114,7 @@
   code: "ID22I10226"
   period: "2022–2024"
   lead: "Felipe Scott"
-  contact: ""
+  contact: "fscott@uandes.cl"
   abstract: { es: "", en: "" }
 
 - id: fondecyt-1220582-no
@@ -118,6 +123,7 @@
   funding: "ANID · Fondecyt Regular"
   code: "1220582"
   period: "2022–2026"
+  status: finished               # terminó el 31/03/2026
   lead: "Sichem Guerrero"
   contact: "sguerrero@uandes.cl"
   abstract: { es: "", en: "" }
@@ -139,5 +145,5 @@
   code: ""
   period: "2022–2024"
   lead: "Patricio Moreno-Casas"
-  contact: ""
+  contact: "patriciomoreno@miuandes.cl"
   abstract: { es: "", en: "" }

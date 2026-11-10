@@ -57,7 +57,7 @@ layout: default
   {% if proyectos.size > 0 %}
   <section class="wrap band">
     <h2>{{ t.pages.projects }}</h2>
-    {% for pr in proyectos %}{% include project-item.html project=pr %}{% endfor %}
+    {% include project-list.html items=proyectos %}
     {% assign colabs = site.data.collaborations | where_exp: "c", "c.areas contains page.area_id" %}
     {% if colabs.size > 0 %}
     <h3 class="sub">{{ t.ui.collaborations }}</h3>

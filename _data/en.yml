@@ -28,6 +28,8 @@ ui:
   funding_title: "Funding and institutions"
   role_in_project: "Role"
   collaborations: "Collaborations"
+  ongoing: "Ongoing"
+  finished: "Completed"
 
 home:
   title: "G-Tech"
@@ -43,7 +45,7 @@ pages:
   research: "Research"
   research_intro: "The group's research lines, grouped by area."
   projects: "Projects"
-  projects_intro: "Funded projects led by the group, and collaborations with other teams."
+  projects_intro: "Funded projects led by the group, ongoing and completed, and collaborations with other teams. Each project appears once, with every area that takes part in it."
   publications: "Publications"
   publications_intro: "Articles in indexed journals from the five areas, since 2020. Group surnames are in bold; an article signed by two areas appears under both."
   team: "Team"

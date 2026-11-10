@@ -4,18 +4,52 @@ layout: default
 {% assign t = site.data[page.lang] %}
 <div class="wrap">
   <header class="phead"><h1>{{ t.pages.projects }}</h1><p class="phead__intro">{{ t.pages.projects_intro }}</p></header>
-  {% for a in site.data.areas %}
-    {% assign proyectos = site.data.projects | where_exp: "p", "p.areas contains a.id" %}
-    {% assign colabs = site.data.collaborations | where_exp: "c", "c.areas contains a.id" %}
-    {% if proyectos.size > 0 or colabs.size > 0 %}
-    <section class="band" style="--c: {{ a.color }}">
-      <h2 class="areamark">{{ a.name[page.lang] }}</h2>
-      {% for pr in proyectos %}{% include project-item.html project=pr %}{% endfor %}
-      {% if colabs.size > 0 %}
-        <h3 class="sub">{{ t.ui.collaborations }}</h3>
-        <ul class="colabs">{% for c in colabs %}<li><b>{{ c.person }}</b> · {{ c.role[page.lang] }} — {{ c.title }} ({{ c.period }})</li>{% endfor %}</ul>
-      {% endif %}
-    </section>
-    {% endif %}
-  {% endfor %}
+
+  {% comment %} Cada proyecto aparece una sola vez, con todas sus áreas. El filtro solo oculta/muestra con JS; sin JS se ve todo. {% endcomment %}
+  <div class="filter" role="group" aria-label="{{ t.ui.filter_by_area }}">
+    <span class="filter__label">{{ t.ui.filter_by_area }}:</span>
+    <button class="filter__btn is-active" data-area="">{{ t.ui.all_areas }}</button>
+    {% for a in site.data.areas %}
+    <button class="filter__btn" data-area="{{ a.id }}" style="--c: {{ a.color }}"><span class="dot"></span>{{ a.name[page.lang] }}</button>
+    {% endfor %}
+  </div>
+
+  {% include project-list.html items=site.data.projects chips=true %}
+
+  {% if site.data.collaborations.size > 0 %}
+  <section class="projgroup">
+    <h3 class="sub projgroup__title">{{ t.ui.collaborations }}</h3>
+    <ul class="colabs">
+      {% assign colabs = site.data.collaborations | sort: "period" | reverse %}
+      {% for c in colabs %}
+      <li class="colab" data-areas="{{ c.areas | join: ' ' }}"><b>{{ c.person }}</b> · {{ c.role[page.lang] }} — {{ c.title }} ({{ c.period }})
+        <ul class="pub__areas">{% for id in c.areas %}{% assign ar = site.data.areas | where: "id", id | first %}{% if ar %}<li style="--c: {{ ar.color }}"><span class="dot"></span>{{ ar.name[page.lang] }}</li>{% endif %}{% endfor %}</ul>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+  <p class="empty filter__empty" hidden>{{ t.ui.empty }}</p>
 </div>
+<script>
+  (function () {
+    var botones = document.querySelectorAll('.filter__btn');
+    var items = document.querySelectorAll('.proj, .colab');
+    var grupos = document.querySelectorAll('.projgroup');
+    var vacio = document.querySelector('.filter__empty');
+    var inicial = (location.hash || '').replace('#', '');
+    function filtrar(area) {
+      var visibles = 0;
+      items.forEach(function (p) {
+        var ok = !area || (' ' + p.getAttribute('data-areas') + ' ').indexOf(' ' + area + ' ') !== -1;
+        p.hidden = !ok; if (ok) visibles++;
+      });
+      grupos.forEach(function (g) { g.hidden = !g.querySelector('.proj:not([hidden]), .colab:not([hidden])'); });
+      if (vacio) vacio.hidden = visibles > 0;
+      botones.forEach(function (b) { b.classList.toggle('is-active', b.getAttribute('data-area') === area); });
+      if (history.replaceState) history.replaceState(null, '', area ? '#' + area : location.pathname);
+    }
+    botones.forEach(function (b) { b.addEventListener('click', function () { filtrar(b.getAttribute('data-area')); }); });
+    if (inicial && document.querySelector('.filter__btn[data-area="' + inicial + '"]')) filtrar(inicial);
+  })();
+</script>
