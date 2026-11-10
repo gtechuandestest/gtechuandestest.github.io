@@ -14,7 +14,7 @@
 - date: 2026-10-30 11:01:00
   kind: congreso
   areas: [aguas]
-  nombre: { es: "Ignacia Gana y Judith Quezada", en: "Ignacia Gana and Judith Quezada" }
+  nombre: { es: "Ignacia Gana, tesista, y Judith Quezada, estudiante de doctorado,", en: "Ignacia Gana, undergraduate thesis student, and Judith Quezada, PhD student," }
   texto:
     es: "{nombre} presentaron el póster «{contribucion}» en el {congreso}, en {lugar}."
     en: "{nombre} presented the poster \"{contribucion}\" at {congreso}, in {lugar}."
@@ -26,10 +26,10 @@
 - date: 2026-10-30 11:00:00
   kind: congreso
   areas: [aguas]
-  nombre: "Felipe Carreño"
+  nombre: { es: "Felipe Carreño, investigador postdoctoral,", en: "Felipe Carreño, postdoctoral researcher," }
   texto:
-    es: "{nombre} presentó el trabajo de tesis de Cristóbal Núñez, «{contribucion}», en el {congreso}, en {lugar}."
-    en: "{nombre} presented Cristóbal Núñez's thesis work, \"{contribucion}\", at {congreso}, in {lugar}."
+    es: "{nombre} presentó el trabajo de tesis de Cristóbal Núñez, tesista del grupo, «{contribucion}», en el {congreso}, en {lugar}."
+    en: "{nombre} presented the thesis work of Cristóbal Núñez, an undergraduate thesis student in the group, \"{contribucion}\", at {congreso}, in {lugar}."
   contribucion: "Efecto de contaminantes emergentes sobre un biofiltro de desnitrificación autótrofa con azufre elemental para el tratamiento de aguas subterráneas"
   congreso: { es: "I Congreso Chileno de Bioprocesos", en: "the 1st Chilean Congress of Bioprocesses" }
   lugar: "Talca"
@@ -37,9 +37,11 @@
 
 - date: 2026-10-27 16:05:00
   kind: congreso
-  template: 1
   areas: [scott]
-  nombre: "Violeta Gómez"
+  nombre: { es: "Violeta Gómez, estudiante de doctorado,", en: "Violeta Gómez, PhD student," }
+  texto:
+    es: "{nombre} expuso «{contribucion}» en el {congreso}, en {lugar}."
+    en: "{nombre} gave the talk \"{contribucion}\" at {congreso}, in {lugar}."
   contribucion: "Modelamiento de un sistema de regeneración de cofactores no canónicos para la producción de metabolitos acoplada al crecimiento celular"
   congreso: { es: "I Congreso Chileno de Bioprocesos", en: "the 1st Chilean Congress of Bioprocesses" }
   lugar: "Talca"
@@ -47,19 +49,23 @@
 
 - date: 2026-10-27 15:45:00
   kind: congreso
-  template: 0
   areas: [scott]
-  nombre: "Paz Torres"
+  nombre: { es: "Paz Torres, estudiante de doctorado,", en: "Paz Torres, PhD student," }
+  texto:
+    es: "{nombre} presentó la charla «{contribucion}» en el {congreso}, en {lugar}."
+    en: "{nombre} presented \"{contribucion}\" at {congreso}, in {lugar}."
   contribucion: "Crecimiento autotrófico de <em>Cupriavidus necator</em> en sistemas de alta transferencia gas-líquido con recirculación gaseosa: evaluación experimental y modelamiento"
   congreso: { es: "I Congreso Chileno de Bioprocesos", en: "the 1st Chilean Congress of Bioprocesses" }
   lugar: "Talca"
   photo: "congreso-bioprocesos-paz-torres.jpg"
 
-- date: 2026-10-27 14:45:00
+- date: 2026-10-27 23:00:00   # keynote: va primero entre las del 27
   kind: congreso
-  template: 2
   areas: [scott]
-  nombre: "Felipe Scott"
+  nombre: { es: "El profesor Felipe Scott Contador, fundador de G-Tech,", en: "Professor Felipe Scott Contador, founder of G-Tech," }
+  texto:
+    es: "{nombre} dictó la conferencia keynote «{contribucion}» en el {congreso}, en {lugar}."
+    en: "{nombre} delivered the keynote lecture \"{contribucion}\" at {congreso}, in {lugar}."
   contribucion: "Reprogramación del metabolismo para la fermentación de compuestos C1: chasis no convencionales y nuevas estrategias redox"
   congreso: { es: "I Congreso Chileno de Bioprocesos", en: "the 1st Chilean Congress of Bioprocesses" }
   lugar: "Talca"
