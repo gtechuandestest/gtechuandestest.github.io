@@ -24,13 +24,18 @@
   template: 0
   areas: [scott, vergara]
   nombre: { es: "Pedro Cruz, Paz Torres-Praderio, Felipe Scott y Alberto Vergara-Fernández", en: "Pedro Cruz, Paz Torres-Praderio, Felipe Scott and Alberto Vergara-Fernández" }
+  texto:
+    es: "¡Felicitaciones a {nombre}! Su artículo «{titulo}» fue publicado en {revista}."
+    en: "Congratulations to {nombre}! Their paper \"{titulo}\" has been published in {revista}."
   titulo: "Enhancing H₂-driven CO₂ bioconversion through airlift and Taylor flow bioreactors: experimental comparison and model-based analysis"
-  revista: "Journal of Environmental Management"
+  revista:
+    es: "<em>Journal of Environmental Management</em> (Elsevier), revista Q1 con factor de impacto 9,2 (JCR 2025)"
+    en: "<em>Journal of Environmental Management</em> (Elsevier), a Q1 journal with an impact factor of 9.2 (JCR 2025)"
   link: "https://doi.org/10.1016/j.jenvman.2026.131381"
   link_label:
     es: "Leer el artículo"
     en: "Read the paper"
-  photo: ""
+  photo: "publicacion-jem-airlift-taylor.jpg"   # graphical abstract del artículo
 
 # --- I Congreso Chileno de Bioprocesos (Talca, 26–30 oct 2026) -------------
 - date: 2026-10-30 11:01:00
