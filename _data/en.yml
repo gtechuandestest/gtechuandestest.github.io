@@ -86,3 +86,6 @@ news:
     proyecto:
       - "{nombre} was awarded the {proyecto}."
       - "A new project in the group: {nombre} leads the {proyecto}."
+    publicacion:
+      - "New paper from the group in {revista}: \"{titulo}\". Authors: {nombre}."
+      - "{nombre} published \"{titulo}\" in {revista}."

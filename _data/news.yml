@@ -3,10 +3,10 @@
 # en 0). Al agregar una noticia, usa un índice distinto al de la anterior del
 # mismo tipo, para que dos seguidas no repitan la fórmula.
 #
-# kind: defensa | titulacion | premio | congreso | proyecto
+# kind: defensa | titulacion | premio | congreso | proyecto | publicacion
 # Marcadores por tipo: ver informacion/LEEME.md
 # Todos los marcadores (`nombre`, `titulo`, `profesores`, `premio`, `congreso`,
-# `contribucion`, `lugar`, `proyecto`) aceptan un texto único o uno por idioma
+# `contribucion`, `lugar`, `proyecto`, `revista`) aceptan un texto único o uno por idioma
 # ({es:, en:}).
 # `extra` ({es:, en:}): frase opcional que se agrega al final del párrafo.
 # `link` + `link_label` ({es:, en:}): enlace opcional bajo el texto.
@@ -17,6 +17,20 @@
 # `texto` ({es:, en:}) reemplaza la plantilla cuando una noticia necesita su
 # propia frase; admite los mismos marcadores. Úsalo solo como excepción.
 # La hora de `date` no se muestra: solo ordena las noticias del mismo día.
+
+# --- Publicaciones -------------------------------------------------------------
+- date: 2026-11-18 10:11:00
+  kind: publicacion
+  template: 0
+  areas: [scott, vergara]
+  nombre: { es: "Pedro Cruz, Paz Torres-Praderio, Felipe Scott y Alberto Vergara-Fernández", en: "Pedro Cruz, Paz Torres-Praderio, Felipe Scott and Alberto Vergara-Fernández" }
+  titulo: "Enhancing H₂-driven CO₂ bioconversion through airlift and Taylor flow bioreactors: experimental comparison and model-based analysis"
+  revista: "Journal of Environmental Management"
+  link: "https://doi.org/10.1016/j.jenvman.2026.131381"
+  link_label:
+    es: "Leer el artículo"
+    en: "Read the paper"
+  photo: ""
 
 # --- I Congreso Chileno de Bioprocesos (Talca, 26–30 oct 2026) -------------
 - date: 2026-10-30 11:01:00

@@ -86,3 +86,6 @@ news:
     proyecto:
       - "{nombre} se adjudicó el {proyecto}."
       - "Nuevo proyecto en el grupo: {nombre} dirige el {proyecto}."
+    publicacion:
+      - "Nuevo artículo del grupo en {revista}: «{titulo}». Autores: {nombre}."
+      - "{nombre} publicaron «{titulo}» en {revista}."

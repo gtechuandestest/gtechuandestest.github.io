@@ -205,6 +205,15 @@ indexed:
     featured: false
 
   # ---- bloque 2: Vergara / Scott / Guerrero / Moreno, 2020–2026 ----
+  - areas: [scott, vergara]
+    year: 2026
+    authors: "Cruz, P., Torres-Praderio, P., Scott, F., Vergara-Fernández, A."
+    title: "Enhancing H₂-driven CO₂ bioconversion through airlift and Taylor flow bioreactors: experimental comparison and model-based analysis"
+    journal: "Journal of Environmental Management"
+    details: "420, 131381"
+    doi: "10.1016/j.jenvman.2026.131381"
+    featured: true
+
   - areas: [vergara, scott]
     year: 2026
     authors: "Araya, B., Torres-Praderio, P., Conejeros, R., Vergara-Fernández, A., Scott, F."

@@ -11,7 +11,8 @@
 {% assign contribucion = n.contribucion[page.lang] | default: n.contribucion %}
 {% assign lugar = n.lugar[page.lang] | default: n.lugar %}
 {% assign proyecto = n.proyecto[page.lang] | default: n.proyecto %}
-{% assign texto = texto | replace: '{nombre}', nombre | replace: '{titulo}', titulo | replace: '{profesores}', profesores | replace: '{premio}', premio | replace: '{congreso}', congreso | replace: '{contribucion}', contribucion | replace: '{lugar}', lugar | replace: '{proyecto}', proyecto %}
+{% assign revista = n.revista[page.lang] | default: n.revista %}
+{% assign texto = texto | replace: '{nombre}', nombre | replace: '{titulo}', titulo | replace: '{profesores}', profesores | replace: '{premio}', premio | replace: '{congreso}', congreso | replace: '{contribucion}', contribucion | replace: '{lugar}', lugar | replace: '{proyecto}', proyecto | replace: '{revista}', revista %}
 <article class="slide">
   {% if n.photo and n.photo != "" %}
   <div class="slide__img" style="background-image:url('{{ '/assets/img/news/' | append: n.photo | relative_url }}')">
