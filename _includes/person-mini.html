@@ -4,7 +4,7 @@
     {% if p.photo != "" %}
       <img src="{{ '/assets/img/people/' | append: p.photo | relative_url }}" alt="{{ p.name }}" loading="lazy">
     {% else %}
-      <span class="initials">{{ p.name | split: " " | first | slice: 0 }}{{ p.name | split: " " | last | slice: 0 }}</span>
+      <span class="initials">{% if p.initials %}{{ p.initials }}{% else %}{{ p.name | split: " " | first | slice: 0 }}{{ p.name | split: " " | last | slice: 0 }}{% endif %}</span>
     {% endif %}
   </div>
   <h3>{{ p.name }}</h3>

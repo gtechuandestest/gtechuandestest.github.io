@@ -7,7 +7,8 @@
 #   areas:  lista de ids de areas.yml                   → decide DÓNDE aparece
 #           (siempre lista, aunque sea una sola: permite pertenecer a dos)
 #
-# photo: "" muestra las iniciales en vez de una foto.
+# photo: "" muestra las iniciales en vez de una foto (primera letra de la primera y
+#         de la última palabra del nombre; `initials: "XY"` las fija a mano).
 # El resto del equipo del área de aguas entra con herramientas/migrar-aguas.rb.
 # ---------------------------------------------------------------------------
 
@@ -347,6 +348,7 @@
   areas: [scott]
   name: "Paz Torres Praderio"
   photo: ""
+  initials: "PT"         # sin esto saldría "PP" (primera y última palabra del nombre)
   role:
     es: "Estudiante de doctorado"
     en: "PhD Student"
