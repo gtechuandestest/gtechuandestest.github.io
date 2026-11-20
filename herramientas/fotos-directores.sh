@@ -10,7 +10,7 @@
 # Es idempotente: si la foto ya existe no la vuelve a bajar; si el campo
 # `photo` ya está lleno no lo toca. Para forzar la descarga: FORZAR=1 bash ...
 #
-# Las URLs salen de informacion/perfiles/*/*.md (campo `foto:`). Si UANDES
+# Las URLs salen de informacion/profesores/*/*.md (campo `foto:`). Si UANDES
 # cambia una, se actualiza acá.
 # ---------------------------------------------------------------------------
 set -euo pipefail

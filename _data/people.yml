@@ -342,10 +342,48 @@
     orcid: ""
     linkedin: "judith-quezada-caceres"
 
+- id: paz-torres
+  group: phd
+  areas: [scott]
+  name: "Paz Torres Praderio"
+  photo: ""
+  role:
+    es: "Estudiante de doctorado"
+    en: "PhD Student"
+  program:
+    es: "Doctorado en Ciencias de la Ingeniería"
+    en: "PhD in Engineering Sciences"
+  focus:
+    es: "Crecimiento autotrófico de <em>Cupriavidus necator</em> en sistemas de alta transferencia gas-líquido con recirculación gaseosa."
+    en: "Autotrophic growth of <em>Cupriavidus necator</em> in high gas–liquid transfer systems with gas recirculation."
+  links:
+    email: ""
+    orcid: ""
+    linkedin: ""
+
+- id: violeta-gomez
+  group: phd
+  areas: [scott]
+  name: "Violeta Gómez"
+  photo: ""
+  role:
+    es: "Estudiante de doctorado"
+    en: "PhD Student"
+  program:
+    es: "Doctorado en Ciencias de la Ingeniería"
+    en: "PhD in Engineering Sciences"
+  focus:
+    es: "Modelamiento de un sistema de regeneración de cofactores no canónicos para la producción de metabolitos acoplada al crecimiento celular."
+    en: "Modelling a non-canonical cofactor regeneration system for growth-coupled metabolite production."
+  links:
+    email: ""
+    orcid: ""
+    linkedin: ""
+
 - id: cristobal-nunez
   group: undergrad
   areas: [aguas]
-  name: "Cristóbal Núñez"
+  name: "Cristóbal Núñez Maldonado"
   photo: "cristobal-nunez.jpg"
   role:
     es: "Estudiante de pregrado"
@@ -373,8 +411,8 @@
     es: "Ingeniería Civil Química"
     en: "Chemical Engineering"
   focus:
-    es: "Modelo de orden reducido (POD) alimentado por simulaciones CFD de lechos empacados aleatorios, para estudiar parámetros geométricos de diseño en un biofiltro de desnitrificación autótrofa."
-    en: "Proper orthogonal decomposition reduced-order model, driven by CFD simulations of random packed beds, to study geometric design parameters in an autotrophic denitrification biofilter."
+    es: "Modelo de orden reducido (POD) alimentado por simulaciones CFD de lechos empacados, para estudiar parámetros geométricos de diseño en un biofiltro de desnitrificación autótrofa."
+    en: "Proper orthogonal decomposition reduced-order model, driven by CFD simulations of packed beds, to study geometric design parameters in an autotrophic denitrification biofilter."
   links:
     email: ""
     orcid: ""
@@ -430,7 +468,7 @@
     es: "Ingeniería Civil Química"
     en: "Chemical Engineering"
   focus:
-    es: "Efecto de los contaminantes emergentes en la desnitrificación autótrofa de agua subterránea, con biomasa suspendida en reactores secuenciales batch."
+    es: "Efecto de contaminantes emergentes en la desnitrificación autótrofa de agua subterránea, con biomasa suspendida en reactores secuenciales batch."
     en: "Effect of emerging contaminants on the autotrophic denitrification of groundwater, using suspended biomass in sequencing batch reactors."
   links:
     email: ""
@@ -446,8 +484,8 @@
     es: "Estudiante de pregrado"
     en: "Undergraduate Student"
   program:
-    es: "Ingeniería Civil Química"
-    en: "Chemical Engineering"
+    es: "Ingeniería Civil Química, mención Ambiental"
+    en: "Chemical Engineering, environmental track"
   focus:
     es: "Remoción simultánea de C/N/S en reactores biológicos: efecto de la zeolita natural en el proceso."
     en: "Simultaneous C/N/S removal in biological reactors: effect of natural zeolite on the process."
@@ -455,3 +493,22 @@
     email: ""
     orcid: ""
     linkedin: "mar%C3%ADa-jos%C3%A9-n%C3%BA%C3%B1ez-echazarreta-379a24361"
+
+- id: valentina-cardenas
+  group: undergrad
+  areas: [aguas]
+  name: "Valentina Cárdenas Montecinos"
+  photo: "valentina-cardenas.jpg"
+  role:
+    es: "Estudiante de pregrado"
+    en: "Undergraduate Student"
+  program:
+    es: ""
+    en: ""
+  focus:
+    es: "Recuperación de nitrógeno amoniacal y fósforo vía absorción sobre biochar."
+    en: "Recovery of ammonium nitrogen and phosphorus via sorption onto biochar."
+  links:
+    email: ""
+    orcid: ""
+    linkedin: "valentina-isidora-cardenas-montecinos-47484732a"
