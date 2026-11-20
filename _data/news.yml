@@ -5,7 +5,15 @@
 #
 # kind: defensa | titulacion | premio | congreso | proyecto
 # Marcadores por tipo: ver informacion/LEEME.md
-# `nombre` y `congreso` aceptan un texto único o uno por idioma ({es:, en:}).
+# Todos los marcadores (`nombre`, `titulo`, `profesores`, `premio`, `congreso`,
+# `contribucion`, `lugar`, `proyecto`) aceptan un texto único o uno por idioma
+# ({es:, en:}).
+# `extra` ({es:, en:}): frase opcional que se agrega al final del párrafo.
+# `link` + `link_label` ({es:, en:}): enlace opcional bajo el texto.
+# `date_label` ({es:, en:}): solo cuando la fecha exacta no se conoce (p. ej.
+# "2025"); reemplaza la fecha que se muestra. `date` sigue ordenando.
+# Ojo con las plantillas: «de {profesores}» con «el profesor…» da «de el», y
+# «La guiaron {profesores}» pide plural. Con un solo profesor, usa la 0 o la 3.
 # `texto` ({es:, en:}) reemplaza la plantilla cuando una noticia necesita su
 # propia frase; admite los mismos marcadores. Úsalo solo como excepción.
 # La hora de `date` no se muestra: solo ordena las noticias del mismo día.
@@ -70,3 +78,211 @@
   congreso: { es: "I Congreso Chileno de Bioprocesos", en: "the 1st Chilean Congress of Bioprocesses" }
   lugar: "Talca"
   photo: "congreso-bioprocesos-felipe-scott.jpg"
+
+# --- Traídas del sitio de aguas (labgtechaguas.github.io), 20-11-2026 ------
+
+- date: 2026-07-07 12:00:00
+  kind: premio
+  template: 2
+  areas: [aguas]
+  nombre: "Mariano Guajardo Jofré"
+  premio:
+    es: "la Beca Santander Movilidad Internacional de Pregrado, que lo llevará a la Universidad de Valladolid, en España"
+    en: "the Santander International Undergraduate Mobility Scholarship, which will take him to the University of Valladolid, Spain"
+  extra:
+    es: "Estudiante de Ingeniería Civil Química con mención Ambiental."
+    en: "Chemical Engineering student, environmental track."
+  photo: "beca-mariano-guajardo.jpg"
+
+- date: 2026-05-19 12:00:00
+  kind: congreso
+  template: 2
+  areas: [aguas]
+  nombre: { es: "Felipe Carreño, investigador postdoctoral,", en: "Felipe Carreño, postdoctoral researcher," }
+  contribucion: "Living porous media: uncovering the microbe–fluid–rock interactions that reshape subsurface transport"
+  congreso: "InterPore 2026"
+  lugar: { es: "la Université de Nantes, Francia", en: "Nantes, France" }
+  extra:
+    es: "Póster en colaboración con el grupo de la Dra. Verónica Morales, de la University of California, Davis."
+    en: "Poster in collaboration with Dr. Verónica Morales' group at the University of California, Davis."
+  photo: "congreso-interpore-felipe.jpg"
+
+- date: 2026-05-01 12:00:00
+  date_label: { es: "Mayo de 2026", en: "May 2026" }
+  kind: defensa
+  template: 3
+  areas: [aguas]
+  nombre: "Josefina Viotti Marelli"
+  titulo:
+    es: "Producción de H₂ y CH₄ desde aguas residuales: efecto de la presencia de compuestos farmacéuticos en el proceso"
+    en: "H₂ and CH₄ production from wastewater: effect of pharmaceutical compounds on the process"
+  profesores: { es: "los profesores César Huiliñir y Alberto Vergara", en: "Professors César Huiliñir and Alberto Vergara" }
+  extra:
+    es: "Obtuvo un 7,0 en la defensa."
+    en: "She earned top marks in the defence."
+  photo: "defensa-josefina-viotti.jpg"
+
+- date: 2026-04-01 12:01:00
+  kind: defensa
+  template: 0
+  areas: [aguas]
+  nombre: "Andrés Orellana Molnar"
+  titulo:
+    es: "Modelación y simulación de una biopelícula desnitrificante autótrofa usando como donador de electrones el azufre elemental"
+    en: "Modelling and simulation of an autotrophic denitrifying biofilm using elemental sulfur as electron donor"
+  profesores: { es: "el profesor Felipe Carreño", en: "Professor Felipe Carreño" }
+  extra:
+    es: "Obtuvo la calificación máxima, 7,0, y profundizó en modelación de procesos ambientales con CFD y C++."
+    en: "He earned the top mark and deepened his work on environmental process modelling with CFD and C++."
+  photo: "defensa-andres-orellana.jpg"
+
+- date: 2026-04-01 12:00:00
+  kind: defensa
+  template: 1
+  areas: [aguas]
+  nombre: "Samuel Abogabir Schacht"
+  titulo:
+    es: "Desarrollo y validación experimental de un modelo CFD tridimensional para un reactor de lecho fijo aplicado a la desnitrificación autótrofa con azufre elemental mediante análisis de distribución de tiempos de residencia"
+    en: "Development and experimental validation of a three-dimensional CFD model of a fixed-bed reactor for sulfur-based autotrophic denitrification through residence time distribution analysis"
+  profesores: { es: "los profesores Felipe Carreño y César Huiliñir", en: "Professors Felipe Carreño and César Huiliñir" }
+  photo: "defensa-samuel-abogabir.jpg"
+
+- date: 2026-01-15 12:00:00
+  date_label: "2026"
+  kind: proyecto
+  template: 0
+  areas: [aguas]
+  nombre: { es: "El profesor César Huiliñir", en: "Professor César Huiliñir" }
+  proyecto:
+    es: "Fondecyt Regular de ANID sobre tratamiento de aguas subterráneas contaminadas con nitrato y microcontaminantes, mediante desnitrificación autótrofa con azufre elemental"
+    en: "ANID Fondecyt Regular grant on treating groundwater contaminated with nitrate and micropollutants through elemental sulfur autotrophic denitrification"
+  extra:
+    es: "El proyecto evalúa además cuánto óxido nitroso se emite en el proceso, un aspecto del que hay muy poca información científica."
+    en: "The project also assesses how much nitrous oxide the process emits, an aspect on which very little scientific information exists."
+  link: "https://www.uandes.cl/noticias/proyecto-de-academico-uandes-desarrolla-soluciones-sustentables-para-el-tratamiento-de-aguas-subterraneas-contaminadas/"
+  link_label:
+    es: "Leer la nota en Uandes"
+    en: "Read the story on the Uandes site"
+  photo: "noticia-cesar-huilinir.jpg"
+
+- date: 2025-12-12 12:00:00
+  kind: premio
+  template: 0
+  areas: [aguas]
+  nombre: { es: "El profesor César Huiliñir", en: "Professor César Huiliñir" }
+  premio:
+    es: "Premio Profesor Investigador Destacado de la Facultad de Ingeniería y Ciencias Aplicadas de la Universidad de los Andes"
+    en: "Outstanding Research Professor Award from the Faculty of Engineering and Applied Sciences, Universidad de los Andes"
+  extra:
+    es: "Como él mismo lo puso, el reconocimiento no es individual: refleja el trabajo de todo su equipo."
+    en: "As he put it himself, the recognition is not individual: it reflects the work of his whole team."
+  photo: "premio-cesar-huilinir.jpg"
+
+- date: 2025-12-11 12:00:00
+  kind: premio
+  template: 2
+  areas: [aguas]
+  nombre: "Sofía Belén Hernández Honorato"
+  premio:
+    es: "el premio Espíritu Universidad de los Andes, en su ceremonia de titulación como Ingeniera Civil Ambiental"
+    en: "the Espíritu Universidad de los Andes award, at her graduation ceremony as an Environmental Engineer"
+  extra:
+    es: "Se tituló además con dos votos de distinción."
+    en: "She also graduated with two distinctions."
+  photo: "premio-sofia-hernandez.jpg"
+
+- date: 2025-11-04 12:00:00
+  kind: congreso
+  template: 1
+  areas: [aguas]
+  nombre: { es: "el profesor César Huiliñir", en: "Professor César Huiliñir" }
+  contribucion:
+    es: "Remoción biológica multicomponente en reactores secuenciales con soporte de zeolita"
+    en: "Multicomponent biological removal in sequencing reactors with zeolite support"
+  congreso: { es: "XXVI Congreso Chileno de Ingeniería Sanitaria y Ambiental, AIDIS", en: "the XXVI Chilean Congress of Sanitary and Environmental Engineering, AIDIS" }
+  lugar: "Las Condes, Santiago"
+  extra:
+    es: "Abrió la sesión presentando el trabajo de memoria de Amanda Espinosa."
+    en: "He opened the session presenting the thesis work of Amanda Espinosa."
+  photo: "congreso-aidis-cesar.jpg"
+
+- date: 2025-10-27 12:01:00
+  kind: congreso
+  template: 0
+  areas: [aguas]
+  nombre: { es: "Felipe Carreño, investigador postdoctoral,", en: "Felipe Carreño, postdoctoral researcher," }
+  contribucion:
+    es: "Simulación CFD de un biofiltro de lecho empacado con azufre elemental aplicado a la desnitrificación autótrofa"
+    en: "CFD simulation of an elemental sulfur packed-bed biofilter applied to autotrophic denitrification"
+  congreso: { es: "XXII Congreso Chileno de Ingeniería Química", en: "the XXII Chilean Congress of Chemical Engineering" }
+  lugar: { es: "la Pontificia Universidad Católica de Valparaíso", en: "Valparaíso" }
+  extra:
+    es: "Póster y presentación oral, con el trabajo de los tesistas del grupo."
+    en: "Poster and oral presentation, drawing on the work of the group's undergraduate researchers."
+  photo: "congreso-iq-felipe.jpg"
+
+- date: 2025-10-27 12:00:00
+  kind: congreso
+  template: 2
+  areas: [aguas]
+  nombre: { es: "Judith Quezada, estudiante de doctorado,", en: "Judith Quezada, PhD student," }
+  contribucion:
+    es: "Estudio de la degradación de ibuprofeno y diclofenaco en un reactor batch secuencial de lecho móvil nitrificante"
+    en: "Degradation of ibuprofen and diclofenac in a nitrifying moving-bed sequencing batch reactor"
+  congreso: { es: "XXII Congreso Chileno de Ingeniería Química", en: "the XXII Chilean Congress of Chemical Engineering" }
+  lugar: { es: "la Pontificia Universidad Católica de Valparaíso", en: "Valparaíso" }
+  extra:
+    es: "Su primera presentación como estudiante de doctorado en la Universidad de los Andes, con beca FAI de Congresos."
+    en: "Her first presentation as a doctoral student at Universidad de los Andes, supported by a FAI conference grant."
+  photo: "congreso-iq-judith.jpg"
+
+- date: 2025-10-01 12:00:00
+  date_label: "2025"
+  kind: defensa
+  template: 0
+  areas: [aguas]
+  nombre: "Amanda Espinosa Peña"
+  titulo:
+    es: "Efecto de la zeolita natural sobre la desnitrificación heterótrofa, incluyendo la remoción de productos farmacéuticos (ibuprofeno y diclofenaco)"
+    en: "Effect of natural zeolite on heterotrophic denitrification, including the removal of pharmaceuticals (ibuprofen and diclofenac)"
+  profesores: { es: "el profesor César Huiliñir", en: "Professor César Huiliñir" }
+  photo: "defensa-amanda-espinosa.jpg"
+
+- date: 2025-09-29 12:00:00
+  kind: defensa
+  template: 3
+  areas: [aguas]
+  nombre: "Sofía Belén Hernández Honorato"
+  titulo:
+    es: "Simulación y modelación de un sistema acoplado Anammox–Feammox en reactores batch secuenciales"
+    en: "Simulation and modelling of a coupled Anammox–Feammox system in sequencing batch reactors"
+  profesores: { es: "el profesor César Huiliñir", en: "Professor César Huiliñir" }
+  extra:
+    es: "El trabajo se enmarcó en el Fondecyt Regular N.º 1241833 del profesor Eduardo Leiva."
+    en: "The work was part of Fondecyt Regular grant No. 1241833, led by Professor Eduardo Leiva."
+  photo: "defensa-sofia-hernandez.jpg"
+
+- date: 2025-09-22 12:00:00
+  kind: defensa
+  template: 0
+  areas: [aguas]
+  nombre: "Valentina Guajardo Jofré"
+  titulo:
+    es: "Degradación de ibuprofeno y diclofenaco en reactores nitrificantes en presencia de zeolita: contribución de microorganismos nitrito-oxidantes al proceso"
+    en: "Degradation of ibuprofen and diclofenac in nitrifying reactors in the presence of zeolite: contribution of nitrite-oxidising microorganisms to the process"
+  profesores: { es: "el profesor César Huiliñir", en: "Professor César Huiliñir" }
+  extra:
+    es: "Obtuvo su título con distinción máxima."
+    en: "She was awarded her degree with highest distinction."
+  photo: "defensa-valentina-guajardo.jpg"
+
+- date: 2025-08-01 12:00:00
+  date_label: "2025"
+  kind: titulacion
+  areas: [aguas]
+  nombre: "Margarita María Fernanda Toro Gaete"
+  texto:
+    es: "{nombre} recibió su título de Ingeniera Civil Ambiental tras aprobar su defensa de memoria, guiada por {profesores}."
+    en: "{nombre} received her degree in Environmental Engineering after passing her thesis defence, supervised by {profesores}."
+  profesores: { es: "el profesor César Huiliñir", en: "Professor César Huiliñir" }
+  photo: "titulacion-margarita-toro.jpg"
